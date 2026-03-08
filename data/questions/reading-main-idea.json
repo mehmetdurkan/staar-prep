@@ -1,0 +1,377 @@
+{
+  "subject": "reading",
+  "topic": "main-idea",
+  "topicName": "Main Idea & Details",
+  "passages": [
+    {
+      "id": "mi-p001",
+      "difficulty": "easy",
+      "teks": "3.13A",
+      "title": "The Community Garden",
+      "text": "The people in Rosa's neighborhood worked together to build a community garden. They cleared a lot, brought soil, and planted vegetables and flowers. Each family took care of a small section. Every week, neighbors would meet at the garden to water the plants and share stories. The garden made the neighborhood a happier and friendlier place.",
+      "questions": [
+        {
+          "id": "mi-p001-q1",
+          "difficulty": "easy",
+          "question": "What is the main idea of this passage?",
+          "options": [
+            "Rosa planted flowers in her yard.",
+            "A community garden brought neighbors together.",
+            "Vegetables need water every week.",
+            "It is hard to clear an empty lot."
+          ],
+          "answer": 1,
+          "explanation": "The passage is MOSTLY about how building a community garden helped the neighborhood come together. Details about flowers or watering are supporting details, not the main idea."
+        },
+        {
+          "id": "mi-p001-q2",
+          "difficulty": "easy",
+          "question": "Which detail BEST supports the main idea?",
+          "options": [
+            "They brought soil to the lot.",
+            "Each family had a small section.",
+            "Neighbors met weekly to share stories.",
+            "They planted vegetables and flowers."
+          ],
+          "answer": 2,
+          "explanation": "Neighbors meeting weekly to share stories best shows that the garden brought people together — supporting the main idea about community."
+        },
+        {
+          "id": "mi-p001-q3",
+          "difficulty": "easy",
+          "question": "What happened FIRST in the passage?",
+          "options": [
+            "Families watered the plants.",
+            "Neighbors shared stories.",
+            "They cleared a lot.",
+            "Each family planted vegetables."
+          ],
+          "answer": 2,
+          "explanation": "The passage says they first 'cleared a lot' before bringing soil or planting anything."
+        },
+        {
+          "id": "mi-p001-q4",
+          "difficulty": "easy",
+          "question": "What is the BEST summary of this passage?",
+          "options": [
+            "Rosa learned how to grow vegetables.",
+            "A neighborhood worked together to build a garden that made the community closer.",
+            "Flowers and vegetables grow well in good soil.",
+            "It takes a lot of work to clear a lot."
+          ],
+          "answer": 1,
+          "explanation": "A good summary captures the main idea without adding details from only one part. The community working together and becoming closer is the central message."
+        },
+        {
+          "id": "mi-p001-q5",
+          "difficulty": "easy",
+          "question": "The author wrote this passage MAINLY to —",
+          "options": [
+            "explain how to plant a vegetable garden",
+            "describe how gardening can bring a community together",
+            "list the steps needed to clear an empty lot",
+            "compare different types of flowers"
+          ],
+          "answer": 1,
+          "explanation": "The author focuses on the community coming together, not on gardening instructions or comparisons."
+        }
+      ]
+    },
+    {
+      "id": "mi-p002",
+      "difficulty": "easy",
+      "teks": "3.13A",
+      "title": "Dogs as Helpers",
+      "text": "Dogs do many important jobs for people. Some dogs guide people who cannot see well. Others help police officers find missing people. Some dogs are trained to help children feel calm at hospitals. Dogs that work on farms herd sheep and cattle. No matter what the job, working dogs are trained for many months to learn their skills.",
+      "questions": [
+        {
+          "id": "mi-p002-q1",
+          "difficulty": "easy",
+          "question": "What is the main idea of this passage?",
+          "options": [
+            "Dogs need months of training.",
+            "Dogs do many helpful jobs for people.",
+            "Police officers use dogs to find missing people.",
+            "Farm dogs herd sheep and cattle."
+          ],
+          "answer": 1,
+          "explanation": "The passage lists many jobs dogs do — guiding, helping police, comforting patients, herding. The main idea is that dogs do many helpful jobs. Training is a supporting detail."
+        },
+        {
+          "id": "mi-p002-q2",
+          "difficulty": "easy",
+          "question": "Which detail does NOT support the main idea?",
+          "options": [
+            "Some dogs guide people who cannot see.",
+            "Dogs help police officers.",
+            "Dogs are trained for many months.",
+            "All dogs like to play fetch."
+          ],
+          "answer": 3,
+          "explanation": "'All dogs like to play fetch' is not mentioned in the passage and does not support the idea that dogs do helpful jobs for people."
+        },
+        {
+          "id": "mi-p002-q3",
+          "difficulty": "easy",
+          "question": "What do ALL the dogs in this passage have in common?",
+          "options": [
+            "They all live on farms.",
+            "They all work in hospitals.",
+            "They all help people in some way.",
+            "They all herd animals."
+          ],
+          "answer": 2,
+          "explanation": "Every dog described in the passage — guide dogs, police dogs, hospital dogs, farm dogs — helps people in some way."
+        },
+        {
+          "id": "mi-p002-q4",
+          "difficulty": "easy",
+          "question": "What is the BEST title for this passage?",
+          "options": [
+            "How to Train a Dog",
+            "Working Dogs: Helpers to People",
+            "Farm Animals and Their Jobs",
+            "Guide Dogs for the Blind"
+          ],
+          "answer": 1,
+          "explanation": "'Working Dogs: Helpers to People' fits because the passage covers many types of working dogs, not just one kind."
+        },
+        {
+          "id": "mi-p002-q5",
+          "difficulty": "easy",
+          "question": "According to the passage, how do dogs become good working dogs?",
+          "options": [
+            "They are born knowing their jobs.",
+            "They watch other dogs work.",
+            "They are trained for many months.",
+            "They choose their own jobs."
+          ],
+          "answer": 2,
+          "explanation": "The passage states: 'working dogs are trained for many months to learn their skills.'"
+        }
+      ]
+    },
+    {
+      "id": "mi-p003",
+      "difficulty": "medium",
+      "teks": "3.13B",
+      "title": "The Water Cycle",
+      "text": "Water is always moving on Earth. When the sun heats lakes, rivers, and oceans, water turns into water vapor and rises into the air. This process is called evaporation. High in the sky, water vapor cools and forms tiny water droplets that make clouds. This is called condensation. When clouds hold too much water, the droplets fall back to Earth as rain or snow. This is called precipitation. The water then collects in rivers and oceans, and the cycle begins again. The water cycle keeps fresh water moving all around our planet.",
+      "questions": [
+        {
+          "id": "mi-p003-q1",
+          "difficulty": "medium",
+          "question": "What is the main idea of this passage?",
+          "options": [
+            "Clouds are made of tiny water droplets.",
+            "Water moves through a continuous cycle on Earth.",
+            "Rain and snow are forms of precipitation.",
+            "The sun heats water in oceans and rivers."
+          ],
+          "answer": 1,
+          "explanation": "The passage describes all three stages of the water cycle and ends by saying the cycle 'keeps fresh water moving all around our planet.' That is the central idea."
+        },
+        {
+          "id": "mi-p003-q2",
+          "difficulty": "medium",
+          "question": "Which detail is MOST important to understanding the main idea?",
+          "options": [
+            "Water vapor cools and forms clouds.",
+            "The water cycle repeats continuously.",
+            "Rain can be heavy or light.",
+            "Oceans are large bodies of water."
+          ],
+          "answer": 1,
+          "explanation": "The idea that the water cycle repeats continuously is most important because it explains WHY water keeps moving — which is the main idea."
+        },
+        {
+          "id": "mi-p003-q3",
+          "difficulty": "medium",
+          "question": "According to the passage, what causes evaporation?",
+          "options": [
+            "Cold air in the sky",
+            "Clouds holding too much water",
+            "The sun heating water",
+            "Rain falling on rivers"
+          ],
+          "answer": 2,
+          "explanation": "The passage says 'when the sun heats lakes, rivers, and oceans, water turns into water vapor' — this is evaporation."
+        },
+        {
+          "id": "mi-p003-q4",
+          "difficulty": "medium",
+          "question": "What happens AFTER water vapor forms clouds?",
+          "options": [
+            "The sun heats the water.",
+            "Water collects in rivers and oceans.",
+            "Water vapor rises into the air.",
+            "Droplets fall as rain or snow."
+          ],
+          "answer": 3,
+          "explanation": "According to the sequence in the passage: vapor → clouds (condensation) → rain/snow falls (precipitation). Precipitation comes after clouds form."
+        },
+        {
+          "id": "mi-p003-q5",
+          "difficulty": "medium",
+          "question": "The last sentence says the water cycle 'keeps fresh water moving all around our planet.' This sentence —",
+          "options": [
+            "introduces a new topic about the ocean",
+            "gives an example of precipitation",
+            "restates and supports the main idea",
+            "explains how clouds are formed"
+          ],
+          "answer": 2,
+          "explanation": "The final sentence restates the main idea that water is always moving. It does not introduce a new topic or explain a specific stage."
+        }
+      ]
+    },
+    {
+      "id": "mi-p004",
+      "difficulty": "medium",
+      "teks": "3.13B",
+      "title": "Monarch Butterflies",
+      "text": "Every year, monarch butterflies make one of the longest migrations of any insect. Millions of monarchs travel from the United States and Canada all the way to forests in central Mexico. The trip can be more than 2,000 miles. Scientists are amazed by this journey because each butterfly is only about the size of a hand. Along the way, monarchs stop to drink nectar from flowers, which gives them energy. When spring arrives, the butterflies begin the long journey back north. Scientists are still studying how monarchs know which direction to fly.",
+      "questions": [
+        {
+          "id": "mi-p004-q1",
+          "difficulty": "medium",
+          "question": "What is the main idea of this passage?",
+          "options": [
+            "Monarch butterflies drink nectar from flowers.",
+            "Monarch butterflies make an amazing long migration every year.",
+            "Scientists study insects in Mexico.",
+            "Monarch butterflies are small insects."
+          ],
+          "answer": 1,
+          "explanation": "The passage is mostly about the remarkable migration monarchs make — the distance, the mystery, and the return journey. Nectar and size are supporting details."
+        },
+        {
+          "id": "mi-p004-q2",
+          "difficulty": "medium",
+          "question": "Why do scientists find the monarch migration amazing?",
+          "options": [
+            "Monarchs can fly faster than birds.",
+            "Such small insects travel such a long distance.",
+            "Monarchs change color during migration.",
+            "The butterflies travel only at night."
+          ],
+          "answer": 1,
+          "explanation": "The passage says scientists are 'amazed by this journey because each butterfly is only about the size of a hand' — their small size makes the long distance remarkable."
+        },
+        {
+          "id": "mi-p004-q3",
+          "difficulty": "medium",
+          "question": "Which sentence from the passage is a supporting DETAIL?",
+          "options": [
+            "Every year, monarch butterflies make one of the longest migrations of any insect.",
+            "The trip can be more than 2,000 miles.",
+            "Scientists are still studying how monarchs know which direction to fly.",
+            "When spring arrives, the butterflies begin the long journey back north."
+          ],
+          "answer": 1,
+          "explanation": "'The trip can be more than 2,000 miles' is a specific fact that supports the main idea that it is a long migration. The first option is the main idea itself."
+        },
+        {
+          "id": "mi-p004-q4",
+          "difficulty": "medium",
+          "question": "What question do scientists still have about monarch butterflies?",
+          "options": [
+            "Where do they spend the winter?",
+            "How long is their migration?",
+            "How they know which direction to fly",
+            "What they eat during migration"
+          ],
+          "answer": 2,
+          "explanation": "The passage states: 'Scientists are still studying how monarchs know which direction to fly.' The other facts — destination and distance — are already known."
+        },
+        {
+          "id": "mi-p004-q5",
+          "difficulty": "medium",
+          "question": "What is the BEST summary of this passage?",
+          "options": [
+            "Monarch butterflies are small insects that eat nectar.",
+            "Every year, millions of monarchs travel over 2,000 miles to Mexico and back, a journey scientists still study.",
+            "Scientists are studying butterflies in the forests of Mexico.",
+            "Monarch butterflies travel south in spring and north in winter."
+          ],
+          "answer": 1,
+          "explanation": "Option B captures the main idea (long annual migration), the key detail (2,000+ miles to Mexico), and the unanswered question (scientists still studying it)."
+        }
+      ]
+    },
+    {
+      "id": "mi-p005",
+      "difficulty": "hard",
+      "teks": "3.13C",
+      "title": "The Great Barrier Reef",
+      "text": "The Great Barrier Reef, located off the coast of Australia, is the world's largest coral reef system. It stretches over 1,400 miles and can even be seen from space. The reef is home to more than 1,500 species of fish and 4,000 types of mollusk. Despite its beauty and importance, the reef faces serious threats. Rising ocean temperatures caused by climate change lead to coral bleaching, which can kill coral. Pollution from farms and cities also harms the reef. Scientists and governments around the world are working together on plans to protect this natural treasure before it is too late.",
+      "questions": [
+        {
+          "id": "mi-p005-q1",
+          "difficulty": "hard",
+          "question": "What is the main idea of this passage?",
+          "options": [
+            "The Great Barrier Reef is a large and important reef that is currently threatened.",
+            "The Great Barrier Reef is visible from space.",
+            "Climate change causes coral bleaching.",
+            "Many species of fish live in the Great Barrier Reef."
+          ],
+          "answer": 0,
+          "explanation": "The passage introduces the reef's size and importance, then shifts to the threats it faces and efforts to protect it. The main idea covers both the reef's value AND the threats — not just one."
+        },
+        {
+          "id": "mi-p005-q2",
+          "difficulty": "hard",
+          "question": "Which paragraph structure does the author use in this passage?",
+          "options": [
+            "Problem and solution",
+            "Compare and contrast",
+            "Sequence of events in order",
+            "Question and answer"
+          ],
+          "answer": 0,
+          "explanation": "The author first describes the reef (its size and biodiversity), then presents the problems it faces (bleaching, pollution), and finally mentions the solution (scientists and governments working together)."
+        },
+        {
+          "id": "mi-p005-q3",
+          "difficulty": "hard",
+          "question": "According to the passage, what are TWO threats to the reef?",
+          "options": [
+            "Tourists and deep-sea fishing",
+            "Rising ocean temperatures and pollution",
+            "Coral bleaching and too many fish",
+            "Distance from land and cold water"
+          ],
+          "answer": 1,
+          "explanation": "The passage specifically names 'rising ocean temperatures' and 'pollution from farms and cities' as the two threats to the reef."
+        },
+        {
+          "id": "mi-p005-q4",
+          "difficulty": "hard",
+          "question": "The phrase 'before it is too late' in the last sentence suggests that —",
+          "options": [
+            "the reef has already been completely destroyed",
+            "scientists are not worried about the reef",
+            "protecting the reef is urgent",
+            "the reef is growing larger every year"
+          ],
+          "answer": 2,
+          "explanation": "'Before it is too late' signals urgency — the author is emphasizing that action must happen soon or the reef could be permanently damaged."
+        },
+        {
+          "id": "mi-p005-q5",
+          "difficulty": "hard",
+          "question": "Which detail from the passage BEST supports the idea that the reef is important?",
+          "options": [
+            "The reef stretches over 1,400 miles.",
+            "It can be seen from space.",
+            "It is home to more than 1,500 species of fish and 4,000 types of mollusk.",
+            "Scientists and governments are working to protect it."
+          ],
+          "answer": 2,
+          "explanation": "Being home to thousands of species shows the reef's ecological importance — it supports enormous biodiversity. The other details show size or awareness, but not importance."
+        }
+      ]
+    }
+  ]
+}

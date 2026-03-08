@@ -1,0 +1,377 @@
+{
+  "subject": "reading",
+  "topic": "literary-elements",
+  "topicName": "Literary Elements",
+  "passages": [
+    {
+      "id": "lit-p001",
+      "difficulty": "easy",
+      "teks": "3.8A",
+      "title": "The Lost Kitten",
+      "text": "Maya heard a soft sound coming from behind the shed. She found a tiny orange kitten with big green eyes shivering in the rain. Maya wrapped the kitten in her jacket and brought it inside. Her mother looked at Maya's pleading eyes and sighed. 'Just for tonight,' she said with a small smile. Maya named the kitten Mango and promised to find it a good home — though she secretly hoped that home would be hers.",
+      "questions": [
+        {
+          "id": "lit-p001-q1",
+          "difficulty": "easy",
+          "question": "Where does the story take place?",
+          "options": [
+            "At a pet store",
+            "At Maya's house and yard",
+            "At a veterinarian's office",
+            "In a park near a pond"
+          ],
+          "answer": 1,
+          "explanation": "The story takes place behind the shed and inside Maya's house — details that establish the setting as her home and yard."
+        },
+        {
+          "id": "lit-p001-q2",
+          "difficulty": "easy",
+          "question": "What is the problem in this story?",
+          "options": [
+            "Maya cannot find her jacket.",
+            "Maya's mother is angry.",
+            "A kitten is lost and shivering in the rain.",
+            "The shed is broken."
+          ],
+          "answer": 2,
+          "explanation": "The central problem is that a helpless kitten is found shivering in the rain and needs help."
+        },
+        {
+          "id": "lit-p001-q3",
+          "difficulty": "easy",
+          "question": "Which word BEST describes Maya's character?",
+          "options": [
+            "Selfish",
+            "Caring",
+            "Lazy",
+            "Frightened"
+          ],
+          "answer": 1,
+          "explanation": "Maya wraps the kitten in her jacket, brings it inside, and hopes to keep it — all actions that show she is caring and kind."
+        },
+        {
+          "id": "lit-p001-q4",
+          "difficulty": "easy",
+          "question": "How does Maya's mother MOST LIKELY feel at the end of the story?",
+          "options": [
+            "Angry and upset",
+            "Nervous and worried",
+            "Firm but a little kind",
+            "Excited and happy"
+          ],
+          "answer": 2,
+          "explanation": "Maya's mother sighs and says 'Just for tonight' but smiles — she sets a firm rule but shows a little kindness. She is not truly angry."
+        },
+        {
+          "id": "lit-p001-q5",
+          "difficulty": "easy",
+          "question": "What does Maya 'secretly hope' at the end?",
+          "options": [
+            "That the kitten will run away",
+            "That her mother will buy a new kitten",
+            "That her house will become the kitten's home",
+            "That she will find the kitten's owner"
+          ],
+          "answer": 2,
+          "explanation": "The passage states Maya 'secretly hoped that home would be hers' — meaning she wants to keep Mango for herself."
+        }
+      ]
+    },
+    {
+      "id": "lit-p002",
+      "difficulty": "easy",
+      "teks": "3.9A",
+      "title": "The Race",
+      "text": "Carlos had trained all summer for the school race. On race day, he lined up at the start and felt his heart pounding. When the whistle blew, he burst forward. Halfway through, he saw his friend Tomás fall and scrape his knee. Carlos stopped and helped Tomás up. They crossed the finish line together — last. Carlos did not win a ribbon, but his teacher told him he showed real courage. That night, Carlos smiled, knowing he had won something better.",
+      "questions": [
+        {
+          "id": "lit-p002-q1",
+          "difficulty": "easy",
+          "question": "What is the SETTING at the beginning of the race?",
+          "options": [
+            "A park near Carlos's house",
+            "A school race track on race day",
+            "A summer training camp",
+            "A gymnasium after school"
+          ],
+          "answer": 1,
+          "explanation": "The race takes place at school on race day — the passage says 'school race' and describes him lining up at the start."
+        },
+        {
+          "id": "lit-p002-q2",
+          "difficulty": "easy",
+          "question": "What is the PROBLEM in this story?",
+          "options": [
+            "Carlos forgot to train for the race.",
+            "Carlos's friend Tomás falls during the race.",
+            "Carlos is too slow to win.",
+            "Carlos's teacher is upset with him."
+          ],
+          "answer": 1,
+          "explanation": "The key problem is that Tomás falls and gets hurt during the race, forcing Carlos to make a decision."
+        },
+        {
+          "id": "lit-p002-q3",
+          "difficulty": "easy",
+          "question": "How does Carlos solve the problem?",
+          "options": [
+            "He keeps running to win.",
+            "He asks a teacher for help.",
+            "He stops and helps Tomás up.",
+            "He waits at the finish line for Tomás."
+          ],
+          "answer": 2,
+          "explanation": "Carlos stops and helps Tomás up, and they cross the finish line together. This is how Carlos responds to the problem."
+        },
+        {
+          "id": "lit-p002-q4",
+          "difficulty": "easy",
+          "question": "What lesson does this story teach?",
+          "options": [
+            "Winning is the most important thing in a race.",
+            "Being kind and helping others is more valuable than winning.",
+            "You should always train harder to win.",
+            "Teachers should give ribbons to everyone."
+          ],
+          "answer": 1,
+          "explanation": "Carlos does not win the race but ends up smiling, knowing he 'won something better' — the story's theme is that kindness matters more than winning."
+        },
+        {
+          "id": "lit-p002-q5",
+          "difficulty": "easy",
+          "question": "What did Carlos win 'something better' than a ribbon?",
+          "options": [
+            "A trophy from his teacher",
+            "A second chance to race",
+            "The feeling of doing the right thing",
+            "His friend's gratitude"
+          ],
+          "answer": 2,
+          "explanation": "The teacher says Carlos showed 'real courage' and Carlos smiles knowing he acted with good character. The 'something better' is the feeling of doing what was right."
+        }
+      ]
+    },
+    {
+      "id": "lit-p003",
+      "difficulty": "medium",
+      "teks": "3.9B",
+      "title": "Two Trees",
+      "text": "An oak tree and a willow tree grew side by side near a river. When strong winds came, the oak stood stiff and proud. 'I am the mightiest tree!' it boasted. The willow bent gracefully with the wind, its long branches sweeping low. One autumn, a great storm arrived. The wind howled and the rain pounded. The next morning, the oak lay broken on the ground, its roots torn from the earth. But the willow stood tall, its flexible branches unharmed. The willow whispered, 'It is not strength, but bending that keeps us whole.'",
+      "questions": [
+        {
+          "id": "lit-p003-q1",
+          "difficulty": "medium",
+          "question": "What is the THEME of this story?",
+          "options": [
+            "Oak trees are stronger than willow trees.",
+            "Rivers are dangerous during storms.",
+            "Flexibility and adaptability are strengths.",
+            "Bragging helps you succeed."
+          ],
+          "answer": 2,
+          "explanation": "The willow survives by bending rather than resisting. The theme is that being flexible — able to adapt — is a real strength, not a weakness."
+        },
+        {
+          "id": "lit-p003-q2",
+          "difficulty": "medium",
+          "question": "How are the oak and willow trees DIFFERENT?",
+          "options": [
+            "The oak bends in wind; the willow stays stiff.",
+            "The oak is stiff and proud; the willow is flexible and graceful.",
+            "The oak grows near water; the willow grows in the forest.",
+            "The willow boasts; the oak stays quiet."
+          ],
+          "answer": 1,
+          "explanation": "The oak stands 'stiff and proud' and boasts, while the willow 'bent gracefully' — they contrast in personality and how they handle wind."
+        },
+        {
+          "id": "lit-p003-q3",
+          "difficulty": "medium",
+          "question": "What does the oak tree's boasting show about its CHARACTER?",
+          "options": [
+            "It is wise and experienced.",
+            "It is arrogant and overconfident.",
+            "It is afraid of the willow.",
+            "It is helpful and generous."
+          ],
+          "answer": 1,
+          "explanation": "The oak calls itself 'the mightiest tree' — boasting shows arrogance. Its overconfidence leads to its downfall in the storm."
+        },
+        {
+          "id": "lit-p003-q4",
+          "difficulty": "medium",
+          "question": "What does the willow mean when it says 'It is not strength, but bending that keeps us whole'?",
+          "options": [
+            "Trees must be watered to survive.",
+            "Being flexible and adaptable is how we survive challenges.",
+            "Strong trees always survive storms.",
+            "The willow is stronger than the oak."
+          ],
+          "answer": 1,
+          "explanation": "The willow's words explain the story's lesson: surviving comes from bending (adapting) rather than being rigid. It is a metaphor for flexibility as a life skill."
+        },
+        {
+          "id": "lit-p003-q5",
+          "difficulty": "medium",
+          "question": "What type of story is this MOST likely?",
+          "options": [
+            "A true story from history",
+            "A fable with a moral lesson",
+            "A science article about trees",
+            "A personal narrative"
+          ],
+          "answer": 1,
+          "explanation": "A fable uses animal or nature characters to teach a moral lesson. This story uses talking trees to teach about flexibility — that is the hallmark of a fable."
+        }
+      ]
+    },
+    {
+      "id": "lit-p004",
+      "difficulty": "medium",
+      "teks": "3.9A",
+      "title": "The Secret Garden",
+      "text": "Priya had not smiled in months. Since moving to a new city, she felt invisible at school. One rainy afternoon she discovered a rusted gate in the back of the school yard. Behind it was a forgotten garden, full of weeds but also wild roses and a mossy fountain. Priya began coming every day, pulling weeds and planting seeds she found at the dollar store. By spring, the garden bloomed. Other students began stopping at the gate, curious. Soon Priya was not lonely anymore — the garden had given her a reason to be found.",
+      "questions": [
+        {
+          "id": "lit-p004-q1",
+          "difficulty": "medium",
+          "question": "What is Priya's problem at the beginning of the story?",
+          "options": [
+            "She is lost in the city.",
+            "She feels alone and invisible after moving.",
+            "She does not like her new school.",
+            "She cannot find the garden gate."
+          ],
+          "answer": 1,
+          "explanation": "Priya 'felt invisible at school' after moving to a new city and had not smiled in months — her problem is loneliness and feeling unseen."
+        },
+        {
+          "id": "lit-p004-q2",
+          "difficulty": "medium",
+          "question": "What CHANGE does Priya go through from the beginning to the end?",
+          "options": [
+            "She goes from a gardener to a teacher.",
+            "She goes from lonely and sad to connected and found.",
+            "She goes from new student to class president.",
+            "She goes from curious to afraid."
+          ],
+          "answer": 1,
+          "explanation": "At the start, Priya is lonely and smileless. By the end, other students come to the garden and she is 'not lonely anymore.' She transforms through her work on the garden."
+        },
+        {
+          "id": "lit-p004-q3",
+          "difficulty": "medium",
+          "question": "The garden is MOST LIKELY a symbol for —",
+          "options": [
+            "hard work and exercise",
+            "the dangers of being alone",
+            "hope, growth, and belonging",
+            "the city's history"
+          ],
+          "answer": 2,
+          "explanation": "The neglected garden transforms into something beautiful through Priya's care — mirroring Priya's own transformation from isolated to connected. It symbolizes hope and growth."
+        },
+        {
+          "id": "lit-p004-q4",
+          "difficulty": "medium",
+          "question": "The phrase 'the garden had given her a reason to be found' means that —",
+          "options": [
+            "Priya was lost and needed directions",
+            "the garden helped Priya connect with other students",
+            "Priya found hidden treasure in the garden",
+            "the garden was located in a secret place"
+          ],
+          "answer": 1,
+          "explanation": "'To be found' is figurative — it means to be noticed and connected with others. The garden drew students to her, ending her invisibility."
+        },
+        {
+          "id": "lit-p004-q5",
+          "difficulty": "medium",
+          "question": "What is the THEME of this story?",
+          "options": [
+            "Gardens require a lot of hard work.",
+            "Moving to a new city is always difficult.",
+            "Caring for something can bring you connection and belonging.",
+            "You should explore every corner of a school yard."
+          ],
+          "answer": 2,
+          "explanation": "The story shows that Priya's act of caring for the garden led to her own sense of belonging. The theme is that nurturing something can create connection."
+        }
+      ]
+    },
+    {
+      "id": "lit-p005",
+      "difficulty": "hard",
+      "teks": "3.9B",
+      "title": "The Lighthouse Keeper's Daughter",
+      "text": "Every morning, Iris climbed the spiral stairs of the lighthouse to help her father polish the great lens. She had memorized every ship that passed — the fishing boats with their red sails, the cargo ships heavy with grain. But lately, her father's hands trembled at the controls and he forgot which ships had already been logged. The harbor master asked Iris if she could take over the night shift. She was only twelve. That evening, standing at the lens as a November storm rolled in, Iris saw a cargo ship drifting off course. She adjusted the beam sharply left. An hour later, through the rain, she heard the ship's grateful horn echo across the water.",
+      "questions": [
+        {
+          "id": "lit-p005-q1",
+          "difficulty": "hard",
+          "question": "What is the SETTING of this story?",
+          "options": [
+            "A fishing village on a sunny afternoon",
+            "A lighthouse near a harbor during a stormy November night",
+            "A harbor master's office in winter",
+            "A cargo ship during a storm at sea"
+          ],
+          "answer": 1,
+          "explanation": "The climax takes place in the lighthouse during a November storm — the time and place are both important to the story's tension."
+        },
+        {
+          "id": "lit-p005-q2",
+          "difficulty": "hard",
+          "question": "What problem does Iris face in this story?",
+          "options": [
+            "She cannot climb the lighthouse stairs.",
+            "She must take on adult responsibility while still young.",
+            "Her father is angry with her.",
+            "The lighthouse lens is broken."
+          ],
+          "answer": 1,
+          "explanation": "Iris is only twelve but must perform the important and dangerous work of the night shift because her father can no longer do it reliably — she faces a challenge beyond her years."
+        },
+        {
+          "id": "lit-p005-q3",
+          "difficulty": "hard",
+          "question": "How do we know that Iris is capable before the storm arrives?",
+          "options": [
+            "The harbor master trusts her to take over.",
+            "She had memorized every ship that passed.",
+            "She knew how to adjust the lighthouse beam.",
+            "Both A and B"
+          ],
+          "answer": 3,
+          "explanation": "Both the harbor master's trust (A) and Iris's knowledge of every ship (B) are established details that show she is already capable and observant before the crisis."
+        },
+        {
+          "id": "lit-p005-q4",
+          "difficulty": "hard",
+          "question": "What does the ship's 'grateful horn' at the end represent?",
+          "options": [
+            "The ship signaling it needs more help",
+            "The crew celebrating their arrival at port",
+            "Acknowledgment that Iris's action saved the ship",
+            "A warning to other ships about the storm"
+          ],
+          "answer": 2,
+          "explanation": "The horn echoes 'gratefully' — it is the crew's way of acknowledging that Iris's quick action guided them to safety. It confirms her success."
+        },
+        {
+          "id": "lit-p005-q5",
+          "difficulty": "hard",
+          "question": "Which statement BEST describes the theme of this story?",
+          "options": [
+            "Lighthouses are important for keeping ships safe.",
+            "Adults should not let children do dangerous work.",
+            "Responsibility and courage can come at any age.",
+            "Storms at sea are very dangerous for cargo ships."
+          ],
+          "answer": 2,
+          "explanation": "Iris is twelve but rises to the challenge, saving a ship through skill and courage. The theme is that you do not need to be an adult to be capable and responsible."
+        }
+      ]
+    }
+  ]
+}

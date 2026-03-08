@@ -1,0 +1,377 @@
+{
+  "subject": "reading",
+  "topic": "authors-purpose",
+  "topicName": "Author's Purpose",
+  "passages": [
+    {
+      "id": "ap-p001",
+      "difficulty": "easy",
+      "teks": "3.11A",
+      "title": "Recycling at Home",
+      "text": "Recycling helps the environment in many ways. When you recycle paper, you save trees. Recycling aluminum cans saves energy — it takes 95% less energy to make a new can from recycled aluminum than from raw materials. Recycling also keeps trash out of landfills. You can start recycling today by sorting paper, plastic, glass, and metal into separate bins. Small actions at home add up to big changes for our planet.",
+      "questions": [
+        {
+          "id": "ap-p001-q1",
+          "difficulty": "easy",
+          "question": "Why did the author MOST LIKELY write this passage?",
+          "options": [
+            "To entertain readers with a funny story about trash",
+            "To inform readers about recycling and persuade them to do it",
+            "To tell a fictional story about a recycling robot",
+            "To describe the history of landfills"
+          ],
+          "answer": 1,
+          "explanation": "The passage gives facts about recycling AND tells readers they 'can start recycling today' — the author both informs and persuades. The purpose combines information with a call to action."
+        },
+        {
+          "id": "ap-p001-q2",
+          "difficulty": "easy",
+          "question": "The sentence 'Small actions at home add up to big changes for our planet' is meant to —",
+          "options": [
+            "explain the history of recycling",
+            "encourage readers to take action",
+            "describe how landfills work",
+            "give an example of a small action"
+          ],
+          "answer": 1,
+          "explanation": "This sentence is a motivational statement — it is meant to encourage readers by making them feel their individual actions matter. It is a call to action, not a fact."
+        },
+        {
+          "id": "ap-p001-q3",
+          "difficulty": "easy",
+          "question": "The statistic about aluminum cans — '95% less energy' — is included to —",
+          "options": [
+            "entertain readers with surprising numbers",
+            "provide evidence to support the claim that recycling helps",
+            "confuse readers about how cans are made",
+            "describe the process of making aluminum"
+          ],
+          "answer": 1,
+          "explanation": "Using a specific statistic (95%) gives readers a concrete reason to believe recycling saves energy. It is evidence that supports the author's claim."
+        },
+        {
+          "id": "ap-p001-q4",
+          "difficulty": "easy",
+          "question": "This passage is BEST described as —",
+          "options": [
+            "a fictional story",
+            "an informational/persuasive text",
+            "a personal diary entry",
+            "a poem about nature"
+          ],
+          "answer": 1,
+          "explanation": "The passage uses facts, statistics, and a direct call to action — these are features of informational and persuasive text, not fiction, diary entries, or poetry."
+        },
+        {
+          "id": "ap-p001-q5",
+          "difficulty": "easy",
+          "question": "What does the author want readers to DO after reading this passage?",
+          "options": [
+            "Visit a landfill",
+            "Stop buying aluminum cans",
+            "Start sorting recyclables at home",
+            "Learn more about making aluminum"
+          ],
+          "answer": 2,
+          "explanation": "The passage ends by telling readers to sort 'paper, plastic, glass, and metal into separate bins' — this is the direct action the author wants readers to take."
+        }
+      ]
+    },
+    {
+      "id": "ap-p002",
+      "difficulty": "easy",
+      "teks": "3.11A",
+      "title": "The Balloon and the Cloud",
+      "text": "One morning, a red balloon floated up into the sky and bumped into a fluffy cloud. 'Excuse me!' said the balloon. 'Watch where you're drifting!' grumbled the cloud. 'I'm sorry,' said the balloon. 'I'm trying to find my owner, a little girl named Lily.' The cloud felt a twinge of sympathy. 'I saw a girl with pigtails crying near the park.' Together, the balloon and the cloud searched until they spotted Lily below. The balloon dove down, its string landing right in Lily's hands. She laughed and the cloud smiled — a rare thing for a cloud to do.",
+      "questions": [
+        {
+          "id": "ap-p002-q1",
+          "difficulty": "easy",
+          "question": "Why did the author MOST LIKELY write this story?",
+          "options": [
+            "To persuade readers to hold onto their balloons",
+            "To entertain readers with a fun, imaginative story",
+            "To inform readers about how clouds form",
+            "To explain what happens to lost balloons"
+          ],
+          "answer": 1,
+          "explanation": "The story features talking clouds and balloons in a playful adventure — this is clearly written to entertain with imagination and warmth, not to inform or persuade."
+        },
+        {
+          "id": "ap-p002-q2",
+          "difficulty": "easy",
+          "question": "The detail that 'the cloud smiled — a rare thing for a cloud to do' tells us the author —",
+          "options": [
+            "is writing a science article",
+            "wants readers to know clouds can smile",
+            "is adding a playful, humorous touch",
+            "is trying to inform about weather"
+          ],
+          "answer": 2,
+          "explanation": "This detail is playful and funny — clouds cannot really smile. The author adds it for humor and charm, showing this is a story meant to entertain."
+        },
+        {
+          "id": "ap-p002-q3",
+          "difficulty": "easy",
+          "question": "What type of text is this passage?",
+          "options": [
+            "Informational nonfiction",
+            "Persuasive essay",
+            "Fantasy fiction",
+            "Historical account"
+          ],
+          "answer": 2,
+          "explanation": "The passage features talking balloons and clouds — things that cannot talk in real life. This makes it fantasy fiction, a story with imaginative, impossible elements."
+        },
+        {
+          "id": "ap-p002-q4",
+          "difficulty": "easy",
+          "question": "How is this story DIFFERENT from a science article about clouds?",
+          "options": [
+            "This story has a main character; science articles do not.",
+            "This story is meant to entertain; science articles are meant to inform.",
+            "This story uses facts; science articles use opinions.",
+            "This story is shorter; science articles are longer."
+          ],
+          "answer": 1,
+          "explanation": "The key difference is purpose: this story exists to entertain with imagination and feeling. A science article about clouds would inform with facts and explanations."
+        },
+        {
+          "id": "ap-p002-q5",
+          "difficulty": "easy",
+          "question": "Which sentence from the passage BEST shows the author wants to create a feeling of warmth?",
+          "options": [
+            "'Excuse me!' said the balloon.",
+            "'Watch where you're drifting!' grumbled the cloud.",
+            "She laughed and the cloud smiled — a rare thing for a cloud to do.",
+            "One morning, a red balloon floated up into the sky."
+          ],
+          "answer": 2,
+          "explanation": "Lily laughing and the cloud smiling creates a warm, happy ending — this emotional moment is designed to leave readers with a good feeling, showing the author's intent to entertain warmly."
+        }
+      ]
+    },
+    {
+      "id": "ap-p003",
+      "difficulty": "medium",
+      "teks": "3.11B",
+      "title": "Why Students Should Have Longer Recess",
+      "text": "Many schools are cutting recess time to make room for more lessons. But research shows that students who have longer recess actually perform BETTER in class. Physical activity increases blood flow to the brain, helping students focus and remember information. In Finland — one of the top-ranked countries in education — students take a 15-minute break after every 45 minutes of class. It is time for American schools to recognize that play is not a distraction from learning; it IS learning. Longer recess should be required in every school.",
+      "questions": [
+        {
+          "id": "ap-p003-q1",
+          "difficulty": "medium",
+          "question": "What is the author's MAIN purpose in writing this passage?",
+          "options": [
+            "To entertain readers with a story about recess",
+            "To inform readers about how the brain works",
+            "To persuade readers that schools should have longer recess",
+            "To describe what recess looks like in Finland"
+          ],
+          "answer": 2,
+          "explanation": "The author presents an argument with evidence (research, Finland example) and ends with a direct claim: 'Longer recess should be required in every school.' This is persuasive writing."
+        },
+        {
+          "id": "ap-p003-q2",
+          "difficulty": "medium",
+          "question": "The author mentions Finland in order to —",
+          "options": [
+            "compare American and Finnish cultures",
+            "entertain readers with an interesting fact",
+            "provide evidence that regular breaks improve education",
+            "argue that Finland has better teachers"
+          ],
+          "answer": 2,
+          "explanation": "Finland is described as 'one of the top-ranked countries in education' that uses frequent breaks. The author uses this as evidence that breaks help students succeed — supporting the argument for longer recess."
+        },
+        {
+          "id": "ap-p003-q3",
+          "difficulty": "medium",
+          "question": "The statement 'play is not a distraction from learning; it IS learning' is an example of —",
+          "options": [
+            "a fact supported by research",
+            "a strong opinion meant to persuade",
+            "a scientific definition of play",
+            "a summary of the passage's main idea"
+          ],
+          "answer": 1,
+          "explanation": "This is a strong opinion — the author emphasizes it with capitalization of 'IS' to make it more forceful. It is not a scientific definition or neutral summary; it is meant to persuade."
+        },
+        {
+          "id": "ap-p003-q4",
+          "difficulty": "medium",
+          "question": "How does the author try to convince readers to agree with their view?",
+          "options": [
+            "By telling a story about a student who needed recess",
+            "By using research and examples from other countries",
+            "By listing the names of scientists who study recess",
+            "By describing what recess looks like in American schools"
+          ],
+          "answer": 1,
+          "explanation": "The author uses research ('research shows') and an international example (Finland) as evidence — these are persuasive techniques to support the argument with facts and comparisons."
+        },
+        {
+          "id": "ap-p003-q5",
+          "difficulty": "medium",
+          "question": "This passage is MOST like which type of text?",
+          "options": [
+            "A fairy tale",
+            "A science experiment report",
+            "An opinion essay or editorial",
+            "A biography of a teacher"
+          ],
+          "answer": 2,
+          "explanation": "The passage presents a clear opinion (longer recess should be required), supports it with evidence, and calls for change — these are hallmarks of an opinion essay or editorial."
+        }
+      ]
+    },
+    {
+      "id": "ap-p004",
+      "difficulty": "medium",
+      "teks": "3.11C",
+      "title": "The History of Basketball",
+      "text": "Basketball was invented in December 1891 by Dr. James Naismith, a physical education instructor in Springfield, Massachusetts. Naismith needed an indoor game for his students during winter. He nailed two peach baskets to an elevated track and wrote 13 rules for the new game. The first official game used a soccer ball. Over time, the sport spread across the United States and then around the world. Today, basketball is one of the most popular sports globally, played by more than 450 million people.",
+      "questions": [
+        {
+          "id": "ap-p004-q1",
+          "difficulty": "medium",
+          "question": "Why did the author MOST LIKELY write this passage?",
+          "options": [
+            "To persuade readers to play basketball",
+            "To entertain readers with a basketball story",
+            "To inform readers about the history of basketball",
+            "To compare basketball with other sports"
+          ],
+          "answer": 2,
+          "explanation": "The passage gives factual information about when, where, and why basketball was invented — dates, names, places. This is informational writing meant to teach readers about history."
+        },
+        {
+          "id": "ap-p004-q2",
+          "difficulty": "medium",
+          "question": "Which detail shows this passage is informational, not persuasive?",
+          "options": [
+            "Basketball should be played by everyone.",
+            "Dr. James Naismith invented the game in 1891.",
+            "Basketball is more fun than other sports.",
+            "You should watch a basketball game this weekend."
+          ],
+          "answer": 1,
+          "explanation": "A specific fact about who invented the game and when ('Dr. James Naismith, December 1891') is objective information — not an opinion or a call to action. It is a hallmark of informational text."
+        },
+        {
+          "id": "ap-p004-q3",
+          "difficulty": "medium",
+          "question": "The author includes the detail about peach baskets in order to —",
+          "options": [
+            "show that the game is old and outdated",
+            "help readers picture the original game as simple and inventive",
+            "explain why basketball courts are elevated",
+            "persuade readers that the original rules were better"
+          ],
+          "answer": 1,
+          "explanation": "The peach basket detail helps readers visualize the humble, improvised origins of basketball — it is a vivid, specific detail that brings the historical moment to life."
+        },
+        {
+          "id": "ap-p004-q4",
+          "difficulty": "medium",
+          "question": "Which statement is an OPINION, not a fact from the passage?",
+          "options": [
+            "Naismith wrote 13 rules for the new game.",
+            "The first official game used a soccer ball.",
+            "Basketball is the most exciting sport ever invented.",
+            "Today, more than 450 million people play basketball."
+          ],
+          "answer": 2,
+          "explanation": "'Most exciting sport ever invented' is an opinion — it is a judgment that cannot be proven true or false. The other options are all facts stated in the passage."
+        },
+        {
+          "id": "ap-p004-q5",
+          "difficulty": "medium",
+          "question": "Based on the passage, which word BEST describes the author's tone?",
+          "options": [
+            "Excited and enthusiastic",
+            "Neutral and informational",
+            "Sad and regretful",
+            "Angry and critical"
+          ],
+          "answer": 1,
+          "explanation": "The author presents facts without expressing personal feelings — 'was invented,' 'nailed two peach baskets,' 'the sport spread.' This neutral, factual tone is typical of informational writing."
+        }
+      ]
+    },
+    {
+      "id": "ap-p005",
+      "difficulty": "hard",
+      "teks": "3.11C",
+      "title": "The Case Against Homework",
+      "text": "Homework has been a staple of school for generations, but growing evidence suggests it may be doing more harm than good — especially for younger students. Studies from Duke University found that elementary school homework shows little to no connection to better grades. Meanwhile, the time children spend on homework comes at the expense of sleep, play, and family time — all critical for healthy development. In countries like Denmark and Finland, where homework is minimal, students consistently outperform American students on international tests. It is time to question whether we are burdening children with work that does not help them learn.",
+      "questions": [
+        {
+          "id": "ap-p005-q1",
+          "difficulty": "hard",
+          "question": "What is the author's PURPOSE in writing this passage?",
+          "options": [
+            "To inform readers about how homework is assigned",
+            "To persuade readers that homework should be reduced or eliminated for young students",
+            "To entertain readers with a story about a student struggling with homework",
+            "To explain the history of homework in American schools"
+          ],
+          "answer": 1,
+          "explanation": "The author uses research, international comparisons, and strong language ('doing more harm than good') to argue that homework is harmful — this is a persuasive purpose."
+        },
+        {
+          "id": "ap-p005-q2",
+          "difficulty": "hard",
+          "question": "The author mentions Duke University studies to —",
+          "options": [
+            "entertain readers with surprising information",
+            "show that experts support the author's argument",
+            "compare Duke University with Finnish universities",
+            "explain why American students struggle"
+          ],
+          "answer": 1,
+          "explanation": "Citing a university study is a persuasive technique — it makes the author's argument seem credible by backing it with research from an authority. It is evidence, not entertainment."
+        },
+        {
+          "id": "ap-p005-q3",
+          "difficulty": "hard",
+          "question": "The phrase 'doing more harm than good' is an example of —",
+          "options": [
+            "a fact proven by multiple studies",
+            "a loaded phrase meant to persuade the reader",
+            "a neutral description of homework's effects",
+            "a definition of the word 'harm'"
+          ],
+          "answer": 1,
+          "explanation": "'Doing more harm than good' is a strong, biased phrase meant to make the reader feel negatively about homework. It is persuasive language, not a neutral or proven statement."
+        },
+        {
+          "id": "ap-p005-q4",
+          "difficulty": "hard",
+          "question": "How does this passage differ from an informational article about homework?",
+          "options": [
+            "This passage has a title; informational articles do not.",
+            "This passage presents only one point of view; informational articles present multiple views.",
+            "This passage uses facts; informational articles use only opinions.",
+            "This passage is shorter than an informational article."
+          ],
+          "answer": 1,
+          "explanation": "A persuasive text like this one presents only the author's side — evidence that supports the argument against homework. A balanced informational article would also include evidence that homework helps."
+        },
+        {
+          "id": "ap-p005-q5",
+          "difficulty": "hard",
+          "question": "The last sentence — 'It is time to question whether we are burdening children with work that does not help them learn' — is included to —",
+          "options": [
+            "summarize facts from the passage neutrally",
+            "leave readers questioning current practices and thinking about change",
+            "introduce a new topic about childhood development",
+            "explain how homework assignments are designed"
+          ],
+          "answer": 1,
+          "explanation": "This rhetorical question challenges readers to reconsider what they accept as normal. It is a persuasive technique designed to leave readers with doubt about homework and openness to change."
+        }
+      ]
+    }
+  ]
+}

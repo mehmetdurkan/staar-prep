@@ -100,6 +100,26 @@
             text-align: center;
             margin: 24px 0;
         }
+
+        /* Reading passage block */
+        .passage-block {
+            background: #F5F5F0;
+            border-left: 4px solid var(--blue);
+            padding: 14px 16px;
+            margin-bottom: 18px;
+            border-radius: 0 8px 8px 0;
+            font-size: 0.97rem;
+            line-height: 1.65;
+            color: var(--text);
+        }
+        .passage-title {
+            font-weight: 800;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--blue);
+            margin-bottom: 8px;
+        }
     </style>
 </head>
 <body>
@@ -193,6 +213,18 @@
                 const resp = await fetch(`../data/questions/${SUBJECT}-${topicId}.json`);
                 if (!resp.ok) continue;
                 const data = await resp.json();
+                // Flatten passage-based format (reading) into individual questions
+                if (data.passages) {
+                    data.questions = data.passages.flatMap(p =>
+                        p.questions.map(q => ({
+                            ...q,
+                            passage: p.text,
+                            passageTitle: p.title,
+                            difficulty: q.difficulty || p.difficulty,
+                            teks: q.teks || p.teks,
+                        }))
+                    );
+                }
                 // Inject file-level metadata onto each question
                 let qs = (data.questions || []).map(q => ({
                     ...q,
@@ -246,8 +278,18 @@
                 <span class="meta-pill">${q.topicName || q.topic}</span>
                 <span class="meta-pill ${diffClass}">${diffEmoji} ${diffLabel}</span>
                 <span class="meta-pill" style="background:#EEE; color:var(--text-light);">${q.teks}</span>
-            </div>
-            <div class="question-text">${q.question}</div>
+            </div>`;
+
+        // Show reading passage if present
+        if (q.passage) {
+            html += `<div class="passage-block">
+                <div class="passage-title">📖 Read the passage</div>
+                ${q.passageTitle ? `<div style="font-weight:700; margin-bottom:6px;">${q.passageTitle}</div>` : ''}
+                <div>${q.passage}</div>
+            </div>`;
+        }
+
+        html += `<div class="question-text">${q.question}</div>
             <div class="answer-opts" id="answerOpts">
         `;
 

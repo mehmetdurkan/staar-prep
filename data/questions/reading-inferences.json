@@ -1,0 +1,377 @@
+{
+  "subject": "reading",
+  "topic": "inferences",
+  "topicName": "Making Inferences",
+  "passages": [
+    {
+      "id": "inf-p001",
+      "difficulty": "easy",
+      "teks": "3.13C",
+      "title": "A Rainy Morning",
+      "text": "Lily woke up and looked out her window. The sky was gray and a steady patter of drops tapped against the glass. She sighed, walked to her closet, and pulled out her yellow raincoat and rubber boots. She grabbed her backpack and an umbrella by the door. Her mom handed her a warm cup of cocoa before she headed outside.",
+      "questions": [
+        {
+          "id": "inf-p001-q1",
+          "difficulty": "easy",
+          "question": "Where is Lily MOST LIKELY going?",
+          "options": [
+            "To the beach",
+            "To school",
+            "To a store",
+            "To a park"
+          ],
+          "answer": 1,
+          "explanation": "Lily grabs her backpack on a morning — the combination of 'backpack' and 'morning' strongly suggests she is going to school. We infer this from the clues, even though school is never mentioned."
+        },
+        {
+          "id": "inf-p001-q2",
+          "difficulty": "easy",
+          "question": "Why did Lily sigh when she looked out the window?",
+          "options": [
+            "She was tired and wanted to sleep more.",
+            "She was disappointed that it was raining.",
+            "She was happy to wear her raincoat.",
+            "She was surprised to see snow."
+          ],
+          "answer": 1,
+          "explanation": "After seeing the rainy sky, Lily sighs — we infer she is disappointed because the rain will affect her day. A sigh typically signals disappointment or resignation."
+        },
+        {
+          "id": "inf-p001-q3",
+          "difficulty": "easy",
+          "question": "What can you infer about Lily's relationship with her mom?",
+          "options": [
+            "Her mom is too busy to care about Lily.",
+            "Her mom is caring and thoughtful.",
+            "Her mom wants Lily to stay home.",
+            "Her mom dislikes rainy days too."
+          ],
+          "answer": 1,
+          "explanation": "Lily's mom hands her a warm cup of cocoa before she goes out in the rain — this small act of kindness shows she is caring and thoughtful, even if nothing is said."
+        },
+        {
+          "id": "inf-p001-q4",
+          "difficulty": "easy",
+          "question": "What kind of weather is it?",
+          "options": [
+            "Hot and sunny",
+            "Snowy and cold",
+            "Rainy and gray",
+            "Windy with no clouds"
+          ],
+          "answer": 2,
+          "explanation": "The passage directly describes a gray sky and drops tapping the glass. We do not need to infer the weather — the clues clearly tell us it is rainy and gray."
+        },
+        {
+          "id": "inf-p001-q5",
+          "difficulty": "easy",
+          "question": "Why did Lily take an umbrella?",
+          "options": [
+            "She always carries one for exercise.",
+            "She expected it to rain all day.",
+            "Her mom asked her to take it.",
+            "The umbrella is her backpack."
+          ],
+          "answer": 1,
+          "explanation": "We infer she took the umbrella because it was already raining and she expected to need protection outside. The clue is the rain described at the beginning."
+        }
+      ]
+    },
+    {
+      "id": "inf-p002",
+      "difficulty": "easy",
+      "teks": "3.13C",
+      "title": "The Old Photo",
+      "text": "Grandpa sat quietly in his armchair, holding a small black-and-white photograph. His eyes were soft and faraway. In the photo were two young men in army uniforms, smiling in front of a truck. One of them looked just like Grandpa, but much younger. After a long moment, Grandpa set the photo down gently and patted it twice before walking to the window.",
+      "questions": [
+        {
+          "id": "inf-p002-q1",
+          "difficulty": "easy",
+          "question": "What can you infer about Grandpa's feelings as he looks at the photo?",
+          "options": [
+            "He is angry at someone in the photo.",
+            "He is bored and has nothing else to do.",
+            "He is thinking with nostalgia about the past.",
+            "He is confused about who is in the photo."
+          ],
+          "answer": 2,
+          "explanation": "Grandpa's 'soft and faraway' eyes and the gentle way he pats the photo suggest he is lost in memory — thinking about the past with fondness and perhaps some sadness."
+        },
+        {
+          "id": "inf-p002-q2",
+          "difficulty": "easy",
+          "question": "Who is MOST LIKELY one of the men in the photograph?",
+          "options": [
+            "The narrator of the story",
+            "Grandpa when he was young",
+            "A famous soldier from history",
+            "Grandpa's neighbor"
+          ],
+          "answer": 1,
+          "explanation": "The passage says one man 'looked just like Grandpa, but much younger' — this is a strong clue that the young man IS Grandpa in the past."
+        },
+        {
+          "id": "inf-p002-q3",
+          "difficulty": "easy",
+          "question": "Why does Grandpa pat the photo before walking away?",
+          "options": [
+            "He is checking if it is dusty.",
+            "He is showing affection for the people or memory in it.",
+            "He wants to straighten the photo.",
+            "He is angry and pushes it away."
+          ],
+          "answer": 1,
+          "explanation": "Patting something gently is an affectionate gesture — like patting someone's hand or a pet. Grandpa pats the photo to show love and connection with what it represents."
+        },
+        {
+          "id": "inf-p002-q4",
+          "difficulty": "easy",
+          "question": "What does the army uniform in the photo suggest about Grandpa's past?",
+          "options": [
+            "Grandpa was a photographer.",
+            "Grandpa worked in a factory.",
+            "Grandpa served in the military.",
+            "Grandpa drove trucks for a living."
+          ],
+          "answer": 2,
+          "explanation": "Both men in the photo are wearing army uniforms — we infer that Grandpa (as a young man) served in the military. This is a logical inference from the clue."
+        },
+        {
+          "id": "inf-p002-q5",
+          "difficulty": "easy",
+          "question": "The 'faraway' look in Grandpa's eyes suggests he is —",
+          "options": [
+            "watching something outside the window",
+            "thinking deeply about the past",
+            "falling asleep in his chair",
+            "reading something across the room"
+          ],
+          "answer": 1,
+          "explanation": "'Faraway eyes' is a common expression for when someone's mind is in the past (or elsewhere). Combined with the old photo, we infer Grandpa is lost in memories."
+        }
+      ]
+    },
+    {
+      "id": "inf-p003",
+      "difficulty": "medium",
+      "teks": "3.13C",
+      "title": "The Last Piece",
+      "text": "Marcus had been working on the puzzle for three days. Every morning before school and every evening after dinner, he sat at the kitchen table fitting pieces together. His little sister, Bea, watched from the couch and kept her hands folded in her lap. On the last day, Marcus slid in the final piece and stood back, arms crossed, staring at the completed picture. Bea ran over and clapped. 'I didn't touch it, Marcus. Not once.' Marcus looked at his sister and then at the puzzle. He smiled. 'I know,' he said.",
+      "questions": [
+        {
+          "id": "inf-p003-q1",
+          "difficulty": "medium",
+          "question": "What can you infer about WHY Bea kept her hands folded?",
+          "options": [
+            "She was bored and had nothing to do.",
+            "She was deliberately keeping herself from touching the puzzle.",
+            "She was cold and trying to stay warm.",
+            "She was following a rule about sitting on the couch."
+          ],
+          "answer": 1,
+          "explanation": "Bea telling Marcus 'I didn't touch it, not once' and having her hands folded all along shows she was controlling herself — deliberately resisting the urge to touch the puzzle."
+        },
+        {
+          "id": "inf-p003-q2",
+          "difficulty": "medium",
+          "question": "What does Marcus's smile at the end tell us?",
+          "options": [
+            "He is glad the puzzle is finally done.",
+            "He is proud of his sister's self-control and appreciates it.",
+            "He thinks Bea is funny.",
+            "He is happy that school is over."
+          ],
+          "answer": 1,
+          "explanation": "Marcus smiles AFTER Bea says she didn't touch it — the smile is a response to her statement, not just to finishing the puzzle. He is touched by her self-control and dedication."
+        },
+        {
+          "id": "inf-p003-q3",
+          "difficulty": "medium",
+          "question": "Why did Bea tell Marcus, 'I didn't touch it, not once'?",
+          "options": [
+            "She wanted credit for her restraint.",
+            "She thought Marcus would be angry at her.",
+            "She was defending herself from a false accusation.",
+            "She wanted to help Marcus finish the puzzle."
+          ],
+          "answer": 0,
+          "explanation": "Bea volunteers this information at the end, even though Marcus never asked — she wanted Marcus to know she had respected his project and exercised self-control. She wanted that acknowledgment."
+        },
+        {
+          "id": "inf-p003-q4",
+          "difficulty": "medium",
+          "question": "What does 'arms crossed, staring at the completed picture' suggest about Marcus?",
+          "options": [
+            "He is angry at the final result.",
+            "He is cold and tired.",
+            "He is satisfied and taking a moment to appreciate his work.",
+            "He is not sure he put the puzzle together correctly."
+          ],
+          "answer": 2,
+          "explanation": "Standing back with arms crossed is a posture of someone surveying their completed work with pride and satisfaction — it suggests Marcus is proud of what he accomplished."
+        },
+        {
+          "id": "inf-p003-q5",
+          "difficulty": "medium",
+          "question": "What can you infer about the relationship between Marcus and Bea?",
+          "options": [
+            "They do not get along and argue often.",
+            "Bea admires Marcus and wants to earn his respect.",
+            "Marcus does not care about his sister.",
+            "They do all their activities together."
+          ],
+          "answer": 1,
+          "explanation": "Bea carefully avoided touching the puzzle for three days and announced her restraint to Marcus — this shows she wanted his approval. She admires him and cares what he thinks."
+        }
+      ]
+    },
+    {
+      "id": "inf-p004",
+      "difficulty": "medium",
+      "teks": "3.13C",
+      "title": "Empty Seats",
+      "text": "The school cafeteria buzzed with noise, but one table sat completely empty. The new student, Diego, carried his lunch tray and looked around. At every table, students huddled together, already deep in conversation. He set his tray down at the empty table and opened his book. Three seats away, a girl named Sophie noticed him. She looked at her friends and then back at Diego. She picked up her tray. 'Come on,' she said to her friends.",
+      "questions": [
+        {
+          "id": "inf-p004-q1",
+          "difficulty": "medium",
+          "question": "What is Diego MOST LIKELY feeling when he sits at the empty table?",
+          "options": [
+            "Relieved to have a quiet table",
+            "Lonely and left out",
+            "Angry at the other students",
+            "Happy to read his book"
+          ],
+          "answer": 1,
+          "explanation": "Diego is the new student in a noisy cafeteria full of groups already talking — having to sit alone at an empty table most likely makes him feel lonely and left out, even if the text doesn't say so directly."
+        },
+        {
+          "id": "inf-p004-q2",
+          "difficulty": "medium",
+          "question": "What is Sophie MOST LIKELY about to do?",
+          "options": [
+            "Ask Diego to leave the cafeteria",
+            "Tell her friends to ignore Diego",
+            "Bring her friends to sit with Diego",
+            "Move to a different table alone"
+          ],
+          "answer": 2,
+          "explanation": "Sophie picks up her tray and says 'Come on' to her friends — after looking at Diego sitting alone. We infer she is inviting her friends to move and sit with him."
+        },
+        {
+          "id": "inf-p004-q3",
+          "difficulty": "medium",
+          "question": "The detail that Sophie 'looked at her friends and then back at Diego' suggests she was —",
+          "options": [
+            "deciding whether to help Diego",
+            "asking her friends to make fun of Diego",
+            "looking for an empty seat for herself",
+            "telling her friends about a class assignment"
+          ],
+          "answer": 0,
+          "explanation": "Sophie's back-and-forth glance between her friends and Diego shows she is weighing a decision — should she stay with her group or do something about Diego? She decides to act."
+        },
+        {
+          "id": "inf-p004-q4",
+          "difficulty": "medium",
+          "question": "Why does Diego open his book at the empty table?",
+          "options": [
+            "He loves to read more than anything.",
+            "He has homework due the next day.",
+            "He is trying to look busy and avoid feeling awkward.",
+            "His teacher asked him to read during lunch."
+          ],
+          "answer": 2,
+          "explanation": "Opening a book while alone in a social setting is a common way to avoid feeling awkward or exposed. We infer Diego uses the book as a way to cope with the uncomfortable situation."
+        },
+        {
+          "id": "inf-p004-q5",
+          "difficulty": "medium",
+          "question": "What does this story suggest about what it feels like to be the new student?",
+          "options": [
+            "It is always easy to make new friends quickly.",
+            "It can feel lonely and uncertain until someone reaches out.",
+            "New students prefer to eat alone.",
+            "Other students are always unkind to new students."
+          ],
+          "answer": 1,
+          "explanation": "Diego sits alone in a buzzing cafeteria — the contrast between the noise around him and his solitary table shows how isolating it can feel to be new until someone like Sophie steps in."
+        }
+      ]
+    },
+    {
+      "id": "inf-p005",
+      "difficulty": "hard",
+      "teks": "3.13C",
+      "title": "The Interview",
+      "text": "Dr. Hana Chen gripped her folder and waited outside the conference room. Through the small window she could see five people sitting around a long table, shuffling papers. Her palms were damp. She had applied for this research position twice before — both times receiving the same polite rejection letter. She reviewed her notes one final time, then straightened her lab coat and stood up straight. When the door opened, she walked in without hesitation.",
+      "questions": [
+        {
+          "id": "inf-p005-q1",
+          "difficulty": "hard",
+          "question": "What can you infer about how Dr. Chen feels BEFORE entering the room?",
+          "options": [
+            "She is confident and relaxed.",
+            "She is nervous but determined.",
+            "She is angry and frustrated.",
+            "She is unprepared and confused."
+          ],
+          "answer": 1,
+          "explanation": "Her damp palms and gripping the folder show nervousness. But she straightens up, reviews her notes, and walks in 'without hesitation' — showing she is also determined. Both feelings are present."
+        },
+        {
+          "id": "inf-p005-q2",
+          "difficulty": "hard",
+          "question": "What do the two previous rejections tell us about Dr. Chen's character?",
+          "options": [
+            "She gives up easily when things get hard.",
+            "She is stubborn and refuses to accept feedback.",
+            "She is persistent and does not let setbacks stop her.",
+            "She has not learned from her past experiences."
+          ],
+          "answer": 2,
+          "explanation": "Being rejected twice and still applying a third time shows persistence — the ability to keep going after failure. This is a character inference based on her actions, not her words."
+        },
+        {
+          "id": "inf-p005-q3",
+          "difficulty": "hard",
+          "question": "Why does Dr. Chen review her notes 'one final time'?",
+          "options": [
+            "She forgot what she studied.",
+            "She is making sure she is as prepared as possible.",
+            "She is hoping to find a mistake to correct.",
+            "She wants to memorize the interviewers' names."
+          ],
+          "answer": 1,
+          "explanation": "Reviewing notes before an important moment is a preparation strategy. Combined with her history of previous rejections, we infer she is making every effort to be ready — leaving nothing to chance."
+        },
+        {
+          "id": "inf-p005-q4",
+          "difficulty": "hard",
+          "question": "The detail that she walks in 'without hesitation' suggests she has —",
+          "options": [
+            "decided to give up halfway through",
+            "chosen to project confidence even if she is nervous",
+            "forgotten why she wanted the job",
+            "become angry and impatient with waiting"
+          ],
+          "answer": 1,
+          "explanation": "She is nervous (damp palms) but walks in without hesitation — this suggests a conscious choice to present confidence. It shows self-discipline and professionalism."
+        },
+        {
+          "id": "inf-p005-q5",
+          "difficulty": "hard",
+          "question": "Based on the passage, what is Dr. Chen MOST LIKELY hoping will be different this time?",
+          "options": [
+            "That the interviewers will not recognize her from before",
+            "That her preparation and persistence will finally earn her the position",
+            "That the interview will be shorter than before",
+            "That the panel will cancel the interview"
+          ],
+          "answer": 1,
+          "explanation": "Having applied twice before and been rejected, the most logical hope for this third attempt is that her preparation (reviewed notes, lab coat, confident entry) will prove she is worthy of the position."
+        }
+      ]
+    }
+  ]
+}

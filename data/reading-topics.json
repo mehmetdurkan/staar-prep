@@ -1,0 +1,61 @@
+{
+  "subject": "reading",
+  "categories": [
+    {
+      "id": "comprehension",
+      "name": "Reading Comprehension",
+      "icon": "📖",
+      "color": "#002868",
+      "topics": [
+        {
+          "id": "main-idea",
+          "name": "Main Idea & Details",
+          "icon": "🎯",
+          "teks": "3.13A–D",
+          "description": "Find the central message and identify supporting details in a passage",
+          "hasQuestions": true
+        },
+        {
+          "id": "literary-elements",
+          "name": "Literary Elements",
+          "icon": "📚",
+          "teks": "3.8A, 3.9A–B",
+          "description": "Identify characters, setting, plot, problem, solution, and theme",
+          "hasQuestions": true
+        },
+        {
+          "id": "inferences",
+          "name": "Making Inferences",
+          "icon": "🔍",
+          "teks": "3.13C",
+          "description": "Use text evidence and background knowledge to draw conclusions",
+          "hasQuestions": true
+        }
+      ]
+    },
+    {
+      "id": "language",
+      "name": "Language & Craft",
+      "icon": "✍️",
+      "color": "#BF0A30",
+      "topics": [
+        {
+          "id": "vocabulary",
+          "name": "Vocabulary in Context",
+          "icon": "📝",
+          "teks": "3.4A–D",
+          "description": "Use context clues to understand the meaning of unfamiliar words",
+          "hasQuestions": true
+        },
+        {
+          "id": "authors-purpose",
+          "name": "Author's Purpose",
+          "icon": "🖊️",
+          "teks": "3.11A–C",
+          "description": "Identify why an author wrote a text — to inform, persuade, or entertain",
+          "hasQuestions": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,377 @@
+{
+  "subject": "reading",
+  "topic": "vocabulary",
+  "topicName": "Vocabulary in Context",
+  "passages": [
+    {
+      "id": "vocab-p001",
+      "difficulty": "easy",
+      "teks": "3.4A",
+      "title": "The Busy Bakery",
+      "text": "Every morning, Mr. Torres woke up before sunrise to prepare his bakery. He would knead the bread dough, shaping and folding it with strong hands. The smell of fresh bread drifted down the street and drew customers inside. When they arrived, Mr. Torres greeted each person with a warm welcome. His bakery was famous for its generous portions — he always made sure no one left hungry.",
+      "questions": [
+        {
+          "id": "vocab-p001-q1",
+          "difficulty": "easy",
+          "question": "In the passage, the word 'knead' means —",
+          "options": [
+            "to cut with a knife",
+            "to press and fold dough with your hands",
+            "to bake in an oven",
+            "to measure ingredients"
+          ],
+          "answer": 1,
+          "explanation": "The passage says Mr. Torres would 'knead the bread dough, shaping and folding it with strong hands.' The clues 'shaping and folding' tell us knead means to press and fold."
+        },
+        {
+          "id": "vocab-p001-q2",
+          "difficulty": "easy",
+          "question": "What does the word 'generous' mean in this passage?",
+          "options": [
+            "small and thin",
+            "large and plentiful",
+            "expensive and fancy",
+            "hard and stale"
+          ],
+          "answer": 1,
+          "explanation": "'Generous portions' means large amounts of food. The clue is that 'no one left hungry' — if no one went hungry, the portions must have been large."
+        },
+        {
+          "id": "vocab-p001-q3",
+          "difficulty": "easy",
+          "question": "The word 'drew' in 'drew customers inside' means —",
+          "options": [
+            "painted a picture of",
+            "pulled or attracted",
+            "pushed away",
+            "called out to"
+          ],
+          "answer": 1,
+          "explanation": "Here 'drew' means attracted or pulled. The smell of bread 'drew customers' — meaning it attracted them to come in. This is a figurative use of 'draw.'"
+        },
+        {
+          "id": "vocab-p001-q4",
+          "difficulty": "easy",
+          "question": "What does 'drifted' mean in the sentence 'The smell of fresh bread drifted down the street'?",
+          "options": [
+            "stayed in one place",
+            "floated slowly through the air",
+            "fell quickly to the ground",
+            "disappeared immediately"
+          ],
+          "answer": 1,
+          "explanation": "'Drifted' means floated or moved slowly. The smell drifting down the street suggests it moved gently through the air, carried by a breeze."
+        },
+        {
+          "id": "vocab-p001-q5",
+          "difficulty": "easy",
+          "question": "What does the word 'portions' mean in this passage?",
+          "options": [
+            "types of bread",
+            "serving sizes or amounts of food",
+            "the price of food",
+            "tools used in baking"
+          ],
+          "answer": 1,
+          "explanation": "Portions are serving sizes — amounts of food given to each person. Since Mr. Torres gave 'generous portions,' customers received large servings."
+        }
+      ]
+    },
+    {
+      "id": "vocab-p002",
+      "difficulty": "easy",
+      "teks": "3.4B",
+      "title": "Stars in the Night Sky",
+      "text": "On clear nights, thousands of stars are visible in the sky. Stars are massive balls of burning gas located very far from Earth. The closest star to our planet is the Sun. Other stars appear tiny because they are so distant. Ancient people used stars to navigate — they used star patterns called constellations to find their way at sea and across deserts. Today, sailors and pilots still use star navigation, though they also have modern tools to help them.",
+      "questions": [
+        {
+          "id": "vocab-p002-q1",
+          "difficulty": "easy",
+          "question": "In the passage, 'massive' means —",
+          "options": [
+            "very small",
+            "very large",
+            "very bright",
+            "very hot"
+          ],
+          "answer": 1,
+          "explanation": "Stars are described as 'massive balls' — the context of stars being huge objects in space tells us massive means very large."
+        },
+        {
+          "id": "vocab-p002-q2",
+          "difficulty": "easy",
+          "question": "What does 'navigate' mean in this passage?",
+          "options": [
+            "to count stars",
+            "to find your way from one place to another",
+            "to draw pictures of constellations",
+            "to sail a boat quickly"
+          ],
+          "answer": 1,
+          "explanation": "The passage says people used stars 'to navigate' — specifically 'to find their way at sea and across deserts.' These clues tell us navigate means to find your way."
+        },
+        {
+          "id": "vocab-p002-q3",
+          "difficulty": "easy",
+          "question": "The word 'constellations' in the passage means —",
+          "options": [
+            "telescopes used to see stars",
+            "named patterns of stars",
+            "ancient maps of the ocean",
+            "the light given off by stars"
+          ],
+          "answer": 1,
+          "explanation": "The passage defines constellations directly: 'star patterns called constellations.' A constellation is a named pattern of stars."
+        },
+        {
+          "id": "vocab-p002-q4",
+          "difficulty": "easy",
+          "question": "The word 'ancient' in 'ancient people' means —",
+          "options": [
+            "smart and educated",
+            "very old, from long ago",
+            "living in cold places",
+            "brave and adventurous"
+          ],
+          "answer": 1,
+          "explanation": "Ancient refers to people from very long ago in history. The contrast with 'today, sailors and pilots' shows that 'ancient people' lived long before modern times."
+        },
+        {
+          "id": "vocab-p002-q5",
+          "difficulty": "easy",
+          "question": "The word 'distant' in 'they are so distant' means —",
+          "options": [
+            "bright",
+            "far away",
+            "small",
+            "hot"
+          ],
+          "answer": 1,
+          "explanation": "Stars appear tiny 'because they are so distant' — the clue is that distance explains their small appearance. Distant means far away."
+        }
+      ]
+    },
+    {
+      "id": "vocab-p003",
+      "difficulty": "medium",
+      "teks": "3.4C",
+      "title": "Rain Forests",
+      "text": "Tropical rain forests are some of the most diverse ecosystems on Earth. They are dense with life — every layer from the dark forest floor to the towering canopy is packed with plants and animals. Many species found in rain forests are endemic to those regions, meaning they exist nowhere else in the world. Rain forests also regulate Earth's climate by absorbing large amounts of carbon dioxide. Although rain forests cover less than six percent of Earth's surface, they are home to more than half of the world's plant and animal species.",
+      "questions": [
+        {
+          "id": "vocab-p003-q1",
+          "difficulty": "medium",
+          "question": "In the passage, 'diverse' means —",
+          "options": [
+            "having many different types",
+            "very wet and warm",
+            "difficult to explore",
+            "covered in tall trees"
+          ],
+          "answer": 0,
+          "explanation": "'Diverse ecosystems' with species in 'every layer' packed with plants and animals tells us diverse means having many different types or varieties."
+        },
+        {
+          "id": "vocab-p003-q2",
+          "difficulty": "medium",
+          "question": "What does 'endemic' mean in this passage?",
+          "options": [
+            "endangered and nearly extinct",
+            "found only in a particular region",
+            "very colorful or bright",
+            "living near water"
+          ],
+          "answer": 1,
+          "explanation": "The passage defines endemic directly: 'endemic to those regions, meaning they exist nowhere else in the world.' Endemic means native to only one specific place."
+        },
+        {
+          "id": "vocab-p003-q3",
+          "difficulty": "medium",
+          "question": "The word 'canopy' in this passage refers to —",
+          "options": [
+            "the dark floor of the forest",
+            "animals that live in trees",
+            "the top layer of tall trees",
+            "a type of rain forest plant"
+          ],
+          "answer": 2,
+          "explanation": "The passage contrasts 'the dark forest floor' with 'the towering canopy' — since the floor is at the bottom, the canopy must be the top layer. 'Towering' confirms it is tall."
+        },
+        {
+          "id": "vocab-p003-q4",
+          "difficulty": "medium",
+          "question": "What does 'regulate' mean in 'rain forests regulate Earth's climate'?",
+          "options": [
+            "to destroy or damage",
+            "to control or manage",
+            "to study or examine",
+            "to predict or forecast"
+          ],
+          "answer": 1,
+          "explanation": "Rain forests 'regulate' the climate by absorbing carbon dioxide — this means they help control or manage climate conditions, keeping things balanced."
+        },
+        {
+          "id": "vocab-p003-q5",
+          "difficulty": "medium",
+          "question": "The word 'absorbing' in 'absorbing large amounts of carbon dioxide' means —",
+          "options": [
+            "releasing or giving off",
+            "measuring or calculating",
+            "taking in or soaking up",
+            "burning or destroying"
+          ],
+          "answer": 2,
+          "explanation": "Absorbing means taking in or soaking up. Rain forests take in carbon dioxide from the atmosphere — opposite of releasing. A sponge absorbs water in the same way."
+        }
+      ]
+    },
+    {
+      "id": "vocab-p004",
+      "difficulty": "medium",
+      "teks": "3.4D",
+      "title": "The Solar System",
+      "text": "Our solar system consists of the Sun and everything that orbits it. The eight planets travel in elliptical paths around the Sun. Each planet has a unique composition — for example, rocky planets like Earth are made of solid materials, while gas giants like Jupiter are composed mainly of hydrogen and helium. Gravity is the invisible force that keeps planets in their orbits. Without gravity, planets would fly off into space. Scientists use powerful telescopes and space probes to observe and explore the distant reaches of our solar system.",
+      "questions": [
+        {
+          "id": "vocab-p004-q1",
+          "difficulty": "medium",
+          "question": "What does 'orbits' mean in this passage?",
+          "options": [
+            "crashes into",
+            "travels in a curved path around",
+            "moves away from quickly",
+            "reflects light from"
+          ],
+          "answer": 1,
+          "explanation": "The passage says planets 'travel in elliptical paths around the Sun' and also uses 'orbits' to describe this same movement. To orbit means to travel in a path around something."
+        },
+        {
+          "id": "vocab-p004-q2",
+          "difficulty": "medium",
+          "question": "The word 'composition' in 'unique composition' means —",
+          "options": [
+            "the size of a planet",
+            "the distance from the sun",
+            "what something is made of",
+            "the speed at which it travels"
+          ],
+          "answer": 2,
+          "explanation": "The passage explains composition by giving examples of materials: 'rocky planets are made of solid materials' and 'gas giants are composed mainly of hydrogen.' Composition means what something is made of."
+        },
+        {
+          "id": "vocab-p004-q3",
+          "difficulty": "medium",
+          "question": "What does 'elliptical' mean in 'elliptical paths'?",
+          "options": [
+            "perfectly round like a circle",
+            "oval or stretched-circle shaped",
+            "straight and direct",
+            "irregular and unpredictable"
+          ],
+          "answer": 1,
+          "explanation": "An ellipse is an oval shape. Elliptical means shaped like an oval — planets' orbits are not perfect circles but slightly stretched ovals."
+        },
+        {
+          "id": "vocab-p004-q4",
+          "difficulty": "medium",
+          "question": "The word 'probes' in 'space probes' means —",
+          "options": [
+            "large telescopes on the ground",
+            "unmanned spacecraft sent to explore space",
+            "astronauts on a space mission",
+            "cameras attached to satellites"
+          ],
+          "answer": 1,
+          "explanation": "Space probes are used alongside telescopes to 'observe and explore the distant reaches' of space. Probes are unmanned (robotic) spacecraft sent out to gather information."
+        },
+        {
+          "id": "vocab-p004-q5",
+          "difficulty": "medium",
+          "question": "What does 'invisible' mean in 'the invisible force that keeps planets in their orbits'?",
+          "options": [
+            "very weak",
+            "not able to be seen",
+            "very powerful",
+            "coming from the Sun"
+          ],
+          "answer": 1,
+          "explanation": "Invisible means cannot be seen. Gravity is a force you cannot see — you can only observe its effects (like planets staying in orbit). The passage calls it 'invisible' for exactly this reason."
+        }
+      ]
+    },
+    {
+      "id": "vocab-p005",
+      "difficulty": "hard",
+      "teks": "3.4A",
+      "title": "The Dust Bowl",
+      "text": "In the 1930s, the Great Plains of the United States suffered a devastating environmental disaster known as the Dust Bowl. Years of drought combined with poor farming practices stripped the land of its vegetation and topsoil. Without roots to anchor the soil, fierce winds swept up enormous clouds of dust that blotted out the sun and buried farms and homes. Thousands of families were forced to abandon their land and migrate westward in search of work and survival. The disaster prompted the government to implement new conservation practices to prevent future soil erosion.",
+      "questions": [
+        {
+          "id": "vocab-p005-q1",
+          "difficulty": "hard",
+          "question": "The word 'devastating' in the passage means —",
+          "options": [
+            "slow and gradual",
+            "causing great damage and suffering",
+            "unexpected and surprising",
+            "related to weather patterns"
+          ],
+          "answer": 1,
+          "explanation": "A 'devastating environmental disaster' is described as stripping land, burying farms, and forcing thousands to flee. All of these show great destruction — devastating means causing great damage."
+        },
+        {
+          "id": "vocab-p005-q2",
+          "difficulty": "hard",
+          "question": "What does 'anchor' mean in 'roots to anchor the soil'?",
+          "options": [
+            "to water or nourish",
+            "to hold firmly in place",
+            "to loosen and break apart",
+            "to enrich with nutrients"
+          ],
+          "answer": 1,
+          "explanation": "An anchor holds a ship in place. Here, roots 'anchor' soil — they hold it firmly in place so the wind cannot blow it away. Without roots, the soil was loose and vulnerable."
+        },
+        {
+          "id": "vocab-p005-q3",
+          "difficulty": "hard",
+          "question": "The word 'migrate' in this passage means —",
+          "options": [
+            "to build new homes",
+            "to ask the government for help",
+            "to move from one place to another",
+            "to protest unfair conditions"
+          ],
+          "answer": 2,
+          "explanation": "Families 'migrate westward' in search of work — migrate means to move from one place or region to another, especially over a long distance."
+        },
+        {
+          "id": "vocab-p005-q4",
+          "difficulty": "hard",
+          "question": "What does 'implement' mean in 'implement new conservation practices'?",
+          "options": [
+            "to study or research",
+            "to put into action",
+            "to vote on or debate",
+            "to describe or explain"
+          ],
+          "answer": 1,
+          "explanation": "The government 'implement[ed]' new practices — meaning they put those practices into action or applied them. Implementing goes beyond planning; it means actually doing."
+        },
+        {
+          "id": "vocab-p005-q5",
+          "difficulty": "hard",
+          "question": "What does 'erosion' mean in 'prevent future soil erosion'?",
+          "options": [
+            "the drying out of soil during drought",
+            "the gradual wearing away of soil by wind or water",
+            "the planting of crops in soil",
+            "the contamination of soil by chemicals"
+          ],
+          "answer": 1,
+          "explanation": "The passage describes soil being 'swept up' and 'stripped' by wind — this wearing away or removal of soil is erosion. Conservation practices aim to stop this process."
+        }
+      ]
+    }
+  ]
+}
