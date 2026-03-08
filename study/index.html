@@ -153,7 +153,7 @@
 
 <div class="page-wrap">
 
-    <a class="back-btn" href="../math/index.html" id="backBtn">← Math Topics</a>
+    <a class="back-btn" href="../math/index.html" id="backBtn">← Topics</a>
 
     <div id="studyContent">
         <div class="loading-state" style="text-align:center; padding:40px; color:var(--text-light);">Loading study materials...</div>
@@ -168,10 +168,25 @@
     const topic = params.get('topic') || '';
     const subject = params.get('subject') || 'math';
 
+    // Update back button for reading vs math
+    const backBtn = document.getElementById('backBtn');
+    if (subject === 'reading') {
+        backBtn.href = '../reading/index.html';
+        backBtn.textContent = '← Reading Topics';
+    } else {
+        backBtn.href = '../math/index.html';
+        backBtn.textContent = '← Math Topics';
+    }
+
     const content = {
-        'multiplication': renderMultiplication,
+        'multiplication':      renderMultiplication,
         'addition-subtraction': renderAddSub,
-        'fractions': renderFractions
+        'fractions':            renderFractions,
+        'main-idea':            renderMainIdea,
+        'literary-elements':    renderLiteraryElements,
+        'vocabulary':           renderVocabulary,
+        'authors-purpose':      renderAuthorsPurpose,
+        'inferences':           renderInferences,
     };
 
     if (content[topic]) {
@@ -397,6 +412,324 @@
                 </div>
                 <div class="rule-box">
                     <strong>To check:</strong> Do they land on the same point on the number line? If yes, they're equivalent!
+                </div>
+            </div>
+        `;
+    }
+
+    // ── READING STUDY GUIDES ──────────────────────────────────────────────────
+
+    function renderMainIdea() {
+        return `
+            <h1 style="font-size:1.5rem; font-weight:900; color:var(--blue); margin-bottom:4px;">🎯 Main Idea & Details</h1>
+            <p class="text-muted mb-16">TEKS 3.13A–D · Finding the central message and supporting details</p>
+
+            <div class="study-card">
+                <h3>📌 What is the Main Idea?</h3>
+                <p style="font-size:0.9rem;">The <strong>main idea</strong> is what a passage is MOSTLY about. It is the big, important point the author wants you to understand. Supporting details are smaller facts or examples that explain or prove the main idea.</p>
+                <div class="rule-box">
+                    <strong>Ask yourself:</strong> "What is this passage MOSTLY about?" — Your answer is the main idea. Details answer "who, what, when, where, or how."
+                </div>
+            </div>
+
+            <div class="study-card">
+                <h3>📖 Key Vocabulary</h3>
+                <div class="vocab-grid">
+                    <div class="vocab-card"><div class="word">Main Idea</div><div class="def">The most important point of a passage</div></div>
+                    <div class="vocab-card"><div class="word">Supporting Detail</div><div class="def">A fact that explains the main idea</div></div>
+                    <div class="vocab-card"><div class="word">Summary</div><div class="def">A short retelling of the main points</div></div>
+                    <div class="vocab-card"><div class="word">Topic</div><div class="def">The subject a passage is about (just one word or phrase)</div></div>
+                </div>
+            </div>
+
+            <div class="study-card">
+                <h3>🔎 Main Idea vs. Detail — Example</h3>
+                <div style="background:#F5F5F0; border-left:4px solid var(--blue); padding:12px 14px; border-radius:0 8px 8px 0; font-size:0.9rem; line-height:1.6; margin-bottom:14px;">
+                    <strong>Dogs as Helpers</strong><br>
+                    Dogs do many important jobs for people. Some dogs guide people who cannot see. Others help police officers. Some dogs are trained to help children feel calm in hospitals. No matter the job, all working dogs are trained for many months.
+                </div>
+                <div class="steps-list">
+                    <div class="step-item">The <strong>topic</strong> is "working dogs" — just the subject.</div>
+                    <div class="step-item">The <strong>main idea</strong> is: <em>"Dogs do many important jobs for people."</em> — the big point.</div>
+                    <div class="step-item">Supporting details: guide dogs, police dogs, hospital dogs — these prove the main idea.</div>
+                </div>
+            </div>
+
+            <div class="study-card">
+                <h3>⚠️ Common Traps</h3>
+                <div class="steps-list">
+                    <div class="step-item"><strong>Topic ≠ Main Idea.</strong> "Dogs" is the topic. "Dogs do many important jobs" is the main idea.</div>
+                    <div class="step-item"><strong>Beware of details.</strong> If an answer is too specific (one example), it is a detail, not the main idea.</div>
+                    <div class="step-item"><strong>Wrong answers often:</strong> Add information not in the passage, or focus on one small part.</div>
+                </div>
+                <div class="rule-box">
+                    <strong>Quick Test:</strong> Can you answer "yes" to "Does this cover the WHOLE passage?"— not just one part? If yes, it is the main idea!
+                </div>
+            </div>
+
+            <div class="study-card">
+                <h3>📝 How to Write a Summary</h3>
+                <div class="steps-list">
+                    <div class="step-item">State the <strong>main idea</strong> in your own words.</div>
+                    <div class="step-item">Add 2–3 <strong>important details</strong>.</div>
+                    <div class="step-item">Keep it <strong>short</strong> — leave out small examples.</div>
+                    <div class="step-item">Use your own words — do not copy the passage.</div>
+                </div>
+            </div>
+        `;
+    }
+
+    function renderLiteraryElements() {
+        return `
+            <h1 style="font-size:1.5rem; font-weight:900; color:var(--blue); margin-bottom:4px;">📚 Literary Elements</h1>
+            <p class="text-muted mb-16">TEKS 3.8A, 3.9A–B · Characters, setting, plot, problem, solution, and theme</p>
+
+            <div class="study-card">
+                <h3>📌 Story Structure</h3>
+                <p style="font-size:0.9rem;">Every story has key parts. Knowing these parts helps you understand and answer questions about what you read.</p>
+                <div class="vocab-grid">
+                    <div class="vocab-card"><div class="word">Character</div><div class="def">Who the story is about</div></div>
+                    <div class="vocab-card"><div class="word">Setting</div><div class="def">Where and when the story takes place</div></div>
+                    <div class="vocab-card"><div class="word">Problem</div><div class="def">The challenge or conflict in the story</div></div>
+                    <div class="vocab-card"><div class="word">Solution</div><div class="def">How the problem is solved</div></div>
+                    <div class="vocab-card"><div class="word">Plot</div><div class="def">The sequence of events (beginning, middle, end)</div></div>
+                    <div class="vocab-card"><div class="word">Theme</div><div class="def">The lesson or message of the story</div></div>
+                </div>
+            </div>
+
+            <div class="study-card">
+                <h3>👤 Character Traits</h3>
+                <p style="font-size:0.9rem;">A character's traits are shown through their <strong>words, actions, thoughts,</strong> and <strong>feelings</strong>. Look for clues — the author often shows traits without stating them.</p>
+                <div style="background:#F5F5F0; border-left:4px solid var(--blue); padding:12px 14px; border-radius:0 8px 8px 0; font-size:0.9rem; line-height:1.6; margin-bottom:8px;">
+                    <em>"Maya wrapped the shivering kitten in her jacket without hesitating."</em>
+                </div>
+                <div class="rule-box">
+                    The author does not say Maya is kind — but her <strong>action</strong> shows it. This is called a character trait shown through actions.
+                </div>
+            </div>
+
+            <div class="study-card">
+                <h3>🌍 Setting</h3>
+                <p style="font-size:0.9rem;">Setting includes both <strong>where</strong> (place) and <strong>when</strong> (time of day, season, year). Setting affects mood and plot. Ask: How does where/when this takes place matter to the story?</p>
+                <div class="steps-list">
+                    <div class="step-item">Look for location words: <em>kitchen, forest, city, school yard</em></div>
+                    <div class="step-item">Look for time words: <em>one morning, in winter, on the last day of school</em></div>
+                    <div class="step-item">Think: Would the story change in a different place or time?</div>
+                </div>
+            </div>
+
+            <div class="study-card">
+                <h3>💡 Theme vs. Topic</h3>
+                <p style="font-size:0.9rem;"><strong>Topic</strong> = what the story is about (one word). <strong>Theme</strong> = the lesson the story teaches (a full sentence).</p>
+                <div style="background:#F5F5F0; padding:12px; border-radius:8px; font-size:0.9rem; margin:8px 0;">
+                    <strong>Topic:</strong> friendship<br>
+                    <strong>Theme:</strong> True friends help each other even when it costs them something.
+                </div>
+                <div class="rule-box">
+                    <strong>Theme Tip:</strong> Ask "What does the main character LEARN?" or "What lesson could anyone take from this story?" — that is the theme.
+                </div>
+            </div>
+
+            <div class="study-card">
+                <h3>⚠️ Common Traps</h3>
+                <div class="steps-list">
+                    <div class="step-item">The theme is NEVER just a word. "Friendship" is a topic. "Good friends support each other" is a theme.</div>
+                    <div class="step-item">The setting includes BOTH time and place — do not forget "when."</div>
+                    <div class="step-item">Characters can CHANGE — look at how they are different at the end vs. the beginning.</div>
+                </div>
+            </div>
+        `;
+    }
+
+    function renderVocabulary() {
+        return `
+            <h1 style="font-size:1.5rem; font-weight:900; color:var(--blue); margin-bottom:4px;">📝 Vocabulary in Context</h1>
+            <p class="text-muted mb-16">TEKS 3.4A–D · Using clues in the passage to understand word meanings</p>
+
+            <div class="study-card">
+                <h3>📌 What are Context Clues?</h3>
+                <p style="font-size:0.9rem;">Context clues are hints <em>inside the sentence or nearby sentences</em> that help you figure out the meaning of an unfamiliar word. You do not need a dictionary — the clues are already in the text!</p>
+                <div class="rule-box">
+                    <strong>Strategy:</strong> When you see an unknown word, re-read the sentence. Look for definitions, examples, or descriptions nearby.
+                </div>
+            </div>
+
+            <div class="study-card">
+                <h3>🔍 Types of Context Clues</h3>
+                <div class="steps-list">
+                    <div class="step-item"><strong>Definition:</strong> The text defines the word directly. <em>"The canopy, the top layer of the tall trees, was full of birds."</em></div>
+                    <div class="step-item"><strong>Example:</strong> Examples around the word help explain it. <em>"Predators — like wolves, hawks, and sharks — hunt other animals."</em></div>
+                    <div class="step-item"><strong>Synonym:</strong> A similar word is nearby. <em>"She was furious, angry beyond words."</em></div>
+                    <div class="step-item"><strong>Antonym:</strong> An opposite clue. <em>"Unlike his timid brother, Jake was bold."</em> (timid = opposite of bold)</div>
+                    <div class="step-item"><strong>General sense:</strong> The rest of the sentence helps you understand. <em>"She trudged home, her feet heavy and sore."</em> (trudge = walk with great effort)</div>
+                </div>
+            </div>
+
+            <div class="study-card">
+                <h3>📖 Multiple Meaning Words</h3>
+                <p style="font-size:0.9rem;">Some words have more than one meaning. Always check how the word is used in the sentence to choose the right meaning.</p>
+                <div style="background:#F5F5F0; padding:12px; border-radius:8px; font-size:0.9rem; margin:8px 0;">
+                    <strong>"The smell of bread drew customers inside."</strong><br>
+                    <em>drew</em> here means <strong>attracted/pulled</strong> — not <em>made a picture</em>.
+                </div>
+                <div class="rule-box">
+                    <strong>Test the meaning:</strong> Replace the unknown word with your guess. Does the sentence still make sense?
+                </div>
+            </div>
+
+            <div class="study-card">
+                <h3>🔤 Word Parts</h3>
+                <div class="vocab-grid">
+                    <div class="vocab-card"><div class="word">un- / dis-</div><div class="def">not (unhappy, disagree)</div></div>
+                    <div class="vocab-card"><div class="word">re-</div><div class="def">again (reread, return)</div></div>
+                    <div class="vocab-card"><div class="word">-ful</div><div class="def">full of (careful, helpful)</div></div>
+                    <div class="vocab-card"><div class="word">-less</div><div class="def">without (careless, hopeless)</div></div>
+                    <div class="vocab-card"><div class="word">-er / -or</div><div class="def">person who (teacher, actor)</div></div>
+                    <div class="vocab-card"><div class="word">pre-</div><div class="def">before (preview, precook)</div></div>
+                </div>
+            </div>
+
+            <div class="study-card">
+                <h3>⚠️ Common Traps</h3>
+                <div class="steps-list">
+                    <div class="step-item">Do not pick a meaning you already know if context changes the word's use.</div>
+                    <div class="step-item">Watch for words that look familiar but are used differently (e.g., <em>anchor</em> as a verb — "roots anchor the soil").</div>
+                    <div class="step-item">Always go back to the text — do not answer from memory alone.</div>
+                </div>
+            </div>
+        `;
+    }
+
+    function renderAuthorsPurpose() {
+        return `
+            <h1 style="font-size:1.5rem; font-weight:900; color:var(--blue); margin-bottom:4px;">🖊️ Author's Purpose</h1>
+            <p class="text-muted mb-16">TEKS 3.11A–C · Why did the author write this?</p>
+
+            <div class="study-card">
+                <h3>📌 The PIE Strategy</h3>
+                <p style="font-size:0.9rem;">Every author writes for a reason. Use <strong>PIE</strong> to remember the three main purposes:</p>
+                <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; gap:8px; margin:12px 0;">
+                    <div style="background:var(--blue-light); border-radius:8px; padding:12px; text-align:center;">
+                        <div style="font-size:1.5rem;">📰</div>
+                        <div style="font-weight:800; color:var(--blue);">P — Persuade</div>
+                        <div style="font-size:0.78rem; color:var(--text-light); margin-top:4px;">Convince you to agree or take action</div>
+                    </div>
+                    <div style="background:var(--green-light); border-radius:8px; padding:12px; text-align:center;">
+                        <div style="font-size:1.5rem;">💡</div>
+                        <div style="font-weight:800; color:var(--green);">I — Inform</div>
+                        <div style="font-size:0.78rem; color:var(--text-light); margin-top:4px;">Teach facts and information</div>
+                    </div>
+                    <div style="background:#FEF9E7; border-radius:8px; padding:12px; text-align:center;">
+                        <div style="font-size:1.5rem;">🎭</div>
+                        <div style="font-weight:800; color:#7D5A00;">E — Entertain</div>
+                        <div style="font-size:0.78rem; color:var(--text-light); margin-top:4px;">Delight, amuse, or tell a story</div>
+                    </div>
+                </div>
+                <div class="rule-box">
+                    <strong>Tip:</strong> A passage can have more than one purpose (e.g., inform AND persuade), but there is always a PRIMARY purpose.
+                </div>
+            </div>
+
+            <div class="study-card">
+                <h3>🔍 How to Identify the Purpose</h3>
+                <div class="steps-list">
+                    <div class="step-item"><strong>Persuade?</strong> Look for opinions, arguments, evidence, and calls to action. Words like <em>"should," "must," "it is time to,"</em> and statistics are clues.</div>
+                    <div class="step-item"><strong>Inform?</strong> Look for facts, dates, definitions, and explanations. Neutral tone, no opinions.</div>
+                    <div class="step-item"><strong>Entertain?</strong> Look for stories, imaginative events, characters, emotions, and humor.</div>
+                </div>
+            </div>
+
+            <div class="study-card">
+                <h3>📖 Clue Words by Purpose</h3>
+                <div class="vocab-grid">
+                    <div class="vocab-card"><div class="word">Persuade</div><div class="def">should, must, everyone agrees, research shows, you can help, it is time to</div></div>
+                    <div class="vocab-card"><div class="word">Inform</div><div class="def">was invented, is located, scientists found, according to, first, then, finally</div></div>
+                    <div class="vocab-card"><div class="word">Entertain</div><div class="def">once upon a time, suddenly, he/she said, felt, laughed, imagined, the next day</div></div>
+                    <div class="vocab-card"><div class="word">Both P+I</div><div class="def">Factual evidence used to argue a point — "Studies show... therefore we should"</div></div>
+                </div>
+            </div>
+
+            <div class="study-card">
+                <h3>⚠️ Common Traps</h3>
+                <div class="steps-list">
+                    <div class="step-item">A text with facts can still be <strong>persuasive</strong> — facts used as arguments are for persuading, not just informing.</div>
+                    <div class="step-item">A story with a lesson is still written to <strong>entertain</strong>, not to persuade (unless it directly tells you to do something).</div>
+                    <div class="step-item">If the passage has a clear <strong>call to action</strong> ("recycle today!"), it is persuasive.</div>
+                </div>
+            </div>
+
+            <div class="study-card">
+                <h3>✍️ Author's Tone</h3>
+                <p style="font-size:0.9rem;"><strong>Tone</strong> is the author's attitude. It shows through word choices.</p>
+                <div class="steps-list">
+                    <div class="step-item"><strong>Neutral / informational:</strong> just the facts, no strong feelings</div>
+                    <div class="step-item"><strong>Urgent / concerned:</strong> "before it is too late," "we must act now"</div>
+                    <div class="step-item"><strong>Playful / humorous:</strong> funny details, exaggeration, light tone</div>
+                    <div class="step-item"><strong>Serious:</strong> formal language, weighty topic</div>
+                </div>
+            </div>
+        `;
+    }
+
+    function renderInferences() {
+        return `
+            <h1 style="font-size:1.5rem; font-weight:900; color:var(--blue); margin-bottom:4px;">🔍 Making Inferences</h1>
+            <p class="text-muted mb-16">TEKS 3.13C · Using text clues + what you know to figure things out</p>
+
+            <div class="study-card">
+                <h3>📌 What is an Inference?</h3>
+                <p style="font-size:0.9rem;">An <strong>inference</strong> is a smart guess based on clues in the text AND what you already know. Authors do not always tell you everything — you have to figure some things out yourself!</p>
+                <div class="rule-box">
+                    <strong>Formula:</strong> Text Clue + What I Know = Inference
+                </div>
+            </div>
+
+            <div class="study-card">
+                <h3>🔎 How to Make an Inference</h3>
+                <div class="steps-list">
+                    <div class="step-item">Read the passage carefully and look for <strong>clues</strong> (actions, words, descriptions).</div>
+                    <div class="step-item">Ask: <em>"What does this clue tell me?"</em></div>
+                    <div class="step-item">Think about what you already know about the topic or situation.</div>
+                    <div class="step-item">Combine the clue + your knowledge to make your inference.</div>
+                    <div class="step-item">Check: <em>"Does my inference make sense with ALL the clues in the text?"</em></div>
+                </div>
+            </div>
+
+            <div class="study-card">
+                <h3>📖 Example Inference</h3>
+                <div style="background:#F5F5F0; border-left:4px solid var(--blue); padding:12px 14px; border-radius:0 8px 8px 0; font-size:0.9rem; line-height:1.6; margin-bottom:14px;">
+                    Lily woke up and looked out her window. The sky was gray and drops tapped against the glass. She pulled out her raincoat and grabbed her backpack.
+                </div>
+                <div class="steps-list">
+                    <div class="step-item"><strong>Clue:</strong> gray sky, drops on glass, raincoat</div>
+                    <div class="step-item"><strong>What I know:</strong> gray skies + water drops = rain; backpack in morning = school</div>
+                    <div class="step-item"><strong>Inference:</strong> It is raining and Lily is going to school.</div>
+                </div>
+                <div class="rule-box">
+                    Notice: "rain" and "school" are never stated — but the clues clearly point to them!
+                </div>
+            </div>
+
+            <div class="study-card">
+                <h3>💬 Inferring Character Feelings</h3>
+                <p style="font-size:0.9rem;">Authors show feelings through <strong>actions, facial expressions, body language,</strong> and <strong>dialogue</strong>. Look for these clues to infer how a character feels.</p>
+                <div class="vocab-grid">
+                    <div class="vocab-card"><div class="word">Sighed / slumped</div><div class="def">→ Disappointed, sad, or tired</div></div>
+                    <div class="vocab-card"><div class="word">Clenched fists / gritted teeth</div><div class="def">→ Angry, frustrated</div></div>
+                    <div class="vocab-card"><div class="word">Eyes lit up / smiled wide</div><div class="def">→ Excited, happy</div></div>
+                    <div class="vocab-card"><div class="word">Looked away / spoke softly</div><div class="def">→ Nervous, shy, embarrassed</div></div>
+                </div>
+            </div>
+
+            <div class="study-card">
+                <h3>⚠️ Common Traps</h3>
+                <div class="steps-list">
+                    <div class="step-item"><strong>Too far a stretch:</strong> Your inference must be supported by text clues — not just imagination.</div>
+                    <div class="step-item"><strong>Stating what the text says:</strong> A literal answer is not an inference. An inference goes beyond what is stated.</div>
+                    <div class="step-item"><strong>Ignoring all clues:</strong> Use ALL the clues in the passage, not just one.</div>
+                </div>
+                <div class="rule-box">
+                    <strong>Ask:</strong> "Can I point to text clues that support my answer?" If yes — it is a valid inference!
                 </div>
             </div>
         `;

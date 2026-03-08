@@ -96,7 +96,7 @@
         <div class="config-label"><span class="step-num">1</span> Subject</div>
         <div class="choice-group" id="subjectGroup">
             <button class="choice-btn selected" data-val="math" onclick="selectSubject(this)">📐 Math</button>
-            <button class="choice-btn" data-val="reading" onclick="selectSubject(this)" disabled title="Coming soon">📚 Reading (soon)</button>
+            <button class="choice-btn" data-val="reading" onclick="selectSubject(this)">📚 Reading</button>
         </div>
     </div>
 
@@ -155,14 +155,25 @@
         difficulty: 'mixed'
     };
 
-    // Available topics with questions
-    const availableTopics = {
-        math: [
-            { id: 'addition-subtraction', name: 'Addition & Subtraction', teks: '3.4A–B', icon: '➕' },
-            { id: 'multiplication', name: 'Multiplication', teks: '3.4D–G', icon: '✖️' },
-            { id: 'fractions', name: 'Fractions', teks: '3.3A–H', icon: '🍕' }
-        ]
-    };
+    // Topics cache (loaded from JSON per subject)
+    const topicsCache = {};
+
+    // Load topics for a subject from its JSON file
+    async function fetchTopics(subject) {
+        if (topicsCache[subject]) return topicsCache[subject];
+        try {
+            const res = await fetch(`../data/${subject}-topics.json`);
+            const data = await res.json();
+            // Flatten all categories, keep only topics with questions
+            topicsCache[subject] = data.categories.flatMap(c =>
+                c.topics.filter(t => t.hasQuestions)
+            );
+        } catch (e) {
+            console.error('Could not load topics for', subject);
+            topicsCache[subject] = [];
+        }
+        return topicsCache[subject];
+    }
 
     // === Init from URL params ===
     const params = new URLSearchParams(window.location.search);
@@ -174,6 +185,9 @@
         document.querySelectorAll('#subjectGroup .choice-btn').forEach(b => {
             b.classList.toggle('selected', b.dataset.val === preSubject);
         });
+        const isReading = config.subject === 'reading';
+        document.getElementById('backBtn').href = isReading ? '../reading/index.html' : '../math/index.html';
+        document.getElementById('backBtn').textContent = isReading ? '← Reading Topics' : '← Math Topics';
     }
 
     if (preTopics && preTopics !== 'all') {
@@ -185,23 +199,24 @@
         document.getElementById('customTopicsPanel').classList.add('active');
     }
 
-    // Render topic picker
+    // Render topic picker (async)
     renderTopicPicker();
 
     // === Render Topic Picker ===
-    function renderTopicPicker() {
-        const topics = availableTopics[config.subject] || [];
+    async function renderTopicPicker() {
         const picker = document.getElementById('topicPicker');
+        picker.innerHTML = '<div style="color:var(--text-light);font-size:0.9rem;padding:8px 0;">Loading topics…</div>';
+        const topics = await fetchTopics(config.subject);
         picker.innerHTML = topics.map(t => {
             const isSelected = config.selectedTopics.includes(t.id);
             return `<label class="topic-check ${isSelected ? 'selected' : ''}">
                 <input type="checkbox" value="${t.id}" ${isSelected ? 'checked' : ''} onchange="handleTopicChange(this)">
                 <div>
-                    <div class="tc-label">${t.icon} ${t.name}</div>
+                    <div class="tc-label">${t.icon || ''} ${t.name}</div>
                     <div class="tc-teks">${t.teks}</div>
                 </div>
             </label>`;
-        }).join('');
+        }).join('') || '<div style="color:var(--text-light);font-size:0.9rem;padding:8px 0;">No topics available yet.</div>';
     }
 
     function handleTopicChange(cb) {
@@ -216,6 +231,7 @@
         btn.classList.add('selected');
         const isReading = config.subject === 'reading';
         document.getElementById('backBtn').href = isReading ? '../reading/index.html' : '../math/index.html';
+        document.getElementById('backBtn').textContent = isReading ? '← Reading Topics' : '← Math Topics';
         config.selectedTopics = [];
         renderTopicPicker();
     }
