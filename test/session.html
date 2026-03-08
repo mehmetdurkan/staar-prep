@@ -323,6 +323,7 @@
 
     // === Navigation ===
     function nextQuestion() {
+        if (window.Whiteboard) Whiteboard.clear();
         currentIndex++;
         if (currentIndex >= questions.length) {
             finishTest();
@@ -387,12 +388,16 @@
             console.error('Save error:', e);
         }
 
+        if (window.Whiteboard) Whiteboard.close();
         window.location.href = './results.html';
     }
 
     // === Start ===
     loadQuestions();
 </script>
+
+<button id="wbFab" class="wb-fab" aria-label="Open scratch work" title="Scratch Work">✏️</button>
+<script src="../js/whiteboard.js"></script>
 
 </body>
 </html>
