@@ -345,9 +345,12 @@
       document.getElementById('wbNumpadBtn').classList.toggle('wb-tool-active', numpadOn);
       document.getElementById('wbNumpad').style.display = numpadOn ? 'grid' : 'none';
 
+      // Grow the sheet tall enough to show canvas + all 4 numpad rows
+      sheet.classList.toggle('wb-numpad-open', numpadOn);
+
       const wrap = document.getElementById('wbCanvasWrap');
       wrap.style.flex = numpadOn ? '0 0 auto' : '1';
-      wrap.style.height = numpadOn ? '160px' : '';
+      wrap.style.height = numpadOn ? '100px' : '';
 
       if (numpadOn) {
         setTimeout(() => { resizeCanvas(); startBlink(); }, 50);

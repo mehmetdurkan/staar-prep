@@ -654,6 +654,8 @@ html, body {
   overflow: hidden;
 }
 #wb-sheet.wb-open { transform: translateY(0); }
+/* Expand sheet when numpad is open to show all 4 rows */
+#wb-sheet.wb-numpad-open { height: 72vh; min-height: 460px; }
 
 /* Handle bar */
 .wb-handle-bar {
