@@ -194,8 +194,8 @@
         const picker = document.getElementById('topicPicker');
         picker.innerHTML = topics.map(t => {
             const isSelected = config.selectedTopics.includes(t.id);
-            return `<label class="topic-check ${isSelected ? 'selected' : ''}" onclick="toggleTopicCard(this, '${t.id}')">
-                <input type="checkbox" value="${t.id}" ${isSelected ? 'checked' : ''} onchange="updateTopicSelection()">
+            return `<label class="topic-check ${isSelected ? 'selected' : ''}">
+                <input type="checkbox" value="${t.id}" ${isSelected ? 'checked' : ''} onchange="handleTopicChange(this)">
                 <div>
                     <div class="tc-label">${t.icon} ${t.name}</div>
                     <div class="tc-teks">${t.teks}</div>
@@ -204,14 +204,8 @@
         }).join('');
     }
 
-    function toggleTopicCard(el, id) {
-        const cb = el.querySelector('input[type="checkbox"]');
-        cb.checked = !cb.checked;
-        el.classList.toggle('selected', cb.checked);
-        updateTopicSelection();
-    }
-
-    function updateTopicSelection() {
+    function handleTopicChange(cb) {
+        cb.closest('.topic-check').classList.toggle('selected', cb.checked);
         config.selectedTopics = Array.from(document.querySelectorAll('#topicPicker input:checked')).map(c => c.value);
     }
 
