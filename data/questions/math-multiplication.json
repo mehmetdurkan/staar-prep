@@ -1,0 +1,307 @@
+{
+  "subject": "math",
+  "topic": "multiplication",
+  "topicName": "Multiplication",
+  "questions": [
+    {
+      "id": "mult-easy-001",
+      "difficulty": "easy",
+      "teks": "3.4F",
+      "type": "multiple-choice",
+      "question": "What is 3 × 4?",
+      "options": ["7", "12", "14", "16"],
+      "answer": 1,
+      "explanation": "3 × 4 = 12. Think of 3 groups of 4: 4, 8, 12."
+    },
+    {
+      "id": "mult-easy-002",
+      "difficulty": "easy",
+      "teks": "3.4F",
+      "type": "multiple-choice",
+      "question": "What is 2 × 8?",
+      "options": ["10", "16", "18", "20"],
+      "answer": 1,
+      "explanation": "2 × 8 = 16. Count by 8s twice: 8, 16."
+    },
+    {
+      "id": "mult-easy-003",
+      "difficulty": "easy",
+      "teks": "3.4F",
+      "type": "multiple-choice",
+      "question": "What is 5 × 5?",
+      "options": ["10", "20", "25", "30"],
+      "answer": 2,
+      "explanation": "5 × 5 = 25. Count by 5s five times: 5, 10, 15, 20, 25."
+    },
+    {
+      "id": "mult-easy-004",
+      "difficulty": "easy",
+      "teks": "3.4F",
+      "type": "multiple-choice",
+      "question": "What is 0 × 9?",
+      "options": ["0", "9", "18", "90"],
+      "answer": 0,
+      "explanation": "Any number multiplied by 0 equals 0. So 0 × 9 = 0."
+    },
+    {
+      "id": "mult-easy-005",
+      "difficulty": "easy",
+      "teks": "3.4F",
+      "type": "multiple-choice",
+      "question": "What is 1 × 7?",
+      "options": ["1", "7", "8", "17"],
+      "answer": 1,
+      "explanation": "Any number multiplied by 1 equals itself. So 1 × 7 = 7."
+    },
+    {
+      "id": "mult-easy-006",
+      "difficulty": "easy",
+      "teks": "3.4F",
+      "type": "multiple-choice",
+      "question": "What is 2 × 6?",
+      "options": ["8", "10", "12", "14"],
+      "answer": 2,
+      "explanation": "2 × 6 = 12. Count by 6s twice: 6, 12."
+    },
+    {
+      "id": "mult-easy-007",
+      "difficulty": "easy",
+      "teks": "3.4F",
+      "type": "multiple-choice",
+      "question": "What is 5 × 3?",
+      "options": ["8", "12", "15", "18"],
+      "answer": 2,
+      "explanation": "5 × 3 = 15. Count by 5s three times: 5, 10, 15."
+    },
+    {
+      "id": "mult-easy-008",
+      "difficulty": "easy",
+      "teks": "3.4D",
+      "type": "multiple-choice",
+      "question": "A rectangle has 3 rows and 5 columns of unit squares. How many unit squares are there in all?",
+      "options": ["8", "12", "15", "18"],
+      "answer": 2,
+      "explanation": "3 rows × 5 columns = 15 unit squares. Multiply the number of rows by the number of columns."
+    },
+    {
+      "id": "mult-easy-009",
+      "difficulty": "easy",
+      "teks": "3.4E",
+      "type": "multiple-choice",
+      "question": "Sam has 4 bags with 3 apples in each bag. How many apples does Sam have in all?",
+      "options": ["7", "12", "14", "16"],
+      "answer": 1,
+      "explanation": "4 bags × 3 apples = 12 apples. Multiply the number of groups by the size of each group."
+    },
+    {
+      "id": "mult-easy-010",
+      "difficulty": "easy",
+      "teks": "3.4F",
+      "type": "multiple-choice",
+      "question": "What is 4 × 3?",
+      "options": ["7", "9", "12", "16"],
+      "answer": 2,
+      "explanation": "4 × 3 = 12. This is the same as 3 × 4 — multiplication can be done in any order!"
+    },
+    {
+      "id": "mult-med-001",
+      "difficulty": "medium",
+      "teks": "3.4F",
+      "type": "multiple-choice",
+      "question": "What is 6 × 7?",
+      "options": ["36", "42", "48", "54"],
+      "answer": 1,
+      "explanation": "6 × 7 = 42. Try skip counting by 7s: 7, 14, 21, 28, 35, 42."
+    },
+    {
+      "id": "mult-med-002",
+      "difficulty": "medium",
+      "teks": "3.4F",
+      "type": "multiple-choice",
+      "question": "What is 8 × 9?",
+      "options": ["63", "72", "81", "90"],
+      "answer": 1,
+      "explanation": "8 × 9 = 72. Think: 8 × 10 = 80, then subtract 8: 80 − 8 = 72."
+    },
+    {
+      "id": "mult-med-003",
+      "difficulty": "medium",
+      "teks": "3.4F",
+      "type": "multiple-choice",
+      "question": "What is 7 × 7?",
+      "options": ["14", "42", "49", "56"],
+      "answer": 2,
+      "explanation": "7 × 7 = 49. The square of 7 is a fact worth memorizing!"
+    },
+    {
+      "id": "mult-med-004",
+      "difficulty": "medium",
+      "teks": "3.4F",
+      "type": "multiple-choice",
+      "question": "What is 9 × 6?",
+      "options": ["48", "54", "63", "72"],
+      "answer": 1,
+      "explanation": "9 × 6 = 54. Try 9 × 6: think 10 × 6 = 60, then subtract 6: 60 − 6 = 54."
+    },
+    {
+      "id": "mult-med-005",
+      "difficulty": "medium",
+      "teks": "3.4F",
+      "type": "multiple-choice",
+      "question": "What is 7 × 8?",
+      "options": ["48", "52", "56", "64"],
+      "answer": 2,
+      "explanation": "7 × 8 = 56. Remember: 5, 6, 7, 8 → 56 = 7 × 8."
+    },
+    {
+      "id": "mult-med-006",
+      "difficulty": "medium",
+      "teks": "3.4K",
+      "type": "multiple-choice",
+      "question": "A classroom has 6 tables with 7 students at each table. How many students are there in all?",
+      "options": ["13", "42", "48", "54"],
+      "answer": 1,
+      "explanation": "6 tables × 7 students = 42 students. Multiply the number of groups by the size of each group."
+    },
+    {
+      "id": "mult-med-007",
+      "difficulty": "medium",
+      "teks": "3.4K",
+      "type": "multiple-choice",
+      "question": "A garden has 8 rows of plants with 9 plants in each row. How many plants are there in all?",
+      "options": ["17", "63", "72", "81"],
+      "answer": 2,
+      "explanation": "8 rows × 9 plants = 72 plants total."
+    },
+    {
+      "id": "mult-med-008",
+      "difficulty": "medium",
+      "teks": "3.4K",
+      "type": "multiple-choice",
+      "question": "A box holds 9 crayons. How many crayons are in 8 boxes?",
+      "options": ["63", "72", "81", "90"],
+      "answer": 1,
+      "explanation": "8 boxes × 9 crayons = 72 crayons. 8 × 9 = 72."
+    },
+    {
+      "id": "mult-med-009",
+      "difficulty": "medium",
+      "teks": "3.4G",
+      "type": "multiple-choice",
+      "question": "What is 3 × 12?",
+      "options": ["30", "33", "36", "40"],
+      "answer": 2,
+      "explanation": "3 × 12 = 36. Use an area model: 3 × 10 = 30, plus 3 × 2 = 6. Then 30 + 6 = 36."
+    },
+    {
+      "id": "mult-med-010",
+      "difficulty": "medium",
+      "teks": "3.4G",
+      "type": "multiple-choice",
+      "question": "What is 4 × 12?",
+      "options": ["44", "48", "52", "56"],
+      "answer": 1,
+      "explanation": "4 × 12 = 48. Use an area model: 4 × 10 = 40, plus 4 × 2 = 8. Then 40 + 8 = 48."
+    },
+    {
+      "id": "mult-hard-001",
+      "difficulty": "hard",
+      "teks": "3.4G",
+      "type": "multiple-choice",
+      "question": "What is 3 × 24?",
+      "options": ["62", "68", "72", "78"],
+      "answer": 2,
+      "explanation": "3 × 24 = 72. Break it apart: 3 × 20 = 60, and 3 × 4 = 12. Then 60 + 12 = 72."
+    },
+    {
+      "id": "mult-hard-002",
+      "difficulty": "hard",
+      "teks": "3.4G",
+      "type": "multiple-choice",
+      "question": "What is 4 × 18?",
+      "options": ["62", "64", "68", "72"],
+      "answer": 3,
+      "explanation": "4 × 18 = 72. Break it apart: 4 × 10 = 40, and 4 × 8 = 32. Then 40 + 32 = 72."
+    },
+    {
+      "id": "mult-hard-003",
+      "difficulty": "hard",
+      "teks": "3.4G",
+      "type": "multiple-choice",
+      "question": "What is 7 × 15?",
+      "options": ["95", "98", "102", "105"],
+      "answer": 3,
+      "explanation": "7 × 15 = 105. Break it apart: 7 × 10 = 70, and 7 × 5 = 35. Then 70 + 35 = 105."
+    },
+    {
+      "id": "mult-hard-004",
+      "difficulty": "hard",
+      "teks": "3.4K",
+      "type": "multiple-choice",
+      "question": "Maria bought 6 packs of stickers. Each pack has 12 stickers. How many stickers does she have in all?",
+      "options": ["18", "62", "72", "84"],
+      "answer": 2,
+      "explanation": "6 × 12 = 72. Break apart: 6 × 10 = 60, and 6 × 2 = 12. Then 60 + 12 = 72."
+    },
+    {
+      "id": "mult-hard-005",
+      "difficulty": "hard",
+      "teks": "3.4K",
+      "type": "multiple-choice",
+      "question": "A school ordered 8 boxes of pencils. Each box has 24 pencils. How many pencils in all?",
+      "options": ["168", "172", "192", "200"],
+      "answer": 2,
+      "explanation": "8 × 24 = 192. Break apart: 8 × 20 = 160, and 8 × 4 = 32. Then 160 + 32 = 192."
+    },
+    {
+      "id": "mult-hard-006",
+      "difficulty": "hard",
+      "teks": "3.4G",
+      "type": "multiple-choice",
+      "question": "What is 5 × 36?",
+      "options": ["155", "170", "175", "180"],
+      "answer": 3,
+      "explanation": "5 × 36 = 180. Break apart: 5 × 30 = 150, and 5 × 6 = 30. Then 150 + 30 = 180."
+    },
+    {
+      "id": "mult-hard-007",
+      "difficulty": "hard",
+      "teks": "3.4K",
+      "type": "multiple-choice",
+      "question": "Jake reads 27 pages a day. How many pages does he read in 3 days?",
+      "options": ["71", "75", "81", "90"],
+      "answer": 2,
+      "explanation": "3 × 27 = 81. Break apart: 3 × 20 = 60, and 3 × 7 = 21. Then 60 + 21 = 81."
+    },
+    {
+      "id": "mult-hard-008",
+      "difficulty": "hard",
+      "teks": "3.4G",
+      "type": "multiple-choice",
+      "question": "What is 9 × 14?",
+      "options": ["116", "122", "126", "132"],
+      "answer": 2,
+      "explanation": "9 × 14 = 126. Break apart: 9 × 10 = 90, and 9 × 4 = 36. Then 90 + 36 = 126."
+    },
+    {
+      "id": "mult-hard-009",
+      "difficulty": "hard",
+      "teks": "3.4K",
+      "type": "multiple-choice",
+      "question": "A movie theater has 6 rows with 32 seats in each row. How many seats are there in all?",
+      "options": ["182", "192", "196", "202"],
+      "answer": 1,
+      "explanation": "6 × 32 = 192. Break apart: 6 × 30 = 180, and 6 × 2 = 12. Then 180 + 12 = 192."
+    },
+    {
+      "id": "mult-hard-010",
+      "difficulty": "hard",
+      "teks": "3.5B",
+      "type": "multiple-choice",
+      "question": "A baker makes 4 trays with 12 cookies each day. How many cookies does she make in 3 days?",
+      "options": ["108", "120", "144", "160"],
+      "answer": 2,
+      "explanation": "First: 4 × 12 = 48 cookies per day. Then: 48 × 3 = 144 cookies in 3 days."
+    }
+  ]
+}

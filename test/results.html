@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results · Lone Star STAAR Prep</title>
+    <link rel="stylesheet" href="../css/shared.css">
+    <style>
+        .results-hero {
+            background: linear-gradient(135deg, var(--blue), var(--blue-dark));
+            color: white;
+            padding: 32px 20px;
+            text-align: center;
+        }
+
+        .score-label {
+            font-size: 0.9rem;
+            opacity: 0.85;
+            margin-top: 10px;
+            font-weight: 600;
+        }
+
+        .score-message {
+            font-size: 1.2rem;
+            font-weight: 800;
+            margin-top: 10px;
+        }
+
+        .topic-breakdown {
+            background: white;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .topic-row {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border);
+        }
+        .topic-row:last-child { border-bottom: none; }
+        .topic-row .t-name { font-weight: 700; font-size: 0.9rem; flex: 1; }
+        .topic-row .t-score {
+            font-size: 0.85rem;
+            font-weight: 700;
+            min-width: 60px;
+            text-align: right;
+        }
+        .topic-row .t-score.perfect { color: var(--green); }
+        .topic-row .t-score.good { color: var(--blue); }
+        .topic-row .t-score.needs-work { color: var(--danger); }
+
+        .review-section {
+            margin-top: 24px;
+        }
+
+        .action-btns {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 24px;
+        }
+
+        .time-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            background: rgba(255,255,255,0.18);
+            border-radius: 99px;
+            padding: 4px 12px;
+            font-size: 0.82rem;
+            margin-top: 8px;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 60px 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header class="site-header">
+    <a class="logo" href="../index.html">
+        <span class="logo-star">⭐</span>
+        <span>Lone Star STAAR Prep</span>
+    </a>
+</header>
+
+<!-- Results Hero (filled by JS) -->
+<div class="results-hero" id="resultsHero">
+    <div class="loading-state">Loading results...</div>
+</div>
+
+<div class="page-wrap" id="pageWrap" style="display:none;">
+
+    <!-- Topic Breakdown -->
+    <div class="section-heading">📊 Topic Breakdown</div>
+    <div class="topic-breakdown" id="topicBreakdown"></div>
+
+    <!-- Review -->
+    <div class="review-section">
+        <div class="section-heading">🔍 Review Your Answers</div>
+        <div id="reviewList"></div>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="action-btns">
+        <button class="btn btn-primary btn-lg btn-block" id="retakeBtn">🔄 Try Again</button>
+        <a class="btn btn-outline btn-lg btn-block" href="../math/index.html" id="topicsBtn">📐 Back to Math Topics</a>
+        <a class="btn btn-outline btn-lg btn-block" href="../index.html">🏠 Home</a>
+    </div>
+
+</div>
+
+<div class="no-results" id="noResults" style="display:none;">
+    <div style="font-size:3rem;">🤔</div>
+    <p style="font-weight:700; margin-top:12px;">No results found.</p>
+    <a class="btn btn-primary mt-16" href="./configure.html">Start a Test</a>
+</div>
+
+<script>
+    function starsForPct(pct) {
+        if (pct >= 91) return '⭐⭐⭐⭐⭐';
+        if (pct >= 81) return '⭐⭐⭐⭐';
+        if (pct >= 61) return '⭐⭐⭐';
+        if (pct >= 41) return '⭐⭐';
+        if (pct >= 21) return '⭐';
+        return '☆';
+    }
+
+    function messageForPct(pct) {
+        if (pct === 100) return 'Perfect score! You\'re a STAAR superstar! 🌟';
+        if (pct >= 90) return 'Amazing work! Almost perfect! 🎉';
+        if (pct >= 80) return 'Great job! Keep it up! 💪';
+        if (pct >= 70) return 'Good work! A little more practice and you\'ve got this!';
+        if (pct >= 60) return 'You\'re getting there! Review the ones you missed.';
+        if (pct >= 40) return 'Keep practicing! Check the review below for tips.';
+        return 'Don\'t give up! Study the topics and try again. You can do it! ⭐';
+    }
+
+    function formatTime(secs) {
+        if (secs < 60) return `${secs}s`;
+        return `${Math.floor(secs / 60)}m ${secs % 60}s`;
+    }
+
+    // === Load Results ===
+    const raw = sessionStorage.getItem('lastTestResults');
+    if (!raw) {
+        document.getElementById('resultsHero').innerHTML = '';
+        document.getElementById('noResults').style.display = 'block';
+    } else {
+        const r = JSON.parse(raw);
+        showResults(r);
+    }
+
+    function showResults(r) {
+        document.getElementById('pageWrap').style.display = 'block';
+
+        const pct = r.percentage;
+        const stars = starsForPct(pct);
+        const msg = messageForPct(pct);
+
+        // Hero
+        document.getElementById('resultsHero').innerHTML = `
+            <div style="font-size:2rem; margin-bottom:8px;">${stars}</div>
+            <div class="score-circle">
+                <div class="score-num">${r.score}</div>
+                <div class="score-denom">out of ${r.totalQuestions}</div>
+            </div>
+            <div class="score-label">${pct}% Correct</div>
+            <div class="score-message">${msg}</div>
+            <div class="time-badge">⏱ ${formatTime(r.timeSpent)}</div>
+        `;
+
+        // Topic Breakdown
+        const topicStats = {};
+        for (const a of r.answers) {
+            if (!topicStats[a.topicName]) topicStats[a.topicName] = { correct: 0, total: 0, topicId: a.topic };
+            topicStats[a.topicName].total++;
+            if (a.isCorrect) topicStats[a.topicName].correct++;
+        }
+
+        let breakdownHtml = '';
+        for (const [name, s] of Object.entries(topicStats)) {
+            const topicPct = Math.round((s.correct / s.total) * 100);
+            const scoreClass = topicPct >= 80 ? 'perfect' : topicPct >= 60 ? 'good' : 'needs-work';
+            const emoji = topicPct >= 80 ? '✅' : topicPct >= 60 ? '🔶' : '❌';
+            breakdownHtml += `
+                <div class="topic-row">
+                    <span style="font-size:1.1rem;">${emoji}</span>
+                    <span class="t-name">${name}</span>
+                    <span class="t-score ${scoreClass}">${s.correct}/${s.total} (${topicPct}%)</span>
+                </div>
+            `;
+        }
+        document.getElementById('topicBreakdown').innerHTML = breakdownHtml;
+
+        // Review List
+        let reviewHtml = '';
+        r.answers.forEach((a, i) => {
+            const icon = a.isCorrect ? '✅' : '❌';
+            const cls = a.isCorrect ? 'correct' : 'wrong';
+            const letters = ['A', 'B', 'C', 'D'];
+            const preview = a.question.length > 70 ? a.question.slice(0, 70) + '…' : a.question;
+
+            let bodyHtml = `<div style="margin-bottom:8px;"><strong>Question:</strong> ${a.question}</div>`;
+            if (!a.isCorrect) {
+                bodyHtml += `<div class="your-ans mb-8">✗ Your answer: ${letters[a.selectedIndex]}. ${a.options[a.selectedIndex]}</div>`;
+            }
+            bodyHtml += `<div class="correct-ans mb-8">✓ Correct: ${letters[a.correctIndex]}. ${a.options[a.correctIndex]}</div>`;
+            bodyHtml += `<div style="margin-top:8px; padding:10px 12px; background:var(--blue-light); border-radius:8px; font-size:0.85rem;">💡 ${a.explanation}</div>`;
+
+            reviewHtml += `
+                <div class="review-item ${cls}">
+                    <div class="review-header" onclick="toggleReview(${i})">
+                        <span class="review-result">${icon}</span>
+                        <span class="review-preview">${i + 1}. ${preview}</span>
+                        <span class="review-toggle" id="toggle-${i}">▼</span>
+                    </div>
+                    <div class="review-body" id="review-body-${i}">${bodyHtml}</div>
+                </div>
+            `;
+        });
+        document.getElementById('reviewList').innerHTML = reviewHtml;
+
+        // Auto-expand wrong answers
+        r.answers.forEach((a, i) => {
+            if (!a.isCorrect) toggleReview(i);
+        });
+
+        // Retake button
+        const topicIds = [...new Set(r.answers.map(a => a.topic))].join(',');
+        document.getElementById('retakeBtn').onclick = () => {
+            window.location.href = `./configure.html?subject=${r.subject}&topics=${topicIds}`;
+        };
+
+        // Topics button
+        document.getElementById('topicsBtn').href = r.subject === 'reading' ? '../reading/index.html' : '../math/index.html';
+        document.getElementById('topicsBtn').textContent = r.subject === 'reading' ? '📚 Back to Reading Topics' : '📐 Back to Math Topics';
+    }
+
+    function toggleReview(i) {
+        const body = document.getElementById(`review-body-${i}`);
+        const toggle = document.getElementById(`toggle-${i}`);
+        const isOpen = body.classList.contains('open');
+        body.classList.toggle('open', !isOpen);
+        toggle.textContent = isOpen ? '▼' : '▲';
+    }
+</script>
+
+</body>
+</html>

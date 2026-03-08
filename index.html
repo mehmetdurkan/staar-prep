@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lone Star STAAR Prep ⭐</title>
+    <link rel="stylesheet" href="./css/shared.css">
+    <style>
+        .hero {
+            background: linear-gradient(135deg, var(--blue) 0%, var(--blue-dark) 100%);
+            color: white;
+            padding: 36px 20px 28px;
+            text-align: center;
+        }
+        .hero h1 { font-size: 1.9rem; font-weight: 900; line-height: 1.2; }
+        .hero p { opacity: 0.88; margin-top: 8px; font-size: 1rem; }
+        .star-row { font-size: 1.4rem; letter-spacing: 8px; margin: 10px 0; color: var(--star); }
+        .section-title {
+            font-size: 1.1rem;
+            font-weight: 800;
+            color: var(--blue);
+            margin: 28px 0 12px;
+        }
+        .footer-note {
+            font-size: 0.78rem;
+            color: var(--text-light);
+            text-align: center;
+            margin-top: 32px;
+            padding-top: 16px;
+            border-top: 1px solid var(--border);
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="site-header">
+    <a class="logo" href="./index.html">
+        <span class="logo-star">⭐</span>
+        <span>Lone Star STAAR Prep</span>
+    </a>
+    <div class="auth-bar" id="authBar">
+        <button class="btn btn-sign-in" onclick="window.staarAuth.signInWithGoogle()">
+            Sign in with Google
+        </button>
+    </div>
+</header>
+
+<!-- Hero -->
+<div class="hero">
+    <div class="star-row">★ ★ ★</div>
+    <h1>Ready to Ace the STAAR? ⭐</h1>
+    <p>Grade 3 · Texas 2025–2026 · Math & Reading</p>
+    <div class="star-row">★ ★ ★</div>
+</div>
+
+<div class="page-wrap">
+
+    <!-- STAAR Countdown -->
+    <div class="section-title">⏳ STAAR Test Countdown</div>
+    <div class="countdown-grid">
+        <div class="countdown-card reading">
+            <div class="cd-subject">📚 Reading (RLA)</div>
+            <div class="days" id="readingDays">–</div>
+            <div class="cd-label">days to go!</div>
+            <div class="cd-date">Apr 6–17, 2026</div>
+        </div>
+        <div class="countdown-card math">
+            <div class="cd-subject">📐 Math</div>
+            <div class="days" id="mathDays">–</div>
+            <div class="cd-label">days to go!</div>
+            <div class="cd-date">Apr 20–May 1, 2026</div>
+        </div>
+    </div>
+
+    <!-- Quick Practice -->
+    <div class="quick-bar">
+        <div>
+            <div class="q-label">⚡ Quick Practice Test</div>
+            <div class="q-sub">10 questions · Mixed topics · Mixed difficulty</div>
+        </div>
+        <a class="btn btn-primary" href="./test/configure.html">Start Test →</a>
+    </div>
+
+    <!-- Subject Cards -->
+    <div class="section-title">Choose a Subject to Study</div>
+    <div class="subject-cards">
+        <a class="subject-card math" href="./math/index.html">
+            <span class="s-icon">📐</span>
+            <span class="s-name">Math</span>
+            <span class="s-sub" id="mathSub">Loading...</span>
+        </a>
+        <a class="subject-card reading" href="./reading/index.html">
+            <span class="s-icon">📚</span>
+            <span class="s-name">Reading</span>
+            <span class="s-sub">Coming soon!</span>
+        </a>
+    </div>
+
+    <!-- Progress Overview -->
+    <div class="section-title">📊 Your Progress</div>
+    <div class="progress-card">
+        <div class="progress-row">
+            <div class="p-emoji">📐</div>
+            <div class="p-name">Math</div>
+            <div class="p-bar">
+                <div class="progress-wrap">
+                    <div class="progress-bar" id="mathBar" style="width:0%"></div>
+                </div>
+            </div>
+            <div class="p-pct" id="mathPct">–</div>
+        </div>
+        <div class="progress-row">
+            <div class="p-emoji">📚</div>
+            <div class="p-name">Reading</div>
+            <div class="p-bar">
+                <div class="progress-wrap">
+                    <div class="progress-bar red" id="readingBar" style="width:0%"></div>
+                </div>
+            </div>
+            <div class="p-pct" id="readingPct">–</div>
+        </div>
+    </div>
+
+    <div id="guestNotice" class="tip-box mt-16" style="display:none;">
+        <strong>💡 Sign in with Google</strong> to save your progress across devices!
+    </div>
+
+    <div class="footer-note">
+        ⭐ Texas Grade 3 STAAR Prep · 2025–2026 School Year · TEKS Aligned
+    </div>
+
+</div>
+
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+<script src="./js/firebase.js"></script>
+
+<script>
+    // === STAAR Countdown ===
+    function daysUntil(dateStr) {
+        const diff = new Date(dateStr) - new Date();
+        if (diff <= 0) return '🎉';
+        return Math.ceil(diff / (1000 * 60 * 60 * 24));
+    }
+    document.getElementById('readingDays').textContent = daysUntil('2026-04-06');
+    document.getElementById('mathDays').textContent = daysUntil('2026-04-20');
+
+    // === Auth State ===
+    window.addEventListener('authStateChanged', async ({ detail: { user } }) => {
+        const bar = document.getElementById('authBar');
+        if (user) {
+            bar.innerHTML = `
+                <img class="user-avatar" src="${user.photoURL || ''}" alt="">
+                <span class="user-name">${user.displayName || ''}</span>
+                <button class="btn btn-sign-out" onclick="window.staarAuth.signOut()">Sign out</button>
+            `;
+            document.getElementById('guestNotice').style.display = 'none';
+        } else {
+            bar.innerHTML = `<button class="btn btn-sign-in" onclick="window.staarAuth.signInWithGoogle()">Sign in with Google</button>`;
+            document.getElementById('guestNotice').style.display = 'block';
+        }
+        await updateProgress();
+    });
+
+    // === Progress ===
+    async function updateProgress() {
+        const mathData = await window.staarAuth.loadAllTopicProgress('math');
+        const ids = Object.keys(mathData);
+        if (ids.length === 0) {
+            document.getElementById('mathSub').textContent = 'Tap to start!';
+            document.getElementById('mathPct').textContent = '0%';
+            return;
+        }
+        const avg = Math.round(ids.reduce((s, id) => s + (mathData[id].mastery || 0), 0) / ids.length);
+        document.getElementById('mathBar').style.width = avg + '%';
+        document.getElementById('mathPct').textContent = avg + '%';
+        document.getElementById('mathSub').textContent = `${avg}% mastered`;
+    }
+</script>
+
+</body>
+</html>

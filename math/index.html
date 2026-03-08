@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Topics · Lone Star STAAR Prep</title>
+    <link rel="stylesheet" href="../css/shared.css">
+    <style>
+        .cat-color-1 { border-top: 4px solid #002868; }
+        .cat-color-2 { border-top: 4px solid #BF0A30; }
+        .cat-color-3 { border-top: 4px solid #1E8449; }
+        .cat-color-4 { border-top: 4px solid #7D3C98; }
+
+        .mastery-ring {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: 800;
+            flex-shrink: 0;
+        }
+        .mastery-ring.none { background: #EEE; color: var(--text-light); }
+        .mastery-ring.low { background: #FADBD8; color: var(--danger); }
+        .mastery-ring.mid { background: #FEF9E7; color: #7D5A00; }
+        .mastery-ring.high { background: var(--green-light); color: var(--green); }
+
+        .topic-card-inner {
+            background: white;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            border: 2px solid transparent;
+            transition: transform 0.18s, box-shadow 0.18s, border-color 0.18s;
+            height: 100%;
+        }
+        .topic-card-inner:hover { transform: translateY(-3px); box-shadow: var(--shadow-hover); }
+        .topic-card-inner.active:hover { border-color: var(--blue); }
+
+        .topic-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; }
+        .topic-info { flex: 1; }
+        .coming-label {
+            display: inline-block;
+            background: #EEE;
+            color: var(--text-light);
+            font-size: 0.7rem;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 99px;
+            margin-top: 6px;
+        }
+        .new-label {
+            display: inline-block;
+            background: var(--gold);
+            color: white;
+            font-size: 0.7rem;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 99px;
+            margin-top: 4px;
+        }
+    </style>
+</head>
+<body>
+
+<header class="site-header">
+    <a class="logo" href="../index.html">
+        <span class="logo-star">⭐</span>
+        <span>Lone Star STAAR Prep</span>
+    </a>
+    <div class="auth-bar" id="authBar">
+        <button class="btn btn-sign-in btn-sm" onclick="window.staarAuth.signInWithGoogle()">Sign in</button>
+    </div>
+</header>
+
+<div class="page-wrap">
+
+    <a class="back-btn" href="../index.html">← Back</a>
+
+    <h1 style="font-size:1.6rem; font-weight:900; color:var(--blue); margin-bottom:4px;">📐 Math Topics</h1>
+    <p class="text-muted mb-16">Texas Grade 3 · 2025–2026 TEKS</p>
+
+    <!-- Overall math progress -->
+    <div class="progress-card" style="margin-bottom:24px;">
+        <div class="flex-between mb-8">
+            <span style="font-weight:700; font-size:0.9rem;">Overall Math Mastery</span>
+            <span id="overallPct" style="font-weight:800; color:var(--blue); font-size:0.9rem;">–</span>
+        </div>
+        <div class="progress-wrap">
+            <div class="progress-bar" id="overallBar" style="width:0%"></div>
+        </div>
+    </div>
+
+    <!-- Test All Topics -->
+    <div class="quick-bar" style="margin-bottom:0;">
+        <div>
+            <div class="q-label">📝 Practice All Topics</div>
+            <div class="q-sub">Mix questions from every available topic</div>
+        </div>
+        <a class="btn btn-primary" href="../test/configure.html?subject=math&topics=all">Practice →</a>
+    </div>
+
+    <!-- Topic Categories (rendered by JS) -->
+    <div id="categoriesContainer"></div>
+
+</div>
+
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+<script src="../js/firebase.js"></script>
+
+<script>
+    let topicsData = null;
+    let masteryData = {};
+    const catColorClass = ['cat-color-1', 'cat-color-2', 'cat-color-3', 'cat-color-4'];
+
+    function masteryClass(pct) {
+        if (pct === undefined) return 'none';
+        if (pct < 40) return 'low';
+        if (pct < 75) return 'mid';
+        return 'high';
+    }
+
+    function masteryLabel(pct) {
+        if (pct === undefined) return 'New';
+        return pct + '%';
+    }
+
+    function renderCategories() {
+        if (!topicsData) return;
+        const container = document.getElementById('categoriesContainer');
+        let html = '';
+        let totalMastery = 0, topicsWithData = 0;
+
+        topicsData.categories.forEach((cat, ci) => {
+            html += `<div class="section-heading">${cat.icon} ${cat.name}</div>`;
+            html += `<div class="topic-grid">`;
+
+            cat.topics.forEach(topic => {
+                const m = masteryData[topic.id];
+                const pct = m ? m.mastery : undefined;
+                if (pct !== undefined) { totalMastery += pct; topicsWithData++; }
+
+                const colorCls = catColorClass[ci] || 'cat-color-1';
+                const activeCls = topic.hasQuestions ? 'active' : 'coming-soon';
+
+                html += `<div class="topic-card-inner ${activeCls} ${colorCls}">
+                    <div class="topic-top">
+                        <div class="topic-info">
+                            <div style="font-size:1.7rem;">${topic.icon}</div>
+                            <div class="topic-name mt-4">${topic.name}</div>
+                            <div class="topic-teks">${topic.teks}</div>
+                        </div>
+                        <div class="mastery-ring ${masteryClass(pct)}">${masteryLabel(pct)}</div>
+                    </div>
+                    <div class="topic-teks" style="font-size:0.78rem; color:var(--text-light);">${topic.description}</div>`;
+
+                if (topic.hasQuestions) {
+                    if (pct === undefined) {
+                        html += `<span class="new-label">⭐ New</span>`;
+                    }
+                    html += `<div class="topic-actions">
+                        <a class="btn btn-outline btn-sm" href="../study/index.html?topic=${topic.id}&subject=math">Study</a>
+                        <a class="btn btn-primary btn-sm" href="../test/configure.html?subject=math&topics=${topic.id}">Practice</a>
+                    </div>`;
+                } else {
+                    html += `<span class="coming-label">Coming soon</span>`;
+                }
+
+                html += `</div>`;
+            });
+
+            html += `</div>`;
+        });
+
+        container.innerHTML = html;
+
+        // Update overall progress
+        if (topicsWithData > 0) {
+            const avg = Math.round(totalMastery / topicsWithData);
+            document.getElementById('overallBar').style.width = avg + '%';
+            document.getElementById('overallPct').textContent = avg + '%';
+        } else {
+            document.getElementById('overallPct').textContent = '0% — start practicing!';
+        }
+    }
+
+    // Load topics JSON on page load
+    fetch('../data/math-topics.json')
+        .then(r => r.json())
+        .then(data => { topicsData = data; renderCategories(); })
+        .catch(() => console.error('Could not load math-topics.json'));
+
+    // Load mastery when auth state resolves
+    window.addEventListener('authStateChanged', async ({ detail: { user } }) => {
+        const bar = document.getElementById('authBar');
+        if (user) {
+            bar.innerHTML = `
+                <img class="user-avatar" src="${user.photoURL || ''}" alt="">
+                <span class="user-name">${user.displayName || ''}</span>
+                <button class="btn btn-sign-out" onclick="window.staarAuth.signOut()">Sign out</button>
+            `;
+        } else {
+            bar.innerHTML = `<button class="btn btn-sign-in btn-sm" onclick="window.staarAuth.signInWithGoogle()">Sign in</button>`;
+        }
+        masteryData = await window.staarAuth.loadAllTopicProgress('math');
+        renderCategories();
+    });
+</script>
+
+</body>
+</html>

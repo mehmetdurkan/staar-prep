@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test · Lone Star STAAR Prep</title>
+    <link rel="stylesheet" href="../css/shared.css">
+    <style>
+        body { background: var(--bg); }
+
+        .test-header {
+            background: white;
+            border-bottom: 2px solid var(--border);
+            padding: 12px 16px;
+            position: sticky;
+            top: 0;
+            z-index: 30;
+        }
+
+        .test-header-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 8px;
+        }
+
+        .q-counter {
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--text-light);
+        }
+
+        .q-exit {
+            background: none;
+            border: none;
+            color: var(--text-light);
+            font-size: 0.85rem;
+            cursor: pointer;
+            padding: 4px 8px;
+            font-family: inherit;
+        }
+        .q-exit:hover { color: var(--danger); }
+
+        .question-wrap {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 24px 16px 100px;
+        }
+
+        .question-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 16px;
+        }
+        .meta-pill {
+            background: var(--blue-light);
+            color: var(--blue);
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 3px 10px;
+            border-radius: 99px;
+        }
+        .meta-pill.medium { background: #FEF9E7; color: #7D5A00; }
+        .meta-pill.hard { background: var(--danger-light); color: var(--danger); }
+        .meta-pill.easy { background: var(--green-light); color: var(--green); }
+
+        .question-text {
+            font-size: 1.1rem;
+            font-weight: 700;
+            line-height: 1.5;
+            color: var(--text);
+            margin-bottom: 4px;
+        }
+
+        .next-section {
+            position: fixed;
+            bottom: 0; left: 0; right: 0;
+            background: white;
+            border-top: 2px solid var(--border);
+            padding: 14px 20px;
+            display: none;
+            justify-content: center;
+            z-index: 40;
+            box-shadow: 0 -4px 16px rgba(0,0,0,0.08);
+        }
+        .next-section.show { display: flex; }
+
+        .loading-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--text-light);
+            font-size: 1.1rem;
+        }
+
+        .error-state {
+            background: var(--danger-light);
+            border-radius: var(--radius);
+            padding: 24px;
+            text-align: center;
+            margin: 24px 0;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Test Header -->
+<div class="test-header">
+    <div class="test-header-top">
+        <span class="q-counter" id="qCounter">Question 1 of 10</span>
+        <button class="q-exit" onclick="exitTest()">✕ Exit</button>
+    </div>
+    <div class="progress-wrap">
+        <div class="progress-bar" id="progressBar" style="width:0%; transition: width 0.4s;"></div>
+    </div>
+</div>
+
+<!-- Question Area -->
+<div class="question-wrap" id="questionWrap">
+    <div class="loading-state" id="loadingState">
+        ⭐ Loading your questions...
+    </div>
+    <div class="error-state" id="errorState" style="display:none;">
+        <div style="font-size:2rem;">😕</div>
+        <p style="font-weight:700; margin-top:8px;">Could not load questions.</p>
+        <p class="text-muted mt-4">Try going back and selecting different topics.</p>
+        <a class="btn btn-primary mt-16" href="./configure.html">← Back to Setup</a>
+    </div>
+</div>
+
+<!-- Next / Finish Button -->
+<div class="next-section" id="nextSection">
+    <button class="btn btn-primary btn-lg" style="min-width:200px;" id="nextBtn" onclick="nextQuestion()">
+        Next →
+    </button>
+</div>
+
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+<script src="../js/firebase.js"></script>
+
+<script>
+    // === Parse URL params ===
+    const params = new URLSearchParams(window.location.search);
+    const SUBJECT = params.get('subject') || 'math';
+    const TOPICS_PARAM = params.get('topics') || 'all';
+    const COUNT = Math.min(Math.max(parseInt(params.get('count') || '10'), 1), 40);
+    const DIFFICULTY = params.get('difficulty') || 'mixed';
+
+    let questions = [];
+    let currentIndex = 0;
+    let answers = [];
+    let answered = false;
+    let startTime = Date.now();
+
+    // === Load Questions ===
+    async function getTopicIds() {
+        if (TOPICS_PARAM !== 'all') return TOPICS_PARAM.split(',').map(t => t.trim());
+        try {
+            const resp = await fetch(`../data/${SUBJECT}-topics.json`);
+            const data = await resp.json();
+            const ids = [];
+            for (const cat of data.categories) {
+                for (const topic of cat.topics) {
+                    if (topic.hasQuestions) ids.push(topic.id);
+                }
+            }
+            return ids;
+        } catch { return []; }
+    }
+
+    function shuffle(arr) {
+        const a = [...arr];
+        for (let i = a.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [a[i], a[j]] = [a[j], a[i]];
+        }
+        return a;
+    }
+
+    async function loadQuestions() {
+        const topicIds = await getTopicIds();
+        if (!topicIds.length) {
+            showError();
+            return;
+        }
+
+        let pool = [];
+        for (const topicId of topicIds) {
+            try {
+                const resp = await fetch(`../data/questions/${SUBJECT}-${topicId}.json`);
+                if (!resp.ok) continue;
+                const data = await resp.json();
+                // Inject file-level metadata onto each question
+                let qs = (data.questions || []).map(q => ({
+                    ...q,
+                    topic: q.topic || data.topic || topicId,
+                    topicName: q.topicName || data.topicName || topicId
+                }));
+                if (DIFFICULTY !== 'mixed') {
+                    qs = qs.filter(q => q.difficulty === DIFFICULTY);
+                }
+                pool.push(...qs);
+            } catch (e) {
+                console.warn(`Could not load ${topicId}:`, e);
+            }
+        }
+
+        if (!pool.length) {
+            showError();
+            return;
+        }
+
+        questions = shuffle(pool).slice(0, COUNT);
+        document.getElementById('loadingState').style.display = 'none';
+        renderQuestion();
+    }
+
+    function showError() {
+        document.getElementById('loadingState').style.display = 'none';
+        document.getElementById('errorState').style.display = 'block';
+    }
+
+    // === Render Current Question ===
+    function renderQuestion() {
+        const q = questions[currentIndex];
+        answered = false;
+
+        // Update header
+        const num = currentIndex + 1;
+        const total = questions.length;
+        document.getElementById('qCounter').textContent = `Question ${num} of ${total}`;
+        document.getElementById('progressBar').style.width = ((num - 1) / total * 100) + '%';
+        document.getElementById('nextSection').classList.remove('show');
+
+        // Build question HTML
+        const diffClass = q.difficulty;
+        const diffEmoji = { easy: '😊', medium: '🤔', hard: '🔥' }[q.difficulty] || '';
+        const diffLabel = { easy: 'Easy', medium: 'Medium', hard: 'Hard' }[q.difficulty] || q.difficulty;
+        const letters = ['A', 'B', 'C', 'D'];
+
+        let html = `
+            <div class="question-meta">
+                <span class="meta-pill">${q.topicName || q.topic}</span>
+                <span class="meta-pill ${diffClass}">${diffEmoji} ${diffLabel}</span>
+                <span class="meta-pill" style="background:#EEE; color:var(--text-light);">${q.teks}</span>
+            </div>
+            <div class="question-text">${q.question}</div>
+            <div class="answer-opts" id="answerOpts">
+        `;
+
+        q.options.forEach((opt, i) => {
+            html += `<button class="answer-btn" id="opt-${i}" onclick="selectAnswer(${i})" aria-label="Option ${letters[i]}: ${opt}">
+                <span class="opt-letter">${letters[i]}</span>
+                <span>${opt}</span>
+            </button>`;
+        });
+
+        html += `</div>`;
+        html += `<div class="explanation" id="explanation"></div>`;
+
+        document.getElementById('questionWrap').innerHTML = html;
+    }
+
+    // === Answer Handling ===
+    function selectAnswer(selectedIndex) {
+        if (answered) return;
+        answered = true;
+
+        const q = questions[currentIndex];
+        const isCorrect = selectedIndex === q.answer;
+        const letters = ['A', 'B', 'C', 'D'];
+
+        // Record answer
+        answers.push({
+            questionId: q.id,
+            topic: q.topic,
+            topicName: q.topicName || q.topic,
+            teks: q.teks,
+            difficulty: q.difficulty,
+            question: q.question,
+            options: q.options,
+            selectedIndex,
+            correctIndex: q.answer,
+            isCorrect,
+            explanation: q.explanation
+        });
+
+        // Disable all buttons
+        document.querySelectorAll('.answer-btn').forEach(btn => btn.disabled = true);
+
+        // Mark selected
+        const selBtn = document.getElementById(`opt-${selectedIndex}`);
+        selBtn.classList.add(isCorrect ? 'correct' : 'wrong');
+        if (!isCorrect) {
+            selBtn.querySelector('.opt-letter').textContent += ' ✗';
+        }
+
+        // Always highlight correct answer
+        const corrBtn = document.getElementById(`opt-${q.answer}`);
+        corrBtn.classList.add('correct');
+        if (isCorrect) {
+            corrBtn.querySelector('.opt-letter').textContent += ' ✓';
+        } else {
+            corrBtn.querySelector('.opt-letter').textContent += ' ✓';
+        }
+
+        // Show explanation
+        const expl = document.getElementById('explanation');
+        const icon = isCorrect ? '✅' : '❌';
+        const msg = isCorrect ? '<strong>Correct!</strong>' : '<strong>Not quite.</strong>';
+        expl.innerHTML = `${icon} ${msg} ${q.explanation}`;
+        expl.classList.add('show');
+
+        // Show next button
+        const nextBtn = document.getElementById('nextBtn');
+        const isLast = currentIndex === questions.length - 1;
+        nextBtn.textContent = isLast ? '🏁 See Results' : 'Next →';
+        document.getElementById('nextSection').classList.add('show');
+    }
+
+    // === Navigation ===
+    function nextQuestion() {
+        currentIndex++;
+        if (currentIndex >= questions.length) {
+            finishTest();
+        } else {
+            renderQuestion();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    }
+
+    function exitTest() {
+        if (confirm('Exit this test? Your progress will not be saved.')) {
+            window.location.href = './configure.html';
+        }
+    }
+
+    // === Finish & Save ===
+    async function finishTest() {
+        const score = answers.filter(a => a.isCorrect).length;
+        const total = questions.length;
+        const timeSpent = Math.round((Date.now() - startTime) / 1000);
+
+        const results = {
+            subject: SUBJECT,
+            difficulty: DIFFICULTY,
+            totalQuestions: total,
+            score,
+            percentage: Math.round((score / total) * 100),
+            timeSpent,
+            answers,
+            date: new Date().toISOString()
+        };
+
+        // Save results for results page
+        sessionStorage.setItem('lastTestResults', JSON.stringify(results));
+
+        // Save to Firebase + update topic mastery
+        try {
+            if (window.staarAuth) {
+                await window.staarAuth.saveTestResult(results);
+
+                // Aggregate per-topic stats
+                const topicStats = {};
+                for (const a of answers) {
+                    if (!topicStats[a.topic]) topicStats[a.topic] = { correct: 0, total: 0 };
+                    topicStats[a.topic].total++;
+                    if (a.isCorrect) topicStats[a.topic].correct++;
+                }
+
+                for (const [topicId, stats] of Object.entries(topicStats)) {
+                    const existing = await window.staarAuth.loadTopicProgress(SUBJECT, topicId);
+                    const updated = {
+                        topicId,
+                        mastery: Math.round((stats.correct / stats.total) * 100),
+                        questionsAttempted: (existing?.questionsAttempted || 0) + stats.total,
+                        questionsCorrect: (existing?.questionsCorrect || 0) + stats.correct,
+                        lastPracticed: new Date().toISOString()
+                    };
+                    await window.staarAuth.saveTopicProgress(SUBJECT, topicId, updated);
+                }
+            }
+        } catch (e) {
+            console.error('Save error:', e);
+        }
+
+        window.location.href = './results.html';
+    }
+
+    // === Start ===
+    loadQuestions();
+</script>
+
+</body>
+</html>

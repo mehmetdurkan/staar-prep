@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study · Lone Star STAAR Prep</title>
+    <link rel="stylesheet" href="../css/shared.css">
+    <style>
+        .vocab-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin: 12px 0;
+        }
+        .vocab-card {
+            background: var(--blue-light);
+            border-radius: var(--radius-sm);
+            padding: 10px 12px;
+            font-size: 0.85rem;
+        }
+        .vocab-card .word { font-weight: 800; color: var(--blue); font-size: 0.9rem; }
+        .vocab-card .def { color: var(--text-light); margin-top: 2px; }
+
+        .array-viz {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            margin: 12px 0;
+        }
+        .array-row { display: flex; gap: 4px; }
+        .array-dot {
+            width: 28px; height: 28px;
+            border-radius: 50%;
+            background: var(--blue);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 0.7rem;
+            font-weight: 700;
+        }
+
+        .fraction-bar {
+            display: flex;
+            height: 32px;
+            border: 2px solid var(--blue);
+            border-radius: 4px;
+            overflow: hidden;
+            margin: 8px 0;
+        }
+        .fraction-part {
+            flex: 1;
+            border-right: 1px solid var(--blue);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: 700;
+        }
+        .fraction-part:last-child { border-right: none; }
+        .fraction-part.shaded { background: var(--blue); color: white; }
+        .fraction-part.unshaded { background: var(--blue-light); color: var(--blue); }
+
+        .number-line-wrap {
+            overflow-x: auto;
+            padding: 8px 0;
+        }
+        .nl {
+            display: flex;
+            align-items: flex-end;
+            gap: 0;
+            min-width: 320px;
+            padding: 0 12px;
+        }
+        .nl-segment {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex: 1;
+        }
+        .nl-mark {
+            width: 2px;
+            height: 12px;
+            background: var(--blue);
+        }
+        .nl-mark.tall {
+            height: 20px;
+        }
+        .nl-bar {
+            height: 3px;
+            flex: 1;
+            background: var(--blue);
+            align-self: flex-end;
+            margin-bottom: 5px;
+        }
+        .nl-num {
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--blue);
+            margin-top: 3px;
+        }
+        .nl-dot-marker {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--red);
+            margin-bottom: 4px;
+        }
+
+        .steps-list { counter-reset: steps; margin: 10px 0; }
+        .step-item {
+            counter-increment: steps;
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+        .step-item::before {
+            content: counter(steps);
+            background: var(--blue);
+            color: white;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: 800;
+            flex-shrink: 0;
+            margin-top: 1px;
+        }
+
+        .rule-box {
+            background: #FFF3CD;
+            border: 2px solid #FFD000;
+            border-radius: var(--radius-sm);
+            padding: 12px 14px;
+            font-size: 0.9rem;
+            margin: 10px 0;
+        }
+        .rule-box strong { color: #5C4000; }
+    </style>
+</head>
+<body>
+
+<header class="site-header">
+    <a class="logo" href="../index.html">
+        <span class="logo-star">⭐</span>
+        <span>Lone Star STAAR Prep</span>
+    </a>
+</header>
+
+<div class="page-wrap">
+
+    <a class="back-btn" href="../math/index.html" id="backBtn">← Math Topics</a>
+
+    <div id="studyContent">
+        <div class="loading-state" style="text-align:center; padding:40px; color:var(--text-light);">Loading study materials...</div>
+    </div>
+
+    <div style="text-align:center; margin-top:32px;" id="practiceBtn" style="display:none;"></div>
+
+</div>
+
+<script>
+    const params = new URLSearchParams(window.location.search);
+    const topic = params.get('topic') || '';
+    const subject = params.get('subject') || 'math';
+
+    const content = {
+        'multiplication': renderMultiplication,
+        'addition-subtraction': renderAddSub,
+        'fractions': renderFractions
+    };
+
+    if (content[topic]) {
+        document.getElementById('studyContent').innerHTML = content[topic]();
+    } else {
+        document.getElementById('studyContent').innerHTML = `
+            <div style="text-align:center; padding:40px;">
+                <div style="font-size:3rem;">📚</div>
+                <p style="font-weight:700; font-size:1.1rem; margin-top:12px;">Study content coming soon for this topic!</p>
+                <p class="text-muted mt-8">You can still practice this topic with questions.</p>
+            </div>
+        `;
+    }
+
+    document.getElementById('practiceBtn').innerHTML = `<a class="btn btn-primary btn-lg" href="../test/configure.html?subject=${subject}&topics=${topic}">⭐ Practice This Topic</a>`;
+    document.getElementById('practiceBtn').style.display = 'block';
+
+    function renderMultiplication() {
+        return `
+            <h1 style="font-size:1.5rem; font-weight:900; color:var(--blue); margin-bottom:4px;">✖️ Multiplication</h1>
+            <p class="text-muted mb-16">TEKS 3.4D–G · Making equal groups, arrays, and word problems</p>
+
+            <div class="study-card">
+                <h3>📌 What is Multiplication?</h3>
+                <p style="font-size:0.9rem;">Multiplication is a fast way to add equal groups. Instead of adding the same number over and over, we multiply!</p>
+                <div class="example-box">
+                    <strong>3 groups of 4 = 3 × 4 = 12</strong><br>
+                    (Instead of 4 + 4 + 4 = 12)
+                </div>
+            </div>
+
+            <div class="study-card">
+                <h3>🔢 Reading a Multiplication Problem</h3>
+                <div class="vocab-grid">
+                    <div class="vocab-card"><div class="word">Factor</div><div class="def">Numbers being multiplied (e.g., 3 and 4)</div></div>
+                    <div class="vocab-card"><div class="word">Product</div><div class="def">The answer (e.g., 3 × 4 = <strong>12</strong>)</div></div>
+                    <div class="vocab-card"><div class="word">Array</div><div class="def">Rows and columns of objects</div></div>
+                    <div class="vocab-card"><div class="word">Equal Groups</div><div class="def">Same number in each group</div></div>
+                </div>
+            </div>
+
+            <div class="study-card">
+                <h3>⬛ Arrays: Rows × Columns</h3>
+                <p style="font-size:0.88rem; margin-bottom:8px;">An array shows multiplication as rows and columns. Count rows × columns to find the total.</p>
+                <p style="font-size:0.85rem; font-weight:700; color:var(--blue); margin-bottom:6px;">3 rows × 4 columns = 12</p>
+                <div class="array-viz">
+                    <div class="array-row"><div class="array-dot"></div><div class="array-dot"></div><div class="array-dot"></div><div class="array-dot"></div></div>
+                    <div class="array-row"><div class="array-dot"></div><div class="array-dot"></div><div class="array-dot"></div><div class="array-dot"></div></div>
+                    <div class="array-row"><div class="array-dot"></div><div class="array-dot"></div><div class="array-dot"></div><div class="array-dot"></div></div>
+                </div>
+                <div class="tip-box">💡 <strong>Order doesn't matter!</strong> 3 × 4 = 4 × 3 = 12. This is called the <strong>Commutative Property</strong>.</div>
+            </div>
+
+            <div class="study-card">
+                <h3>🧱 Area Model: Breaking Apart Big Numbers</h3>
+                <p style="font-size:0.88rem; margin-bottom:8px;">For 2-digit × 1-digit problems, break the bigger number apart:</p>
+                <div class="example-box">
+                    <strong>6 × 14 = ?</strong><br>
+                    Step 1: Break 14 into 10 + 4<br>
+                    Step 2: 6 × 10 = 60<br>
+                    Step 3: 6 × 4 = 24<br>
+                    Step 4: 60 + 24 = <strong>84</strong>
+                </div>
+                <div class="tip-box">⭐ <strong>Try this:</strong> 3 × 23 = 3×20 + 3×3 = 60 + 9 = <strong>69</strong></div>
+            </div>
+
+            <div class="study-card">
+                <h3>🔑 Key Facts to Memorize (×0 through ×10)</h3>
+                <div class="rule-box">
+                    <strong>Special rules:</strong><br>
+                    • Any number × <strong>0</strong> = 0<br>
+                    • Any number × <strong>1</strong> = that number<br>
+                    • Any number × <strong>10</strong> = add a zero (e.g., 7 × 10 = 70)
+                </div>
+                <p style="font-size:0.85rem; margin-top:10px;">Skip counting tricks:</p>
+                <div class="example-box" style="font-size:0.85rem; line-height:1.8;">
+                    <strong>×5:</strong> 5, 10, 15, 20, 25, 30, 35, 40, 45, 50<br>
+                    <strong>×9:</strong> Think ×10 then subtract: 9×7 = 70−7 = 63<br>
+                    <strong>×6×7×8:</strong> "5, 6, 7, 8 → 56 = 7×8" (a trick!)
+                </div>
+            </div>
+        `;
+    }
+
+    function renderAddSub() {
+        return `
+            <h1 style="font-size:1.5rem; font-weight:900; color:var(--blue); margin-bottom:4px;">➕ Addition & Subtraction</h1>
+            <p class="text-muted mb-16">TEKS 3.4A–B · Within 1,000 · Rounding · Estimating</p>
+
+            <div class="study-card">
+                <h3>📌 Adding with Regrouping</h3>
+                <p style="font-size:0.88rem; margin-bottom:10px;">When digits in a column add up to 10 or more, regroup (carry) to the next column.</p>
+                <div class="example-box">
+                    <strong>Example: 468 + 375</strong><br>
+                    Ones: 8 + 5 = 13 → write 3, carry 1<br>
+                    Tens: 6 + 7 + 1 = 14 → write 4, carry 1<br>
+                    Hundreds: 4 + 3 + 1 = 8<br>
+                    Answer: <strong>843</strong>
+                </div>
+            </div>
+
+            <div class="study-card">
+                <h3>➖ Subtracting with Regrouping</h3>
+                <p style="font-size:0.88rem; margin-bottom:10px;">When the top digit is smaller than the bottom digit, borrow from the next column.</p>
+                <div class="example-box">
+                    <strong>Example: 503 − 247</strong><br>
+                    Can't do 3 − 7. Borrow from tens (but tens is 0, borrow from hundreds).<br>
+                    After borrowing: 13 − 7 = 6 (ones), 9 − 4 = 5 (tens), 4 − 2 = 2 (hundreds)<br>
+                    Answer: <strong>256</strong>
+                </div>
+                <div class="tip-box">💡 <strong>Check your work:</strong> Add your answer back to the number you subtracted. You should get the starting number!</div>
+            </div>
+
+            <div class="study-card">
+                <h3>🔄 Rounding Rules</h3>
+                <div class="steps-list">
+                    <div class="step-item">Find the place you are rounding to (tens, hundreds, thousands).</div>
+                    <div class="step-item">Look at the digit ONE place to the RIGHT.</div>
+                    <div class="step-item">If that digit is <strong>0, 1, 2, 3, or 4</strong> → round <strong>DOWN</strong> (keep the rounding digit the same).</div>
+                    <div class="step-item">If that digit is <strong>5, 6, 7, 8, or 9</strong> → round <strong>UP</strong> (add 1 to the rounding digit).</div>
+                </div>
+                <div class="example-box">
+                    <strong>Round 347 to the nearest 10:</strong> Look at ones → 7 ≥ 5 → round UP → <strong>350</strong><br>
+                    <strong>Round 347 to the nearest 100:</strong> Look at tens → 4 < 5 → round DOWN → <strong>300</strong>
+                </div>
+            </div>
+
+            <div class="study-card">
+                <h3>💡 Estimating with Compatible Numbers</h3>
+                <p style="font-size:0.88rem; margin-bottom:8px;">Compatible numbers are numbers that are easy to compute mentally — usually round numbers.</p>
+                <div class="example-box">
+                    <strong>Estimate 398 + 214:</strong><br>
+                    398 ≈ 400, and 214 ≈ 200<br>
+                    400 + 200 = <strong>600</strong> ← estimate
+                </div>
+                <div class="rule-box">
+                    <strong>Keyword strategy for word problems:</strong><br>
+                    • "in all / total / combined" → <strong>add</strong><br>
+                    • "left / remaining / difference / more than" → <strong>subtract</strong>
+                </div>
+            </div>
+        `;
+    }
+
+    function renderFractions() {
+        return `
+            <h1 style="font-size:1.5rem; font-weight:900; color:var(--blue); margin-bottom:4px;">🍕 Fractions</h1>
+            <p class="text-muted mb-16">TEKS 3.3A–H · Equal parts, number lines, comparing, equivalent fractions</p>
+
+            <div class="study-card">
+                <h3>📌 Parts of a Fraction</h3>
+                <div class="vocab-grid">
+                    <div class="vocab-card"><div class="word">Numerator</div><div class="def">Top number — parts you have</div></div>
+                    <div class="vocab-card"><div class="word">Denominator</div><div class="def">Bottom number — total equal parts</div></div>
+                    <div class="vocab-card"><div class="word">Unit Fraction</div><div class="def">1/b — just ONE equal part (1/2, 1/3, 1/4...)</div></div>
+                    <div class="vocab-card"><div class="word">Whole</div><div class="def">When numerator = denominator (4/4 = 1)</div></div>
+                </div>
+                <div class="example-box">
+                    <strong>3/4 means:</strong> 3 parts shaded out of 4 equal parts total.
+                </div>
+            </div>
+
+            <div class="study-card">
+                <h3>📊 Fraction Bar Visual</h3>
+                <p style="font-size:0.85rem; margin-bottom:6px;">This bar shows <strong>3/4</strong> shaded (3 out of 4 equal parts):</p>
+                <div class="fraction-bar">
+                    <div class="fraction-part shaded">1/4</div>
+                    <div class="fraction-part shaded">1/4</div>
+                    <div class="fraction-part shaded">1/4</div>
+                    <div class="fraction-part unshaded">1/4</div>
+                </div>
+                <p style="font-size:0.85rem; margin-top:8px;">This bar shows <strong>2/6</strong> shaded:</p>
+                <div class="fraction-bar">
+                    <div class="fraction-part shaded">1/6</div>
+                    <div class="fraction-part shaded">1/6</div>
+                    <div class="fraction-part unshaded">1/6</div>
+                    <div class="fraction-part unshaded">1/6</div>
+                    <div class="fraction-part unshaded">1/6</div>
+                    <div class="fraction-part unshaded">1/6</div>
+                </div>
+            </div>
+
+            <div class="study-card">
+                <h3>📏 Fractions on a Number Line</h3>
+                <p style="font-size:0.85rem; margin-bottom:8px;">Fractions live between 0 and 1 (and beyond). The denominator tells you how many equal parts to divide the line into.</p>
+                <p style="font-size:0.8rem; font-weight:700; color:var(--blue);">Fourths: 0, 1/4, 2/4, 3/4, 1</p>
+                <div class="number-line-wrap">
+                    <div style="display:flex; align-items:center; gap:0; padding:8px 0;">
+                        <span style="font-size:0.75rem; font-weight:700; color:var(--blue); margin-right:4px;">0</span>
+                        <div style="flex:1; height:3px; background:var(--blue); position:relative;">
+                            <span style="position:absolute; left:0%; top:-16px; font-size:0.7rem; font-weight:700; color:var(--blue);">|</span>
+                            <span style="position:absolute; left:25%; top:-16px; font-size:0.7rem; font-weight:700; color:var(--blue);">|</span>
+                            <span style="position:absolute; left:25%; bottom:-18px; font-size:0.7rem; color:var(--blue);">1/4</span>
+                            <span style="position:absolute; left:50%; top:-16px; font-size:0.7rem; font-weight:700; color:var(--red);">|</span>
+                            <span style="position:absolute; left:50%; bottom:-18px; font-size:0.7rem; color:var(--red); font-weight:700;">2/4=1/2</span>
+                            <span style="position:absolute; left:75%; top:-16px; font-size:0.7rem; font-weight:700; color:var(--blue);">|</span>
+                            <span style="position:absolute; left:75%; bottom:-18px; font-size:0.7rem; color:var(--blue);">3/4</span>
+                            <span style="position:absolute; right:0%; top:-16px; font-size:0.7rem; font-weight:700; color:var(--blue);">|</span>
+                        </div>
+                        <span style="font-size:0.75rem; font-weight:700; color:var(--blue); margin-left:4px;">1</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="study-card">
+                <h3>⚖️ Comparing Fractions</h3>
+                <div class="rule-box">
+                    <strong>Same denominator:</strong> Bigger numerator = bigger fraction<br>
+                    3/4 > 2/4 (because 3 parts > 2 parts)
+                </div>
+                <div class="rule-box">
+                    <strong>Same numerator:</strong> Smaller denominator = bigger fraction<br>
+                    1/3 > 1/6 (each 1/3 piece is larger than each 1/6 piece)
+                </div>
+                <div class="tip-box">💡 <strong>Think pizza slices!</strong> If you cut a pizza into 3 slices, each slice is bigger than if you cut it into 6 slices. So 1/3 > 1/6.</div>
+            </div>
+
+            <div class="study-card">
+                <h3>🟰 Equivalent Fractions</h3>
+                <p style="font-size:0.88rem; margin-bottom:8px;">Equivalent fractions look different but represent the same amount.</p>
+                <div class="example-box">
+                    <strong>1/2 = 2/4 = 3/6 = 4/8</strong> — all equal exactly half!
+                </div>
+                <div class="rule-box">
+                    <strong>To check:</strong> Do they land on the same point on the number line? If yes, they're equivalent!
+                </div>
+            </div>
+        `;
+    }
+</script>
+
+</body>
+</html>

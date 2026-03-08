@@ -1,0 +1,149 @@
+{
+  "subject": "math",
+  "categories": [
+    {
+      "id": "numerical",
+      "name": "Numerical Representations",
+      "icon": "🔢",
+      "color": "#002868",
+      "topics": [
+        {
+          "id": "place-value",
+          "name": "Place Value",
+          "icon": "📍",
+          "teks": "3.2A–D",
+          "description": "Numbers up to 100,000",
+          "hasQuestions": false
+        },
+        {
+          "id": "compare-order",
+          "name": "Compare & Order",
+          "icon": "⚖️",
+          "teks": "3.2D",
+          "description": "Greater than, less than, equal",
+          "hasQuestions": false
+        }
+      ]
+    },
+    {
+      "id": "computation",
+      "name": "Computations & Algebra",
+      "icon": "✏️",
+      "color": "#BF0A30",
+      "topics": [
+        {
+          "id": "addition-subtraction",
+          "name": "Addition & Subtraction",
+          "icon": "➕",
+          "teks": "3.4A–B",
+          "description": "Within 1,000, rounding, estimating",
+          "hasQuestions": true
+        },
+        {
+          "id": "multiplication",
+          "name": "Multiplication",
+          "icon": "✖️",
+          "teks": "3.4D–G",
+          "description": "Facts, arrays, word problems",
+          "hasQuestions": true
+        },
+        {
+          "id": "division",
+          "name": "Division",
+          "icon": "➗",
+          "teks": "3.4H–K",
+          "description": "Relationship to multiplication",
+          "hasQuestions": false
+        },
+        {
+          "id": "fractions",
+          "name": "Fractions",
+          "icon": "🍕",
+          "teks": "3.3A–H",
+          "description": "Halves, thirds, fourths, sixths, eighths",
+          "hasQuestions": true
+        },
+        {
+          "id": "money",
+          "name": "Money",
+          "icon": "💰",
+          "teks": "3.4C",
+          "description": "Coins and bills",
+          "hasQuestions": false
+        }
+      ]
+    },
+    {
+      "id": "geometry",
+      "name": "Geometry & Measurement",
+      "icon": "📐",
+      "color": "#1E8449",
+      "topics": [
+        {
+          "id": "shapes",
+          "name": "2D & 3D Shapes",
+          "icon": "🔷",
+          "teks": "3.6A–B",
+          "description": "Classify shapes, quadrilaterals",
+          "hasQuestions": false
+        },
+        {
+          "id": "area",
+          "name": "Area",
+          "icon": "🟦",
+          "teks": "3.6C–D",
+          "description": "Rectangle area, unit squares",
+          "hasQuestions": false
+        },
+        {
+          "id": "perimeter",
+          "name": "Perimeter",
+          "icon": "📏",
+          "teks": "3.7B",
+          "description": "Perimeter of polygons",
+          "hasQuestions": false
+        },
+        {
+          "id": "time",
+          "name": "Time",
+          "icon": "⏰",
+          "teks": "3.7C",
+          "description": "Time intervals in minutes",
+          "hasQuestions": false
+        },
+        {
+          "id": "measurement",
+          "name": "Volume & Weight",
+          "icon": "⚗️",
+          "teks": "3.7D–E",
+          "description": "Liquid volume and weight",
+          "hasQuestions": false
+        }
+      ]
+    },
+    {
+      "id": "data",
+      "name": "Data Analysis",
+      "icon": "📊",
+      "color": "#7D3C98",
+      "topics": [
+        {
+          "id": "graphs",
+          "name": "Graphs & Charts",
+          "icon": "📊",
+          "teks": "3.8A–B",
+          "description": "Bar graphs, dot plots, pictographs",
+          "hasQuestions": false
+        },
+        {
+          "id": "financial-literacy",
+          "name": "Financial Literacy",
+          "icon": "🏦",
+          "teks": "3.9A–F",
+          "description": "Income, saving, spending",
+          "hasQuestions": false
+        }
+      ]
+    }
+  ]
+}

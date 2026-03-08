@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Up Test · Lone Star STAAR Prep</title>
+    <link rel="stylesheet" href="../css/shared.css">
+    <style>
+        .config-card {
+            background: white;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 22px 20px;
+            margin-bottom: 18px;
+        }
+        .step-num {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 26px;
+            height: 26px;
+            background: var(--blue);
+            color: white;
+            border-radius: 50%;
+            font-size: 0.85rem;
+            font-weight: 800;
+            margin-right: 8px;
+            flex-shrink: 0;
+        }
+        .config-label {
+            font-size: 1rem;
+            font-weight: 800;
+            color: var(--text);
+            display: flex;
+            align-items: center;
+            margin-bottom: 14px;
+        }
+        .topic-picker {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .topic-check {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 14px;
+            background: #F8F6F2;
+            border-radius: var(--radius-sm);
+            border: 2px solid var(--border);
+            cursor: pointer;
+            transition: border-color 0.15s;
+            min-height: 44px;
+        }
+        .topic-check:hover { border-color: var(--blue); }
+        .topic-check.selected { border-color: var(--blue); background: var(--blue-light); }
+        .topic-check input[type="checkbox"] {
+            width: 18px; height: 18px; accent-color: var(--blue); flex-shrink: 0;
+        }
+        .topic-check .tc-label { font-weight: 700; font-size: 0.9rem; }
+        .topic-check .tc-teks { font-size: 0.75rem; color: var(--text-light); }
+
+        .start-section {
+            position: fixed;
+            bottom: 0; left: 0; right: 0;
+            background: white;
+            border-top: 2px solid var(--border);
+            padding: 14px 20px;
+            display: flex;
+            justify-content: center;
+            z-index: 40;
+            box-shadow: 0 -4px 16px rgba(0,0,0,0.08);
+        }
+        .topics-mode { display: none; }
+        .topics-mode.active { display: block; }
+    </style>
+</head>
+<body>
+
+<header class="site-header">
+    <a class="logo" href="../index.html">
+        <span class="logo-star">⭐</span>
+        <span>Lone Star STAAR Prep</span>
+    </a>
+</header>
+
+<div class="page-wrap" style="padding-bottom:100px;">
+
+    <a class="back-btn" href="../math/index.html" id="backBtn">← Math Topics</a>
+
+    <h1 style="font-size:1.5rem; font-weight:900; color:var(--blue); margin-bottom:4px;">📝 Set Up Your Test</h1>
+    <p class="text-muted mb-16">Choose your options and start practicing!</p>
+
+    <!-- Step 1: Subject -->
+    <div class="config-card">
+        <div class="config-label"><span class="step-num">1</span> Subject</div>
+        <div class="choice-group" id="subjectGroup">
+            <button class="choice-btn selected" data-val="math" onclick="selectSubject(this)">📐 Math</button>
+            <button class="choice-btn" data-val="reading" onclick="selectSubject(this)" disabled title="Coming soon">📚 Reading (soon)</button>
+        </div>
+    </div>
+
+    <!-- Step 2: Topics -->
+    <div class="config-card">
+        <div class="config-label"><span class="step-num">2</span> Topics</div>
+        <div class="choice-group" id="topicModeGroup" style="margin-bottom:14px;">
+            <button class="choice-btn selected" data-val="all" onclick="selectTopicMode(this)">All Topics</button>
+            <button class="choice-btn" data-val="custom" onclick="selectTopicMode(this)">Choose Topics</button>
+        </div>
+        <div class="topics-mode" id="customTopicsPanel">
+            <div class="topic-picker" id="topicPicker">
+                <!-- Populated by JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Step 3: Length -->
+    <div class="config-card">
+        <div class="config-label"><span class="step-num">3</span> Number of Questions</div>
+        <div class="choice-group" id="countGroup">
+            <button class="choice-btn" data-val="5" onclick="selectCount(this)">5</button>
+            <button class="choice-btn selected" data-val="10" onclick="selectCount(this)">10</button>
+            <button class="choice-btn" data-val="20" onclick="selectCount(this)">20</button>
+            <button class="choice-btn" data-val="30" onclick="selectCount(this)">30</button>
+        </div>
+    </div>
+
+    <!-- Step 4: Difficulty -->
+    <div class="config-card">
+        <div class="config-label"><span class="step-num">4</span> Difficulty</div>
+        <div class="choice-group" id="difficultyGroup">
+            <button class="choice-btn" data-val="easy" onclick="selectDifficulty(this)">😊 Easy</button>
+            <button class="choice-btn" data-val="medium" onclick="selectDifficulty(this)">🤔 Medium</button>
+            <button class="choice-btn" data-val="hard" onclick="selectDifficulty(this)">🔥 Hard</button>
+            <button class="choice-btn selected" data-val="mixed" onclick="selectDifficulty(this)">⭐ Mixed</button>
+        </div>
+    </div>
+
+</div>
+
+<!-- Fixed Start Button -->
+<div class="start-section">
+    <button class="btn btn-primary btn-lg" style="min-width:220px;" onclick="startTest()">
+        ⭐ Start Test!
+    </button>
+</div>
+
+<script>
+    // === State ===
+    let config = {
+        subject: 'math',
+        topicMode: 'all',
+        selectedTopics: [],
+        count: 10,
+        difficulty: 'mixed'
+    };
+
+    // Available topics with questions
+    const availableTopics = {
+        math: [
+            { id: 'addition-subtraction', name: 'Addition & Subtraction', teks: '3.4A–B', icon: '➕' },
+            { id: 'multiplication', name: 'Multiplication', teks: '3.4D–G', icon: '✖️' },
+            { id: 'fractions', name: 'Fractions', teks: '3.3A–H', icon: '🍕' }
+        ]
+    };
+
+    // === Init from URL params ===
+    const params = new URLSearchParams(window.location.search);
+    const preSubject = params.get('subject');
+    const preTopics = params.get('topics');
+
+    if (preSubject) {
+        config.subject = preSubject;
+        document.querySelectorAll('#subjectGroup .choice-btn').forEach(b => {
+            b.classList.toggle('selected', b.dataset.val === preSubject);
+        });
+    }
+
+    if (preTopics && preTopics !== 'all') {
+        config.topicMode = 'custom';
+        config.selectedTopics = preTopics.split(',');
+        document.querySelectorAll('#topicModeGroup .choice-btn').forEach(b => {
+            b.classList.toggle('selected', b.dataset.val === 'custom');
+        });
+        document.getElementById('customTopicsPanel').classList.add('active');
+    }
+
+    // Render topic picker
+    renderTopicPicker();
+
+    // === Render Topic Picker ===
+    function renderTopicPicker() {
+        const topics = availableTopics[config.subject] || [];
+        const picker = document.getElementById('topicPicker');
+        picker.innerHTML = topics.map(t => {
+            const isSelected = config.selectedTopics.includes(t.id);
+            return `<label class="topic-check ${isSelected ? 'selected' : ''}" onclick="toggleTopicCard(this, '${t.id}')">
+                <input type="checkbox" value="${t.id}" ${isSelected ? 'checked' : ''} onchange="updateTopicSelection()">
+                <div>
+                    <div class="tc-label">${t.icon} ${t.name}</div>
+                    <div class="tc-teks">${t.teks}</div>
+                </div>
+            </label>`;
+        }).join('');
+    }
+
+    function toggleTopicCard(el, id) {
+        const cb = el.querySelector('input[type="checkbox"]');
+        cb.checked = !cb.checked;
+        el.classList.toggle('selected', cb.checked);
+        updateTopicSelection();
+    }
+
+    function updateTopicSelection() {
+        config.selectedTopics = Array.from(document.querySelectorAll('#topicPicker input:checked')).map(c => c.value);
+    }
+
+    // === Selectors ===
+    function selectSubject(btn) {
+        config.subject = btn.dataset.val;
+        document.querySelectorAll('#subjectGroup .choice-btn').forEach(b => b.classList.remove('selected'));
+        btn.classList.add('selected');
+        const isReading = config.subject === 'reading';
+        document.getElementById('backBtn').href = isReading ? '../reading/index.html' : '../math/index.html';
+        config.selectedTopics = [];
+        renderTopicPicker();
+    }
+
+    function selectTopicMode(btn) {
+        config.topicMode = btn.dataset.val;
+        document.querySelectorAll('#topicModeGroup .choice-btn').forEach(b => b.classList.remove('selected'));
+        btn.classList.add('selected');
+        const panel = document.getElementById('customTopicsPanel');
+        panel.classList.toggle('active', config.topicMode === 'custom');
+        if (config.topicMode === 'all') config.selectedTopics = [];
+    }
+
+    function selectCount(btn) {
+        config.count = parseInt(btn.dataset.val);
+        document.querySelectorAll('#countGroup .choice-btn').forEach(b => b.classList.remove('selected'));
+        btn.classList.add('selected');
+    }
+
+    function selectDifficulty(btn) {
+        config.difficulty = btn.dataset.val;
+        document.querySelectorAll('#difficultyGroup .choice-btn').forEach(b => b.classList.remove('selected'));
+        btn.classList.add('selected');
+    }
+
+    // === Start Test ===
+    function startTest() {
+        let topicsParam = 'all';
+        if (config.topicMode === 'custom') {
+            if (config.selectedTopics.length === 0) {
+                alert('Please select at least one topic!');
+                return;
+            }
+            topicsParam = config.selectedTopics.join(',');
+        }
+        const url = `./session.html?subject=${config.subject}&topics=${topicsParam}&count=${config.count}&difficulty=${config.difficulty}`;
+        window.location.href = url;
+    }
+</script>
+
+</body>
+</html>
