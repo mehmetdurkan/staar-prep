@@ -1,0 +1,354 @@
+{
+  "subject": "reading",
+  "topic": "text-features",
+  "topicName": "Text Features",
+  "passages": [
+    {
+      "id": "tf-p001",
+      "difficulty": "easy",
+      "teks": "3.13B",
+      "title": "Amazing Ants",
+      "text": "<strong>Amazing Ants</strong><br><br><strong>What Are Ants?</strong><br>Ants are insects that live in large groups called colonies. A colony can have millions of ants working together. Every ant has a job to do.<br><br><strong>Types of Ants</strong><br>There are three types of ants in a colony: the queen, the workers, and the males. The <em>queen</em> lays all the eggs. The <em>workers</em> find food and take care of the young. The <em>males</em> mate with the queen.<br><br><strong>What Do Ants Eat?</strong><br>Ants eat many different things. Some eat leaves, seeds, or other insects. Some even eat nectar from flowers.<br><br><strong>Did You Know?</strong><br>An ant can carry up to 50 times its own body weight!",
+      "questions": [
+        {
+          "id": "tf-p001-q1",
+          "difficulty": "easy",
+          "question": "What is the purpose of the subheadings in this passage — such as \"What Are Ants?\" and \"Types of Ants\"?",
+          "options": [
+            "To make the passage look longer",
+            "To help readers find information about each topic quickly",
+            "To tell the author's opinion about ants",
+            "To replace the need for a table of contents"
+          ],
+          "answer": 1,
+          "explanation": "Subheadings divide a passage into sections and tell the reader what each section is about — they help readers find specific information quickly without reading everything."
+        },
+        {
+          "id": "tf-p001-q2",
+          "difficulty": "easy",
+          "question": "The words queen, workers, and males are in italic (slanted) print. Why did the author MOST LIKELY make those words italic?",
+          "options": [
+            "Because they are the most interesting words",
+            "To show they are important vocabulary words",
+            "Because the author made a typing mistake",
+            "To show these words are made up"
+          ],
+          "answer": 1,
+          "explanation": "Authors use italic or bold print to signal important vocabulary words — italics draw the reader's attention so they know these terms matter."
+        },
+        {
+          "id": "tf-p001-q3",
+          "difficulty": "easy",
+          "question": "Read the \"Did You Know?\" section. Why did the author MOST LIKELY include this section?",
+          "options": [
+            "To summarize the main idea of the passage",
+            "To share a surprising fact that will interest readers",
+            "To explain what an ant colony is",
+            "To list the types of food ants eat"
+          ],
+          "answer": 1,
+          "explanation": "\"Did You Know?\" boxes are used to highlight a surprising or fun fact that grabs readers' attention — the fact that ants can carry 50 times their weight is meant to impress and engage readers."
+        },
+        {
+          "id": "tf-p001-q4",
+          "difficulty": "easy",
+          "question": "A reader wants to find out what ants eat. Which subheading should the reader look under?",
+          "options": [
+            "What Are Ants?",
+            "Types of Ants",
+            "What Do Ants Eat?",
+            "Did You Know?"
+          ],
+          "answer": 2,
+          "explanation": "Subheadings tell the reader what each section is about. \"What Do Ants Eat?\" directly matches the information the reader is looking for."
+        },
+        {
+          "id": "tf-p001-q5",
+          "difficulty": "easy",
+          "question": "How does the bold title \"Amazing Ants\" help the reader?",
+          "options": [
+            "It tells the reader the passage will be very long",
+            "It introduces the topic the whole passage is about",
+            "It explains what makes ants different from bees",
+            "It lists the main ideas of each section"
+          ],
+          "answer": 1,
+          "explanation": "A title tells readers what the whole passage is about before they begin reading. \"Amazing Ants\" signals that the passage covers the topic of ants."
+        }
+      ]
+    },
+    {
+      "id": "tf-p002",
+      "difficulty": "easy",
+      "teks": "3.13B",
+      "title": "Butterflies: Life Cycle",
+      "text": "Butterflies go through four stages of life: egg, caterpillar, chrysalis, and butterfly. First, a butterfly lays a tiny egg on a leaf. The egg hatches into a caterpillar, also called a larva. The caterpillar eats and grows. Then it wraps itself in a protective case called a chrysalis. Inside the chrysalis, it slowly changes. Finally, a fully grown butterfly breaks free.<br><br><strong>Life Cycle of a Butterfly</strong><br>[Graph: A circle diagram showing the four stages — Egg → Caterpillar → Chrysalis → Butterfly → back to Egg]<br><br><em>Caption: The butterfly life cycle repeats every season.</em>",
+      "questions": [
+        {
+          "id": "tf-p002-q1",
+          "difficulty": "easy",
+          "question": "What information does the circle diagram about the butterfly life cycle help the reader understand?",
+          "options": [
+            "How long each stage of the butterfly's life lasts",
+            "That the life cycle repeats over and over in order",
+            "Which butterflies are most common in Texas",
+            "How big a butterfly gets when it is fully grown"
+          ],
+          "answer": 1,
+          "explanation": "A circle (or cycle) diagram shows that a process repeats — the arrows going from one stage back to the egg show the life cycle continues again and again."
+        },
+        {
+          "id": "tf-p002-q2",
+          "difficulty": "easy",
+          "question": "Read the caption below the diagram: \"The butterfly life cycle repeats every season.\" What does a caption do?",
+          "options": [
+            "Replaces the diagram for readers who cannot see it",
+            "Explains or adds information about an image or diagram",
+            "Lists all the stages of the butterfly's life in order",
+            "Tells readers whether the diagram is accurate"
+          ],
+          "answer": 1,
+          "explanation": "Captions appear below images or diagrams and explain what the image shows or add extra details — they help the reader understand why the visual is included."
+        },
+        {
+          "id": "tf-p002-q3",
+          "difficulty": "easy",
+          "question": "How does the diagram work WITH the passage to help the reader?",
+          "options": [
+            "The diagram replaces all the information in the passage",
+            "The diagram shows the stages visually so readers can see the order clearly",
+            "The diagram gives information the passage does not include",
+            "The diagram is only for readers who cannot read the words"
+          ],
+          "answer": 1,
+          "explanation": "Text features like diagrams support the written text — the passage explains each stage in words, while the diagram shows the stages visually so readers can understand the order at a glance."
+        },
+        {
+          "id": "tf-p002-q4",
+          "difficulty": "easy",
+          "question": "A student wants to quickly see what the four stages of the butterfly life cycle are. Which text feature would help MOST?",
+          "options": [
+            "The caption below the diagram",
+            "The title of the passage",
+            "The circle diagram",
+            "The first sentence of the passage"
+          ],
+          "answer": 2,
+          "explanation": "The circle diagram visually shows all four stages at once — it is the fastest way to see the four stages without reading through the whole passage."
+        }
+      ]
+    },
+    {
+      "id": "tf-p003",
+      "difficulty": "medium",
+      "teks": "3.13B",
+      "title": "Animals of the Texas Prairie",
+      "text": "<strong>Animals of the Texas Prairie</strong><br><br>The Texas prairies are home to many interesting animals. Some are large and easy to spot. Others are small and hide in the grass.<br><br><strong>Common Prairie Animals</strong><br><br>[Table: Prairie Animal | What It Eats | Size]<br>Bison | Grass | Up to 2,000 lbs<br>Prairie dog | Seeds, roots | 2–3 lbs<br>Red-tailed hawk | Small animals | 2–4 lbs<br>Coyote | Meat, berries | 20–50 lbs<br><br>The bison was once nearly extinct but has made a comeback thanks to conservation efforts. Prairie dogs live in underground towns that can stretch for miles.<br><br><strong>Glossary</strong><br><em>conservation</em>: the protection of animals and nature<br><em>extinct</em>: when all animals of a kind have died out",
+      "questions": [
+        {
+          "id": "tf-p003-q1",
+          "difficulty": "medium",
+          "question": "Look at the table \"Common Prairie Animals.\" What does the table help the reader understand?",
+          "options": [
+            "The history of how bison became endangered",
+            "The names, diets, and sizes of several prairie animals at a glance",
+            "Why prairie dogs build underground homes",
+            "How conservation programs work in Texas"
+          ],
+          "answer": 1,
+          "explanation": "Tables organize information into rows and columns so readers can compare facts quickly — this table lets readers see each animal's diet and size without searching through paragraphs."
+        },
+        {
+          "id": "tf-p003-q2",
+          "difficulty": "medium",
+          "question": "A student does not know what the word \"conservation\" means. Which text feature would help MOST?",
+          "options": [
+            "The table of prairie animals",
+            "The title of the passage",
+            "The glossary at the end of the passage",
+            "The bold subheading \"Common Prairie Animals\""
+          ],
+          "answer": 2,
+          "explanation": "A glossary defines difficult vocabulary words. The glossary at the end of this passage defines \"conservation\" — it is exactly the tool to use when a reader encounters an unfamiliar word."
+        },
+        {
+          "id": "tf-p003-q3",
+          "difficulty": "medium",
+          "question": "What are the MOST LIKELY reasons the author used bold subheadings like \"Common Prairie Animals\"? Select TWO correct answers.",
+          "options": [
+            "To help readers skip directly to the section they need",
+            "To make the passage look colorful and decorative",
+            "To show the main topic of each section",
+            "To replace the glossary",
+            "To list all the animals found on Texas prairies"
+          ],
+          "answers": [0, 2],
+          "explanation": "Subheadings serve two purposes: they signal the topic of each section AND they help readers navigate the text by jumping to the section they need without reading everything."
+        },
+        {
+          "id": "tf-p003-q4",
+          "difficulty": "medium",
+          "question": "Based on the table, which animal weighs the MOST?",
+          "options": [
+            "Prairie dog",
+            "Red-tailed hawk",
+            "Coyote",
+            "Bison"
+          ],
+          "answer": 3,
+          "explanation": "The table shows bison weigh up to 2,000 lbs — far more than any other animal listed. Reading tables carefully lets you compare facts across rows."
+        },
+        {
+          "id": "tf-p003-q5",
+          "difficulty": "medium",
+          "question": "How does the glossary at the end of this passage help the reader?",
+          "options": [
+            "It lists all the animals mentioned in the passage",
+            "It provides definitions for difficult words used in the passage",
+            "It summarizes the main idea of the passage",
+            "It shows maps of where prairie animals live"
+          ],
+          "answer": 1,
+          "explanation": "A glossary is a mini-dictionary at the end of a text — it defines key vocabulary words like \"conservation\" and \"extinct\" so readers understand difficult terms without leaving the passage."
+        }
+      ]
+    },
+    {
+      "id": "tf-p004",
+      "difficulty": "medium",
+      "teks": "3.13B",
+      "title": "How Plants Make Food",
+      "text": "<strong>How Plants Make Food</strong><br><em>By the Science Team</em><br><br>Plants make their own food through a process called photosynthesis. They need three things: sunlight, water, and carbon dioxide (a gas in the air).<br><br>[Diagram: A drawing of a plant with arrows showing sunlight hitting the leaves, water coming up from the roots, and carbon dioxide entering the leaves. An arrow labeled \"oxygen\" shows gas leaving the plant. A label at the center reads \"Food (glucose) is made here.\"]<br><br><em>Caption: During photosynthesis, plants use sunlight, water, and carbon dioxide to make food. They release oxygen as a result.</em><br><br><strong>Why It Matters</strong><br>Photosynthesis is important for all living things. Plants release oxygen, which animals and humans need to breathe. Without photosynthesis, life on Earth could not exist.",
+      "questions": [
+        {
+          "id": "tf-p004-q1",
+          "difficulty": "medium",
+          "question": "Look at the diagram of photosynthesis. What does the diagram help the reader understand that the words alone might not?",
+          "options": [
+            "The definition of carbon dioxide",
+            "How sunlight, water, and carbon dioxide move INTO the plant and oxygen moves OUT",
+            "Why plants need to grow near water",
+            "How long photosynthesis takes to occur"
+          ],
+          "answer": 1,
+          "explanation": "The diagram uses arrows to visually show the direction of each ingredient going in and oxygen going out — this movement is hard to picture from words alone, and the diagram makes it clear at a glance."
+        },
+        {
+          "id": "tf-p004-q2",
+          "difficulty": "medium",
+          "question": "Read the caption below the diagram. Which statement BEST describes what a caption does in an informational text?",
+          "options": [
+            "It tells readers which part of the text is most important",
+            "It gives a brief explanation of what the image or diagram shows",
+            "It lists all the vocabulary words in the passage",
+            "It replaces the diagram when the reader cannot see it"
+          ],
+          "answer": 1,
+          "explanation": "Captions explain or summarize what a diagram or image shows — they help readers who need additional context to understand the visual."
+        },
+        {
+          "id": "tf-p004-q3",
+          "difficulty": "medium",
+          "question": "The byline reads \"By the Science Team.\" What does a byline tell a reader?",
+          "options": [
+            "The main idea of the passage",
+            "When the passage was written",
+            "Who wrote or contributed to the text",
+            "Where the passage was published"
+          ],
+          "answer": 2,
+          "explanation": "A byline identifies who wrote the text. Knowing the author helps readers evaluate the source — a \"Science Team\" suggests the information comes from experts."
+        },
+        {
+          "id": "tf-p004-q4",
+          "difficulty": "medium",
+          "question": "What are TWO ways the diagram and caption work together to help the reader understand photosynthesis? Select TWO correct answers.",
+          "options": [
+            "The diagram shows the process visually with arrows",
+            "The diagram lists every type of plant on Earth",
+            "The caption explains what happens in words",
+            "The caption tells readers to memorize the diagram",
+            "Both replace the need to read the passage"
+          ],
+          "answers": [0, 2],
+          "explanation": "The diagram shows the process visually (arrows moving sunlight, water, carbon dioxide, and oxygen) while the caption explains in words what the diagram depicts — together they give readers two ways to understand the same idea."
+        }
+      ]
+    },
+    {
+      "id": "tf-p005",
+      "difficulty": "hard",
+      "teks": "3.13B",
+      "title": "Who Jumps the Farthest?",
+      "text": "<strong>Extreme Jumpers</strong><br><br>Some animals are known for jumping incredible distances. Scientists measure how far different animals can jump to compare their abilities.<br><br><strong>Who Jumps the Farthest?</strong><br>[Bar Graph: X-axis = Animal (Frog, Grasshopper, Cougar, Froghopper, Kangaroo); Y-axis = Jump Distance in feet. Frog = 10 ft, Grasshopper = 3 ft, Cougar = 40 ft, Froghopper = 2.3 ft, Kangaroo = 25 ft]<br><br><strong>Key Fact:</strong> Even though the froghopper is the smallest animal on the graph, it can jump over 100 times its own body length.<br><br>Scientists use data like this to understand how body structure helps animals survive in the wild.",
+      "questions": [
+        {
+          "id": "tf-p005-q1",
+          "difficulty": "hard",
+          "question": "According to the bar graph \"Who Jumps the Farthest?\", which animal can jump the farthest distance?",
+          "options": [
+            "Frog",
+            "Kangaroo",
+            "Cougar",
+            "Froghopper"
+          ],
+          "answer": 2,
+          "explanation": "The bar graph shows the cougar's bar reaching 40 feet — the tallest bar on the graph — meaning the cougar can jump the farthest distance of all animals shown."
+        },
+        {
+          "id": "tf-p005-q2",
+          "difficulty": "hard",
+          "question": "The \"Key Fact\" box says the froghopper can jump over 100 times its own body length. Why is this fact surprising when you look at the bar graph?",
+          "options": [
+            "Because the froghopper bar is the tallest on the graph",
+            "Because the froghopper jumps farther than the cougar",
+            "Because the froghopper has one of the SHORTEST bars, yet it jumps the most relative to its size",
+            "Because the bar graph does not include the froghopper"
+          ],
+          "answer": 2,
+          "explanation": "The bar graph shows the froghopper jumps only 2.3 feet — one of the shortest bars. But the Key Fact reveals it jumps 100 times its own tiny body length. The contrast between absolute distance and relative distance is the surprising point."
+        },
+        {
+          "id": "tf-p005-q3",
+          "difficulty": "hard",
+          "question": "Why does the author include BOTH the bar graph AND the \"Key Fact\" box, instead of just one of them?",
+          "options": [
+            "Because the bar graph is wrong and the Key Fact corrects it",
+            "Because the bar graph shows absolute distances while the Key Fact adds a different perspective — relative size",
+            "Because the Key Fact is required by law in science articles",
+            "Because both say the exact same thing in different ways"
+          ],
+          "answer": 1,
+          "explanation": "The bar graph shows raw jump distances in feet (absolute). The Key Fact adds a new layer: how impressive a jump is relative to the animal's size. Together they give a more complete picture than either could alone."
+        },
+        {
+          "id": "tf-p005-q4",
+          "difficulty": "hard",
+          "question": "What does the Y-axis label \"Jump Distance in feet\" tell the reader?",
+          "options": [
+            "The names of the animals being compared",
+            "The unit of measurement used to compare jump distances",
+            "The weight of each animal in the graph",
+            "Which animal is the author's favorite"
+          ],
+          "answer": 1,
+          "explanation": "Axis labels on a bar graph tell you what is being measured and in what unit. \"Jump Distance in feet\" tells readers that all bars represent distance measured in feet, so they can accurately read and compare values."
+        },
+        {
+          "id": "tf-p005-q5",
+          "difficulty": "hard",
+          "question": "What are TWO things a reader can learn from the bar graph that are NOT directly stated in the passage text? Select TWO correct answers.",
+          "options": [
+            "The exact jump distance of a kangaroo in feet",
+            "Why the cougar is a good hunter",
+            "The exact jump distance of a grasshopper in feet",
+            "How scientists measure jump distances",
+            "What froghoppers eat"
+          ],
+          "answers": [0, 2],
+          "explanation": "The passage text does not give specific numbers for kangaroo or grasshopper jump distances — those specific values (kangaroo = 25 ft, grasshopper = 3 ft) can only be found by reading the bar graph."
+        }
+      ]
+    }
+  ]
+}

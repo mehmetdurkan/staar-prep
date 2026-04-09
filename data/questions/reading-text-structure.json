@@ -1,0 +1,315 @@
+{
+  "subject": "reading",
+  "topic": "text-structure",
+  "topicName": "Text Structure",
+  "passages": [
+    {
+      "id": "ts-p001",
+      "difficulty": "easy",
+      "teks": "3.11C",
+      "title": "Why Leaves Change Color",
+      "text": "In fall, the days get shorter and the temperatures drop. Because of this, trees stop making chlorophyll — the green material in leaves. As a result, the green color fades away. Without the green, other colors that were hidden all summer — red, orange, and yellow — become visible. The cold temperatures also cause the tree to seal off its leaves, which eventually fall to the ground. So when you see red and orange leaves in autumn, it is because the tree is getting ready for winter.",
+      "questions": [
+        {
+          "id": "ts-p001-q1",
+          "difficulty": "easy",
+          "question": "This passage is mostly organized using which text structure?",
+          "options": [
+            "Compare and contrast — showing how fall and spring are different",
+            "Cause and effect — explaining why leaves change color",
+            "Sequence — listing the steps in making maple syrup",
+            "Problem and solution — explaining how to stop leaves from falling"
+          ],
+          "answer": 1,
+          "explanation": "The passage explains WHY leaves change color — shorter days cause trees to stop making chlorophyll, which CAUSES the green to fade and other colors to appear. This is cause-and-effect structure."
+        },
+        {
+          "id": "ts-p001-q2",
+          "difficulty": "easy",
+          "question": "Read this sentence from the passage: \"Because of this, trees stop making chlorophyll.\" The phrase \"because of this\" is a signal word for which text structure?",
+          "options": [
+            "Sequence",
+            "Problem and solution",
+            "Cause and effect",
+            "Compare and contrast"
+          ],
+          "answer": 2,
+          "explanation": "\"Because of this\" is a cause-and-effect signal phrase — it shows that one thing (shorter days and colder temperatures) directly causes another thing (trees stopping chlorophyll production)."
+        },
+        {
+          "id": "ts-p001-q3",
+          "difficulty": "easy",
+          "question": "What is the EFFECT of trees stopping chlorophyll production?",
+          "options": [
+            "The days get shorter in autumn",
+            "The green color in leaves fades away",
+            "Leaves begin growing again in spring",
+            "Temperatures drop below freezing"
+          ],
+          "answer": 1,
+          "explanation": "The passage states: \"trees stop making chlorophyll — the green material in leaves. As a result, the green color fades away.\" Stopping chlorophyll is the cause; green color fading is the effect."
+        },
+        {
+          "id": "ts-p001-q4",
+          "difficulty": "easy",
+          "question": "Which signal words from the passage show cause-and-effect text structure? Select TWO correct answers.",
+          "options": [
+            "\"As a result\"",
+            "\"For example\"",
+            "\"Because of this\"",
+            "\"On the other hand\"",
+            "\"First, second, third\""
+          ],
+          "answers": [0, 2],
+          "explanation": "\"As a result\" and \"Because of this\" are both cause-and-effect signal phrases. They show that one event leads to another. \"For example\" signals examples, \"on the other hand\" signals contrast, and \"first/second\" signals sequence."
+        }
+      ]
+    },
+    {
+      "id": "ts-p002",
+      "difficulty": "easy",
+      "teks": "3.11C",
+      "title": "How to Make a Peanut Butter and Jelly Sandwich",
+      "text": "Making a peanut butter and jelly sandwich is easy if you follow the steps in order. First, get out two slices of bread. Next, open the peanut butter jar and spread peanut butter on one side of a bread slice. Then, open the jelly jar and spread jelly on one side of the other slice. After that, press the two slices together so the peanut butter and jelly are touching. Finally, cut the sandwich in half if you like, and enjoy!",
+      "questions": [
+        {
+          "id": "ts-p002-q1",
+          "difficulty": "easy",
+          "question": "What text structure does the author use in this passage?",
+          "options": [
+            "Cause and effect",
+            "Compare and contrast",
+            "Sequence — steps in order",
+            "Problem and solution"
+          ],
+          "answer": 2,
+          "explanation": "The passage gives directions in a step-by-step order using words like \"first,\" \"next,\" \"then,\" and \"finally\" — this is sequence structure, which shows steps or events in order."
+        },
+        {
+          "id": "ts-p002-q2",
+          "difficulty": "easy",
+          "question": "Which words in the passage signal that it is organized in sequence?",
+          "options": [
+            "Easy, open, enjoy",
+            "First, next, then, finally",
+            "Because, as a result, therefore",
+            "However, but, on the other hand"
+          ],
+          "answer": 1,
+          "explanation": "Sequence signal words tell the reader the order of steps or events. \"First,\" \"next,\" \"then,\" and \"finally\" are all sequence transition words used in this passage."
+        },
+        {
+          "id": "ts-p002-q3",
+          "difficulty": "easy",
+          "question": "Why is it important to follow the steps in ORDER when reading this passage?",
+          "options": [
+            "Because the steps are written in alphabetical order",
+            "Because doing the steps out of order would make the sandwich wrong",
+            "Because each step takes exactly the same amount of time",
+            "Because the author says the sandwich is delicious"
+          ],
+          "answer": 1,
+          "explanation": "In a sequence text, the order matters — you must spread the ingredients before pressing the slices together. Doing steps out of order would not work. This is why sequence structure includes signal words to guide the reader."
+        }
+      ]
+    },
+    {
+      "id": "ts-p003",
+      "difficulty": "medium",
+      "teks": "3.11C",
+      "title": "Wolves and Dogs: More Alike Than You Think",
+      "text": "Wolves and dogs are very different in some ways but surprisingly similar in others. Both wolves and dogs are mammals with sharp teeth, four legs, and fur. Both are known for living in social groups — wolves live in packs, and many dogs enjoy the company of people and other dogs. However, wolves are wild animals that hunt for their food, while most dogs are pets that eat food provided by humans. Wolves are usually much larger than house dogs. Dogs have been domesticated for thousands of years, meaning they have been bred to live with humans. Wolves, on the other hand, remain wild.",
+      "questions": [
+        {
+          "id": "ts-p003-q1",
+          "difficulty": "medium",
+          "question": "What text structure does this passage MOSTLY use?",
+          "options": [
+            "Cause and effect",
+            "Sequence",
+            "Compare and contrast",
+            "Problem and solution"
+          ],
+          "answer": 2,
+          "explanation": "The passage examines both similarities and differences between wolves and dogs — using words like \"both,\" \"however,\" and \"on the other hand.\" This is compare-and-contrast structure."
+        },
+        {
+          "id": "ts-p003-q2",
+          "difficulty": "medium",
+          "question": "Read this sentence from the passage: \"Wolves are wild animals that hunt for their food, while most dogs are pets that eat food provided by humans.\" The word \"while\" signals —",
+          "options": [
+            "that two things happen at the same time",
+            "a contrast between wolves and dogs",
+            "a cause-and-effect relationship",
+            "the sequence of events in the passage"
+          ],
+          "answer": 1,
+          "explanation": "In compare-and-contrast writing, \"while\" often signals a difference. Here it contrasts how wolves get their food (hunting) with how dogs get theirs (from humans)."
+        },
+        {
+          "id": "ts-p003-q3",
+          "difficulty": "medium",
+          "question": "Which of the following is a SIMILARITY between wolves and dogs mentioned in the passage?",
+          "options": [
+            "Both are domesticated animals",
+            "Both hunt for their own food",
+            "Both are mammals with fur and sharp teeth",
+            "Both live in packs in the wild"
+          ],
+          "answer": 2,
+          "explanation": "The passage states: \"Both wolves and dogs are mammals with sharp teeth, four legs, and fur.\" This is a similarity. Domestication and hunting are differences, not similarities."
+        },
+        {
+          "id": "ts-p003-q4",
+          "difficulty": "medium",
+          "question": "Which signal words from the passage show that it uses compare-and-contrast structure? Select TWO correct answers.",
+          "options": [
+            "\"However\"",
+            "\"First\" and \"then\"",
+            "\"On the other hand\"",
+            "\"As a result\"",
+            "\"For example\""
+          ],
+          "answers": [0, 2],
+          "explanation": "\"However\" and \"on the other hand\" are compare-and-contrast signal words that introduce differences. \"First/then\" signal sequence, \"as a result\" signals cause-effect, and \"for example\" signals an example."
+        },
+        {
+          "id": "ts-p003-q5",
+          "difficulty": "medium",
+          "question": "The author MOST LIKELY used compare-and-contrast structure in this passage to —",
+          "options": [
+            "persuade readers to adopt a dog instead of a wolf",
+            "help readers understand how wolves and dogs are related yet different",
+            "explain the steps for training a wild wolf",
+            "describe the history of wolves in North America"
+          ],
+          "answer": 1,
+          "explanation": "Compare-and-contrast structure is used when an author wants to show what two things have in common and how they differ. The author chose this structure to help readers understand the relationship between wolves and dogs."
+        }
+      ]
+    },
+    {
+      "id": "ts-p004",
+      "difficulty": "medium",
+      "teks": "3.11C",
+      "title": "Too Much Screen Time",
+      "text": "Many children spend hours each day looking at screens — phones, tablets, and television. This is a growing problem. Too much screen time can cause children to sleep less because the bright light from screens tricks the brain into staying awake. Another effect is that children who spend many hours on screens often have less time to exercise, which can lead to health problems. A third effect is that heavy screen use can make it harder for children to focus in school. To solve this problem, parents and children can work together to set daily screen time limits, take regular breaks, and replace some screen time with outdoor play.",
+      "questions": [
+        {
+          "id": "ts-p004-q1",
+          "difficulty": "medium",
+          "question": "This passage uses which TWO text structures? Select TWO correct answers.",
+          "options": [
+            "Cause and effect — showing effects of screen time",
+            "Sequence — listing steps in alphabetical order",
+            "Problem and solution — identifying the problem and ways to fix it",
+            "Compare and contrast — comparing phones and tablets",
+            "Description — describing what screens look like"
+          ],
+          "answers": [0, 2],
+          "explanation": "The passage identifies screen time as a problem and lists its effects (cause-and-effect structure). It also presents solutions at the end (problem-solution structure). Many informational texts blend more than one structure."
+        },
+        {
+          "id": "ts-p004-q2",
+          "difficulty": "medium",
+          "question": "Read this sentence: \"Too much screen time can cause children to sleep less because the bright light from screens tricks the brain into staying awake.\" What is the CAUSE and what is the EFFECT?",
+          "options": [
+            "Cause: children sleep less; Effect: screens get brighter",
+            "Cause: bright screen light tricks the brain; Effect: children sleep less",
+            "Cause: children go to school; Effect: screens are used more",
+            "Cause: children sleep less; Effect: they use more screens"
+          ],
+          "answer": 1,
+          "explanation": "The sentence says screen light tricks the brain → which causes children to sleep less. The bright light is the cause; sleeping less is the effect. The word \"because\" signals this cause-and-effect relationship."
+        },
+        {
+          "id": "ts-p004-q3",
+          "difficulty": "medium",
+          "question": "The author ends the passage by saying parents and children can \"set daily screen time limits, take regular breaks, and replace some screen time with outdoor play.\" Why does the author include this information?",
+          "options": [
+            "To provide an example of the problem",
+            "To compare screen time to outdoor play",
+            "To offer solutions to the problem described in the passage",
+            "To list the causes of too much screen time"
+          ],
+          "answer": 2,
+          "explanation": "This is the \"solution\" part of the problem-solution structure. After describing the problem (too much screen time and its effects), the author provides actionable solutions to help readers address the issue."
+        }
+      ]
+    },
+    {
+      "id": "ts-p005",
+      "difficulty": "hard",
+      "teks": "3.11C",
+      "title": "The Water Cycle",
+      "text": "The water cycle is a continuous process that moves water around Earth. It begins when the sun heats water in oceans, lakes, and rivers. Because of this heat, water evaporates — it turns from liquid into water vapor (a gas) and rises into the air. Next, as the water vapor rises higher, it cools down. As a result, the vapor condenses — it turns back into tiny water droplets that form clouds. Then, when clouds collect enough droplets, precipitation occurs: water falls back to Earth as rain, snow, sleet, or hail. After the water lands, it flows into rivers, soaks into the ground, or collects in oceans and lakes. Finally, the sun heats it again and the whole cycle repeats.",
+      "questions": [
+        {
+          "id": "ts-p005-q1",
+          "difficulty": "hard",
+          "question": "Which BEST describes the text structure of this passage?",
+          "options": [
+            "Compare and contrast — comparing rain and snow",
+            "Problem and solution — explaining how the water shortage is fixed",
+            "Sequence with cause and effect — the water cycle steps happen in order, each causing the next",
+            "Description — describing what clouds look like"
+          ],
+          "answer": 2,
+          "explanation": "The passage uses both sequence (first, next, then, finally) and cause-and-effect (because of, as a result) — the steps happen in order AND each step causes the next. Many complex informational texts blend structures this way."
+        },
+        {
+          "id": "ts-p005-q2",
+          "difficulty": "hard",
+          "question": "Read this sentence: \"Because of this heat, water evaporates — it turns from liquid into water vapor and rises into the air.\" What is the CAUSE in this sentence?",
+          "options": [
+            "Water vapor rising into the air",
+            "Water turning into a gas",
+            "The sun heating the water",
+            "The water cycle repeating"
+          ],
+          "answer": 2,
+          "explanation": "\"Because of this heat\" directly identifies the cause — the sun's heat causes the water to evaporate. The phrase \"because of\" is a clear cause-and-effect signal word."
+        },
+        {
+          "id": "ts-p005-q3",
+          "difficulty": "hard",
+          "question": "The passage uses words like \"because of this,\" \"as a result,\" \"next,\" and \"then.\" What do these different types of signal words show about how the author organized the text?",
+          "options": [
+            "The author only used cause-and-effect structure",
+            "The author only used sequence structure",
+            "The author blended sequence and cause-and-effect structures to show ordered steps that cause each other",
+            "The author used compare-and-contrast structure throughout"
+          ],
+          "answer": 2,
+          "explanation": "\"Next\" and \"then\" are sequence signals (showing order), while \"because of this\" and \"as a result\" are cause-effect signals (showing causation). The author blended both structures because the water cycle is a sequence in which each step causes the next."
+        },
+        {
+          "id": "ts-p005-q4",
+          "difficulty": "hard",
+          "question": "Why is the water cycle described as a \"continuous process\" that \"repeats\"?",
+          "options": [
+            "Because it only happens during winter",
+            "Because the last step — water collecting in oceans — connects back to the first step — the sun heating water — making it a cycle with no end",
+            "Because rain always falls in the same places",
+            "Because evaporation only happens once a year"
+          ],
+          "answer": 1,
+          "explanation": "The cycle is continuous because the last step feeds back into the first: after water lands and collects, the sun heats it again and evaporation begins again. This is why it is called a cycle — it has no true beginning or ending."
+        },
+        {
+          "id": "ts-p005-q5",
+          "difficulty": "hard",
+          "question": "What is the MOST LIKELY reason the author chose sequence with cause-and-effect structure for this passage, rather than compare-and-contrast?",
+          "options": [
+            "Because compare-and-contrast would have been easier to write",
+            "Because the water cycle is a process where steps happen in order and cause each other — not a comparison between two things",
+            "Because the water cycle is the same as the weather cycle",
+            "Because the author does not know how to write compare-and-contrast"
+          ],
+          "answer": 1,
+          "explanation": "Authors choose text structure based on their purpose. The water cycle is a process — steps that happen in order and each cause the next. Compare-and-contrast would only make sense if the author were comparing two different cycles. The subject determines the structure."
+        }
+      ]
+    }
+  ]
+}

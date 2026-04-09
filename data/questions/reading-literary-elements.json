@@ -372,6 +372,215 @@
           "explanation": "Iris is twelve but rises to the challenge, saving a ship through skill and courage. The theme is that you do not need to be an adult to be capable and responsible."
         }
       ]
+    },
+    {
+      "id": "lit-p006",
+      "difficulty": "easy",
+      "teks": "3.8A",
+      "title": "The Old Red Bicycle",
+      "text": "Carlos found the old red bicycle in the corner of the garage, covered in a blanket of dust. He wiped it off and pumped up the flat tires. When he tried to ride it, the chain was as stiff as a board. His grandfather shuffled out of the house and watched. \"That was my bicycle when I was your age,\" he said softly. Carlos looked up. \"Will you teach me to fix it?\" His grandfather smiled — the first real smile Carlos had seen in months. Together they oiled every link, tightened every bolt, and by sunset, the bicycle gleamed like a red star in the fading light.",
+      "questions": [
+        {
+          "id": "lit-p006-q1",
+          "difficulty": "easy",
+          "question": "Read this sentence from the story: \"Carlos found the old red bicycle in the corner of the garage, covered in a blanket of dust.\"\n\nThe phrase \"a blanket of dust\" is a metaphor. What does it help the reader picture?",
+          "options": [
+            "That someone put an actual blanket on the bicycle",
+            "That a thick layer of dust covered the bicycle completely, like a blanket covers a person",
+            "That the bicycle was kept warm in winter",
+            "That the dust was soft and clean"
+          ],
+          "answer": 1,
+          "explanation": "A metaphor compares two things without using \"like\" or \"as.\" Calling the dust \"a blanket\" helps readers picture the dust as thick and covering — just as a blanket completely covers something."
+        },
+        {
+          "id": "lit-p006-q2",
+          "difficulty": "easy",
+          "question": "Read this sentence: \"The chain was as stiff as a board.\"\n\nThis is a simile. What does it mean?",
+          "options": [
+            "The chain was made of wood",
+            "The chain was very stiff and hard to move, like a flat piece of wood",
+            "The chain was flat on the ground",
+            "The bicycle was shaped like a board"
+          ],
+          "answer": 1,
+          "explanation": "A simile uses \"like\" or \"as\" to compare two things. \"As stiff as a board\" compares the chain's stiffness to a flat, inflexible board — helping readers understand how hard it would be to pedal."
+        },
+        {
+          "id": "lit-p006-q3",
+          "difficulty": "easy",
+          "question": "Read this sentence: \"By sunset, the bicycle gleamed like a red star in the fading light.\"\n\nWhat does the simile \"like a red star\" help the reader understand?",
+          "options": [
+            "The bicycle flew through the air",
+            "The bicycle glowed and shone brightly after being repaired",
+            "The bicycle turned the color of the night sky",
+            "The bicycle was shaped like a five-pointed star"
+          ],
+          "answer": 1,
+          "explanation": "Comparing the bicycle to a glowing star helps readers picture it shining and bright — a vivid contrast to the dusty, broken bicycle at the start of the story. The simile shows the bicycle has been transformed."
+        },
+        {
+          "id": "lit-p006-q4",
+          "difficulty": "easy",
+          "question": "Carlos's grandfather smiled \"the first real smile Carlos had seen in months.\" What does this detail tell the reader about the grandfather's character?",
+          "options": [
+            "The grandfather has very white teeth",
+            "The grandfather has been sad or distant, and fixing the bicycle brought him joy",
+            "The grandfather smiles all the time",
+            "The grandfather did not want Carlos to touch the bicycle"
+          ],
+          "answer": 1,
+          "explanation": "The phrase \"the first real smile in months\" suggests the grandfather has been unhappy or withdrawn. Working on the bicycle together — connected to his childhood memory — brought him genuine happiness. This detail reveals his emotional state."
+        },
+        {
+          "id": "lit-p006-q5",
+          "difficulty": "easy",
+          "question": "What is the THEME of this story?",
+          "options": [
+            "Old bicycles are better than new ones.",
+            "Garages are good places to find hidden treasures.",
+            "Shared work and memories can bring people together.",
+            "Always oil your bicycle chain regularly."
+          ],
+          "answer": 2,
+          "explanation": "The story is about how fixing the bicycle together reconnects Carlos and his grandfather — the grandfather's smile shows the emotional impact. The theme is that working together on something meaningful can bring people closer."
+        }
+      ]
+    },
+    {
+      "id": "lit-p007",
+      "difficulty": "medium",
+      "teks": "3.9A",
+      "title": "The Race",
+      "text": "Maya's legs were two rubber bands about to snap as she rounded the final corner of the race. The crowd was a roaring ocean on both sides, and she could not hear anything except her own pounding heart. Ahead of her, Tyler — the fastest runner in school — was pulling away. Maya thought of her coach's words: \"The race is never over until it's over.\" She pumped her arms like pistons, leaned forward, and let gravity be her engine. With ten meters left, she drew even. With five meters left, she flew past. She hit the finish line tape first and the roaring ocean crashed over her in waves of sound.",
+      "questions": [
+        {
+          "id": "lit-p007-q1",
+          "difficulty": "medium",
+          "question": "Read this sentence: \"Maya's legs were two rubber bands about to snap.\"\n\nThis is a metaphor. What does it tell the reader about Maya?",
+          "options": [
+            "Maya's legs are made of rubber",
+            "Maya is about to fall down because her legs are so tired and stretched to their limit",
+            "Maya is not a very fast runner",
+            "Maya's legs are very relaxed and comfortable"
+          ],
+          "answer": 1,
+          "explanation": "Comparing Maya's legs to rubber bands \"about to snap\" creates a vivid picture of exhaustion — rubber bands stretch and eventually break under strain. This metaphor shows Maya is pushing her body to its absolute limit."
+        },
+        {
+          "id": "lit-p007-q2",
+          "difficulty": "medium",
+          "question": "Read this sentence: \"The crowd was a roaring ocean on both sides.\"\n\nWhat does this metaphor help the reader understand?",
+          "options": [
+            "The race took place near a real ocean",
+            "The crowd was enormous and loud, surrounding Maya like waves of water",
+            "The crowd was very quiet and calm",
+            "The crowd was standing in water"
+          ],
+          "answer": 1,
+          "explanation": "Calling the crowd \"a roaring ocean\" uses a metaphor to convey two things at once: the crowd is LOUD (roaring) and SURROUNDING (like an ocean on both sides). Metaphors let authors say more with fewer words."
+        },
+        {
+          "id": "lit-p007-q3",
+          "difficulty": "medium",
+          "question": "Read this sentence: \"She pumped her arms like pistons, leaned forward, and let gravity be her engine.\"\n\nThis sentence contains a simile AND a metaphor. What feeling does the author create with these two comparisons together?",
+          "options": [
+            "Maya is exhausted and ready to give up",
+            "Maya is running like a powerful machine — efficient, mechanical, and unstoppable",
+            "Maya is running slowly and carefully",
+            "Maya is trying to fly through the air"
+          ],
+          "answer": 1,
+          "explanation": "\"Like pistons\" (simile) and \"gravity be her engine\" (metaphor) both compare Maya to machine parts — pistons and engines are powerful, precise, and mechanical. Together they make her sprint sound unstoppable and perfectly efficient."
+        },
+        {
+          "id": "lit-p007-q4",
+          "difficulty": "medium",
+          "question": "At the end of the story, the author writes: \"the roaring ocean crashed over her in waves of sound.\" Earlier in the story, the crowd was called \"a roaring ocean.\" Why does the author bring back this same image at the end?",
+          "options": [
+            "Because the author forgot they already used that comparison",
+            "To show that Maya has now won — the sound that surrounded her during the race now celebrates her victory",
+            "To show that the ocean is near the race track",
+            "To confuse the reader about where the race is taking place"
+          ],
+          "answer": 1,
+          "explanation": "Returning to the \"roaring ocean\" image at the end is an intentional craft choice — it creates a full circle. Earlier the crowd surrounded and overwhelmed Maya during the race; now the same sound crashes over her as celebration. The image means something new at the end."
+        },
+        {
+          "id": "lit-p007-q5",
+          "difficulty": "medium",
+          "question": "What is the central message (theme) of this story?",
+          "options": [
+            "Running is better exercise than swimming.",
+            "You should practice every day if you want to win races.",
+            "Do not give up — determination can lead to victory even when winning seems impossible.",
+            "Being the fastest runner in school is very important."
+          ],
+          "answer": 2,
+          "explanation": "Maya is behind and exhausted, yet she remembers her coach's words and pushes through. Her refusal to give up leads to victory. The theme is about perseverance and believing in yourself when the situation seems hopeless."
+        }
+      ]
+    },
+    {
+      "id": "lit-p008",
+      "difficulty": "hard",
+      "teks": "3.9A",
+      "title": "The Last Day of Summer",
+      "text": "Summer was dying. Jonah could feel it in the air — a coolness that had not been there a week ago, sneaking in like a thief at the edges of the warm days. The leaves on the maple tree had begun to whisper to each other, trading their green for hints of gold. Jonah sat on the porch steps and watched a monarch butterfly float past — the last one he would see until next year, he knew. He pressed the feeling into his memory like a flower pressed between the pages of a book: the smell of cut grass, the sound of the ice cream truck three streets over, his little sister's laughter on the tire swing. Everything ending. Everything changing. And yet — the cool air carried the faint promise of something new.",
+      "questions": [
+        {
+          "id": "lit-p008-q1",
+          "difficulty": "hard",
+          "question": "Read this sentence: \"a coolness that had not been there a week ago, sneaking in like a thief at the edges of the warm days.\"\n\nWhat does the simile \"like a thief\" suggest about how summer is ending?",
+          "options": [
+            "Someone is stealing summer from Jonah",
+            "The cold is arriving quietly and uninvited, taking away the warmth without warning",
+            "Jonah is afraid of thieves in his neighborhood",
+            "The cold came very suddenly and loudly"
+          ],
+          "answer": 1,
+          "explanation": "A thief sneaks in uninvited and takes something — the simile suggests the cool air is arriving quietly, taking the warmth of summer away gradually and without asking permission. It gives the season change a sense of loss."
+        },
+        {
+          "id": "lit-p008-q2",
+          "difficulty": "hard",
+          "question": "Read this sentence: \"The leaves on the maple tree had begun to whisper to each other, trading their green for hints of gold.\"\n\nThis sentence uses personification (giving human qualities to something nonhuman). What does giving the leaves the ability to \"whisper to each other\" add to the passage?",
+          "options": [
+            "It tells the reader that leaves can actually communicate",
+            "It creates a sense of mystery and life — as if nature is having a quiet conversation about changing",
+            "It shows that Jonah can speak to trees",
+            "It tells readers the leaves are making a loud noise"
+          ],
+          "answer": 1,
+          "explanation": "Personification makes the natural world feel alive and expressive. Leaves \"whispering\" creates a hushed, gentle mood — like a secret being passed around. It brings nature into the emotional world of the story."
+        },
+        {
+          "id": "lit-p008-q3",
+          "difficulty": "hard",
+          "question": "Read this sentence: \"He pressed the feeling into his memory like a flower pressed between the pages of a book.\"\n\nWhat does this simile reveal about Jonah's CHARACTER?",
+          "options": [
+            "Jonah likes to collect flowers and press them in books",
+            "Jonah is trying to preserve this moment carefully, the way someone preserves a flower — he values these memories deeply",
+            "Jonah is too young to understand what summer means",
+            "Jonah is unhappy and does not want summer to end at all"
+          ],
+          "answer": 1,
+          "explanation": "Pressing a flower in a book is done to preserve it — to keep it forever. This simile shows that Jonah is deliberately storing the moment in his memory, treating it as something precious and worth keeping. It reveals he is thoughtful and emotionally aware."
+        },
+        {
+          "id": "lit-p008-q4",
+          "difficulty": "hard",
+          "question": "The passage ends with: \"Everything ending. Everything changing. And yet — the cool air carried the faint promise of something new.\"\n\nHow does this ending affect the MOOD of the passage?",
+          "options": [
+            "It ends with pure sadness — Jonah is completely heartbroken about summer ending",
+            "It ends with a mix of sadness and hope — loss is acknowledged, but something new is coming",
+            "It ends with excitement — Jonah cannot wait for winter",
+            "It ends with confusion — Jonah does not know what season is coming next"
+          ],
+          "answer": 1,
+          "explanation": "The final lines acknowledge loss (\"everything ending\") but then turn with \"And yet\" — a transition that introduces hope. \"A faint promise of something new\" softens the sadness. The mood is bittersweet, not purely sad or purely happy."
+        }
+      ]
     }
   ]
 }

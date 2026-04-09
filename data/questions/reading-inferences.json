@@ -372,6 +372,190 @@
           "explanation": "Having applied twice before and been rejected, the most logical hope for this third attempt is that her preparation (reviewed notes, lab coat, confident entry) will prove she is worthy of the position."
         }
       ]
+    },
+    {
+      "id": "inf-p006",
+      "difficulty": "easy",
+      "teks": "3.13C",
+      "title": "The Empty Seat",
+      "text": "Every day, Theo sat in the same seat on the bus — the third row, by the window. He always saved the aisle seat beside him with his backpack. When other kids asked to sit there, he would look out the window and say, \"Someone's sitting here.\" But the seat was always empty by the time they got off. One afternoon, a new girl named Ava got on the bus. She saw the empty seat and sat down before Theo could say anything. He looked at her, then looked away. But when Ava started humming a song Theo recognized, he turned back. \"I like that song,\" he said quietly.",
+      "questions": [
+        {
+          "id": "inf-p006-q1",
+          "difficulty": "easy",
+          "question": "Based on the passage, what can you infer about WHY Theo always saved the seat beside him?",
+          "options": [
+            "He was saving the seat for a teacher",
+            "He was lonely and did not know how to make friends",
+            "He did not like riding the bus",
+            "He was keeping the seat for his sister"
+          ],
+          "answer": 1,
+          "explanation": "The seat is always empty by the time they get off — Theo is not saving it for anyone real. His behavior of blocking others while clearly being alone suggests he is lonely but does not know how to connect with people."
+        },
+        {
+          "id": "inf-p006-q2",
+          "difficulty": "easy",
+          "question": "What does Theo turning back to talk to Ava about the song tell you?",
+          "options": [
+            "Theo is angry that Ava sat down without asking",
+            "Theo is starting to open up because they have something in common",
+            "Theo wants Ava to move to a different seat",
+            "Theo does not know who Ava is"
+          ],
+          "answer": 1,
+          "explanation": "Theo initially looks away from Ava, but when she hums a familiar song, he turns back and speaks. The shared connection (the song) gives him a way to start a conversation — suggesting he is beginning to open up."
+        },
+        {
+          "id": "inf-p006-q3",
+          "difficulty": "easy",
+          "question": "Read this sentence: \"He looked at her, then looked away.\"\n\nWhat can the reader INFER about how Theo feels at this moment?",
+          "options": [
+            "Theo is happy that someone finally sat next to him",
+            "Theo is uncomfortable and not sure what to do",
+            "Theo is angry that Ava took the seat",
+            "Theo is about to tell Ava to move"
+          ],
+          "answer": 1,
+          "explanation": "Looking at someone and then quickly looking away is a sign of discomfort or shyness — not anger or happiness. Theo is unsure how to react to someone sitting next to him, which is a behavior consistent with being shy or lonely."
+        },
+        {
+          "id": "inf-p006-q4",
+          "difficulty": "easy",
+          "question": "What text evidence BEST supports the inference that Theo is lonely?",
+          "options": [
+            "Theo sat in the third row by the window",
+            "Theo blocked other kids from sitting with him but the seat was always empty when they got off",
+            "Ava sat down before Theo could say anything",
+            "Ava was a new girl at school"
+          ],
+          "answer": 1,
+          "explanation": "The key detail is that the seat is always EMPTY when they arrive — Theo claims he is saving it for someone, but no one ever sits there. This reveals he has no one to sit with, supporting the inference that he is lonely."
+        }
+      ]
+    },
+    {
+      "id": "inf-p007",
+      "difficulty": "medium",
+      "teks": "3.13C",
+      "title": "The Abandoned Garden",
+      "text": "When the Reyes family moved into the old house on Maple Street, the backyard looked like it had given up. The grass was knee-high and tangled with weeds. Rotting wooden planter boxes sat in rows, their soil dried and cracked. But buried among the weeds, Grandma Reyes found something that made her stop: a rosebush, still holding three pale pink buds. She knelt beside it for a long time, her hand hovering just above the thorns. \"This garden was loved once,\" she said at last, pulling a weed from the base of the rose. She was back the next morning with gloves and a trowel.",
+      "questions": [
+        {
+          "id": "inf-p007-q1",
+          "difficulty": "medium",
+          "question": "What can the reader INFER about the history of the garden based on the details in the passage?",
+          "options": [
+            "The garden was never planted and has always been wild",
+            "Someone cared for the garden carefully in the past, but it was left untended for a long time",
+            "The Reyes family planted the rosebush before they moved in",
+            "The garden is too damaged to ever grow anything again"
+          ],
+          "answer": 1,
+          "explanation": "The planter boxes in rows and the surviving rosebush show the garden was deliberately planted and designed — someone once cared for it. The overgrowth and dried soil show it was abandoned over time. These are text clues that lead to this inference."
+        },
+        {
+          "id": "inf-p007-q2",
+          "difficulty": "medium",
+          "question": "Read this sentence: \"She knelt beside it for a long time, her hand hovering just above the thorns.\"\n\nWhat can you infer about how Grandma Reyes FEELS when she finds the rosebush?",
+          "options": [
+            "She is frustrated that the rose is in her way",
+            "She is moved and thoughtful, treating the rosebush with great care and respect",
+            "She is afraid of the thorns and does not want to touch it",
+            "She is confused about what kind of plant it is"
+          ],
+          "answer": 1,
+          "explanation": "Kneeling and hovering her hand without touching shows a gentle, reverent attitude — she is treating the rose carefully and emotionally. The fact that she stays there \"a long time\" shows she is affected by finding it."
+        },
+        {
+          "id": "inf-p007-q3",
+          "difficulty": "medium",
+          "question": "Grandma Reyes says, \"This garden was loved once.\" What does this statement suggest she has INFERRED from the details around her?",
+          "options": [
+            "She knows the previous owners personally",
+            "She has read the garden's history in old records",
+            "She has drawn a conclusion from the details — the organized planters and surviving rose — that someone once cared for this space",
+            "She is guessing randomly about who lived there before"
+          ],
+          "answer": 2,
+          "explanation": "Grandma Reyes is doing exactly what readers do when they make inferences — she uses clues (planted boxes, surviving rose) and background knowledge (gardens require care) to draw a conclusion. Her statement is an inference, not a fact."
+        },
+        {
+          "id": "inf-p007-q4",
+          "difficulty": "medium",
+          "question": "The passage ends with: \"She was back the next morning with gloves and a trowel.\"\n\nWhat can the reader INFER about what Grandma Reyes plans to do?",
+          "options": [
+            "She plans to tear out all the plants and start from scratch",
+            "She plans to restore the garden — she intends to care for it as someone did before",
+            "She is returning to take photographs of the garden",
+            "She is coming back to show the garden to the rest of the family"
+          ],
+          "answer": 1,
+          "explanation": "Gloves and a trowel are gardening tools used for planting, weeding, and tending plants. Returning \"the next morning\" shows urgency and commitment. These clues clearly point to her intention to restore the garden."
+        }
+      ]
+    },
+    {
+      "id": "inf-p008",
+      "difficulty": "hard",
+      "teks": "3.13C",
+      "title": "The Trophy",
+      "text": "The trophy sat on the highest shelf in Coach Rivera's office, covered in a thin layer of dust. It was from 1987 — the year the Riverside Rockets won the state championship. Every new player who came into the office stared at it. Coach Rivera never talked about it. When a reporter once asked him about that season, he changed the subject so smoothly that the reporter barely noticed. The team photo from 1987 was tucked face-down in a drawer, not hanging on the wall like the others. Some of the older kids in town said that something had happened at the championship game — something that hadn't been in the newspaper. But Coach Rivera just kept coaching, season after season, giving every team the same quiet dedication.",
+      "questions": [
+        {
+          "id": "inf-p008-q1",
+          "difficulty": "hard",
+          "question": "What can the reader INFER about why Coach Rivera does not talk about the 1987 championship?",
+          "options": [
+            "He does not remember what happened that year",
+            "Something happened during that season that he finds painful or difficult to discuss",
+            "He is too busy coaching to think about the past",
+            "He does not think the championship was an important achievement"
+          ],
+          "answer": 1,
+          "explanation": "The trophy has dust on it (not displayed proudly), the team photo is face-down, he changes the subject when asked, and people say something happened that was not in the newspaper — all of these clues point to a painful or complicated memory, not simple forgetfulness or indifference."
+        },
+        {
+          "id": "inf-p008-q2",
+          "difficulty": "hard",
+          "question": "Read this sentence: \"He changed the subject so smoothly that the reporter barely noticed.\"\n\nWhat does this tell the reader about Coach Rivera?",
+          "options": [
+            "He is a poor communicator",
+            "He is skilled at steering conversations away from the 1987 championship — he has practiced avoiding the topic",
+            "He did not hear the reporter's question",
+            "He is excited to talk about other topics instead"
+          ],
+          "answer": 1,
+          "explanation": "Changing a subject \"so smoothly\" that the other person barely notices requires skill — it is not an accident. This suggests Coach Rivera has had to avoid this question before and has become practiced at it."
+        },
+        {
+          "id": "inf-p008-q3",
+          "difficulty": "hard",
+          "question": "The team photo from 1987 is \"tucked face-down in a drawer, not hanging on the wall like the others.\" What can the reader INFER from this detail?",
+          "options": [
+            "The photo was damaged and needed to be stored carefully",
+            "Coach Rivera is hiding the photo because the memory attached to it is too difficult to see every day",
+            "Coach Rivera has run out of space on the wall",
+            "The photo is not from an important year"
+          ],
+          "answer": 1,
+          "explanation": "All other team photos hang on the wall — this one is different. Putting it face-down and in a drawer specifically hides the image. Combined with the trophy's dust and his avoidance of the topic, this strongly suggests the memory is too painful to display."
+        },
+        {
+          "id": "inf-p008-q4",
+          "difficulty": "hard",
+          "question": "Which TWO pieces of text evidence BEST support the inference that the 1987 championship holds a difficult or painful memory for Coach Rivera? Select TWO correct answers.",
+          "options": [
+            "The trophy from 1987 is covered in dust and never mentioned by the coach",
+            "Every new player who comes into the office stares at the trophy",
+            "The team photo from 1987 is stored face-down in a drawer",
+            "Coach Rivera gives every team the same quiet dedication",
+            "The reporter asked about the 1987 season"
+          ],
+          "answers": [0, 2],
+          "explanation": "The dusty, never-mentioned trophy AND the face-down photo hidden in a drawer are both physical signs that Coach Rivera avoids the 1987 memory. Players staring and a reporter asking are external reactions — they don't show Rivera's own feelings about it."
+        }
+      ]
     }
   ]
 }

@@ -372,6 +372,177 @@
           "explanation": "Being home to thousands of species shows the reef's ecological importance — it supports enormous biodiversity. The other details show size or awareness, but not importance."
         }
       ]
+    },
+    {
+      "id": "mi-p006",
+      "difficulty": "easy",
+      "teks": "3.13A",
+      "title": "Fire Ants in Texas",
+      "text": "Fire ants are a common pest in Texas. They build large mounds of dirt in yards, parks, and open fields. Fire ants are known for their painful sting — when disturbed, they swarm quickly and sting anything nearby. A single fire ant can sting multiple times. Fire ant mounds can also damage lawns and equipment. It is important to treat fire ant mounds carefully. You should never step on one or poke it. Pest control experts can help remove fire ant colonies safely.",
+      "questions": [
+        {
+          "id": "mi-p006-q1",
+          "difficulty": "easy",
+          "question": "What is the MAIN IDEA of this passage?",
+          "options": [
+            "Fire ants are found only in Texas parks",
+            "Fire ants are a painful and damaging pest that should be handled carefully",
+            "Pest control experts charge a lot of money to remove fire ants",
+            "All insects that sting are dangerous to humans"
+          ],
+          "answer": 1,
+          "explanation": "The passage describes what fire ants are, how they cause problems (stings and damage), and how to handle them safely. The main idea covers all of this: fire ants are a serious pest that requires careful handling."
+        },
+        {
+          "id": "mi-p006-q2",
+          "difficulty": "easy",
+          "question": "Which detail BEST supports the idea that fire ants are dangerous?",
+          "options": [
+            "Fire ants build mounds of dirt.",
+            "A single fire ant can sting multiple times.",
+            "Fire ant mounds can be found in open fields.",
+            "Pest control experts can help remove colonies."
+          ],
+          "answer": 1,
+          "explanation": "The ability to sting multiple times makes fire ants especially dangerous compared to many other insects. This detail directly supports the idea that they are a painful, harmful pest."
+        },
+        {
+          "id": "mi-p006-q3",
+          "difficulty": "easy",
+          "question": "Read this sentence from the passage: \"It is important to treat fire ant mounds carefully.\"\n\nThis sentence BEST expresses —",
+          "options": [
+            "a minor detail about where fire ants live",
+            "the central message the whole passage supports",
+            "the author's personal opinion about Texas insects",
+            "the title of the passage"
+          ],
+          "answer": 1,
+          "explanation": "The entire passage builds up to this safety message: fire ants are dangerous AND damage property, so they must be handled carefully. This sentence captures the passage's central message."
+        },
+        {
+          "id": "mi-p006-q4",
+          "difficulty": "easy",
+          "question": "What should you do if you find a fire ant mound?",
+          "options": [
+            "Step on it to flatten the mound",
+            "Poke it with a stick to count the ants inside",
+            "Do not disturb it and contact a pest control expert for safe removal",
+            "Water it so the ants will leave on their own"
+          ],
+          "answer": 2,
+          "explanation": "The passage states: \"You should never step on one or poke it\" and recommends pest control experts for safe removal. Disturbing the mound causes the ants to swarm and sting."
+        }
+      ]
+    },
+    {
+      "id": "mi-p007",
+      "difficulty": "medium",
+      "teks": "3.13A",
+      "title": "The Life of Harriet Tubman",
+      "text": "Harriet Tubman was born into slavery around 1822 in Maryland. She escaped slavery in 1849 by traveling about 90 miles on foot to Philadelphia, Pennsylvania — a free state. But Tubman did not stop there. She returned to the South more than a dozen times to lead other enslaved people to freedom. She used a secret network of safe houses called the Underground Railroad. During the Civil War, she worked as a spy for the Union Army, leading soldiers on raids. In all, Harriet Tubman helped free more than 300 people. She is remembered as one of the most courageous Americans who ever lived.",
+      "questions": [
+        {
+          "id": "mi-p007-q1",
+          "difficulty": "medium",
+          "question": "What is the CENTRAL IDEA of this passage?",
+          "options": [
+            "The Underground Railroad was a system of safe houses used to escape slavery",
+            "Harriet Tubman escaped slavery and devoted her life to freeing others, showing extraordinary courage",
+            "Harriet Tubman was born in Maryland and later moved to Philadelphia",
+            "The Civil War lasted many years and involved many battles"
+          ],
+          "answer": 1,
+          "explanation": "The passage covers Tubman's escape AND her many missions to free others AND her Civil War work — all evidence of her courage and dedication. The central idea must cover the whole passage, not just one fact."
+        },
+        {
+          "id": "mi-p007-q2",
+          "difficulty": "medium",
+          "question": "Which detail BEST supports the idea that Tubman was courageous?",
+          "options": [
+            "She was born around 1822 in Maryland.",
+            "She escaped slavery by traveling 90 miles to Philadelphia.",
+            "She returned to the South more than a dozen times to lead others to freedom.",
+            "She is remembered as one of the most courageous Americans."
+          ],
+          "answer": 2,
+          "explanation": "Going back to a dangerous place again and again — over a dozen times — when she had already reached freedom shows extraordinary courage. The last option tells us she was courageous without showing it."
+        },
+        {
+          "id": "mi-p007-q3",
+          "difficulty": "medium",
+          "question": "Why did the author include the detail that Tubman helped free MORE THAN 300 PEOPLE?",
+          "options": [
+            "To show how far north the free states were from Maryland",
+            "To give a specific number that shows the enormous scale of Tubman's impact",
+            "To explain exactly how the Underground Railroad worked",
+            "To describe the Civil War battles Tubman participated in"
+          ],
+          "answer": 1,
+          "explanation": "Specific numbers make an impact concrete and memorable. \"More than 300 people\" shows readers the scale of Tubman's work — it supports the central idea that she was a historic figure who made a major difference."
+        },
+        {
+          "id": "mi-p007-q4",
+          "difficulty": "medium",
+          "question": "Which of the following is a SUPPORTING DETAIL, not the central idea?",
+          "options": [
+            "Harriet Tubman showed extraordinary courage throughout her life",
+            "Tubman worked as a spy for the Union Army during the Civil War",
+            "Tubman is one of the most courageous Americans who ever lived",
+            "Tubman devoted her life to freedom for herself and others"
+          ],
+          "answer": 1,
+          "explanation": "\"Tubman worked as a spy for the Union Army\" is one specific fact about what she did — a supporting detail. The other options are broader statements that capture her overall character, closer to the central idea."
+        }
+      ]
+    },
+    {
+      "id": "mi-p008",
+      "difficulty": "hard",
+      "teks": "3.13A",
+      "title": "The Science of Sleep",
+      "text": "Sleep is not wasted time — it is one of the most productive things a body can do. While you sleep, your brain processes information from the day and moves it into long-term memory. This is why students who sleep well after studying remember more than those who stay up late. During sleep, the body also repairs muscles and produces hormones that help children grow. Research shows that children between 6 and 12 years old need 9 to 12 hours of sleep per night. Yet surveys show that many children get far less. When children do not get enough sleep, they have trouble focusing, remembering, and controlling their emotions. The evidence is clear: sleep is not optional — it is essential for learning, growing, and feeling well.",
+      "questions": [
+        {
+          "id": "mi-p008-q1",
+          "difficulty": "hard",
+          "question": "What is the CENTRAL IDEA of this passage?",
+          "options": [
+            "Children between 6 and 12 need 9 to 12 hours of sleep",
+            "Sleep is essential for children's learning, physical growth, and emotional health",
+            "Staying up late to study makes it hard to focus the next day",
+            "The brain moves information into long-term memory during sleep"
+          ],
+          "answer": 1,
+          "explanation": "The passage covers sleep's benefits for memory, growth, and emotional control — all supporting one big idea: sleep is essential for overall health and learning. Options A, C, and D are each supporting details, not the full central idea."
+        },
+        {
+          "id": "mi-p008-q2",
+          "difficulty": "hard",
+          "question": "The author opens with: \"Sleep is not wasted time — it is one of the most productive things a body can do.\"\n\nWhat is the MOST LIKELY reason the author begins the passage this way?",
+          "options": [
+            "To tell readers they should always sleep more than 12 hours a night",
+            "To challenge a common misconception and immediately establish that sleep is important",
+            "To explain what happens in the brain during sleep",
+            "To list the reasons why children do not get enough sleep"
+          ],
+          "answer": 1,
+          "explanation": "Many people think of sleep as doing nothing — \"wasted time.\" The author directly challenges this idea in the first sentence, setting up the central argument that sleep is actually productive. This is a strong opening strategy."
+        },
+        {
+          "id": "mi-p008-q3",
+          "difficulty": "hard",
+          "question": "Which TWO details BEST support the central idea that sleep is essential for learning and growth? Select TWO correct answers.",
+          "options": [
+            "Children need 9 to 12 hours of sleep per night",
+            "During sleep, the body repairs muscles and produces growth hormones",
+            "Surveys show many children get less sleep than they need",
+            "The brain processes information and builds long-term memory during sleep",
+            "Children who stay up late have trouble controlling emotions"
+          ],
+          "answers": [1, 3],
+          "explanation": "\"The body repairs muscles and produces growth hormones\" and \"the brain builds long-term memory\" are the strongest supporting details — they directly explain WHY sleep is essential (physical repair + memory building). The other options describe sleep needs or consequences, not the mechanism."
+        }
+      ]
     }
   ]
 }
