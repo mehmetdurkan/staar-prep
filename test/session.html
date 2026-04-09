@@ -120,6 +120,68 @@
             color: var(--blue);
             margin-bottom: 8px;
         }
+
+        /* Inline text quote in question stem */
+        .q-quote {
+            display: block;
+            background: #F0F4FF;
+            border-left: 3px solid var(--blue);
+            padding: 10px 14px;
+            margin: 10px 0 14px;
+            border-radius: 0 6px 6px 0;
+            font-style: italic;
+            font-size: 0.97rem;
+            line-height: 1.6;
+            color: var(--text);
+        }
+
+        /* Multi-select hint */
+        .multi-hint {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: #FFF3CD;
+            color: #7D5A00;
+            font-size: 0.82rem;
+            font-weight: 700;
+            padding: 5px 12px;
+            border-radius: 99px;
+            margin-bottom: 14px;
+            border: 1px solid #F0D060;
+        }
+
+        /* Multi-select selected (pending) state */
+        .answer-btn.selected-choice {
+            border-color: var(--blue);
+            background: var(--blue-light);
+        }
+        .answer-btn.selected-choice .opt-letter {
+            background: var(--blue);
+            color: white;
+        }
+
+        /* Check answers button */
+        .check-multi-btn {
+            display: block;
+            width: 100%;
+            margin-top: 16px;
+            padding: 14px;
+            background: var(--blue);
+            color: white;
+            border: none;
+            border-radius: var(--radius);
+            font-size: 1rem;
+            font-weight: 700;
+            font-family: inherit;
+            cursor: pointer;
+            transition: background 0.15s;
+        }
+        .check-multi-btn:disabled {
+            background: var(--border);
+            color: var(--text-light);
+            cursor: not-allowed;
+        }
+        .check-multi-btn:not(:disabled):hover { background: var(--blue-dark); }
     </style>
 </head>
 <body>
@@ -173,6 +235,7 @@
     let currentIndex = 0;
     let answers = [];
     let answered = false;
+    let selectedChoices = [];
     let startTime = Date.now();
 
     // === Load Questions ===
@@ -259,6 +322,7 @@
     function renderQuestion() {
         const q = questions[currentIndex];
         answered = false;
+        selectedChoices = [];
 
         // Update header
         const num = currentIndex + 1;
@@ -271,7 +335,8 @@
         const diffClass = q.difficulty;
         const diffEmoji = { easy: '😊', medium: '🤔', hard: '🔥' }[q.difficulty] || '';
         const diffLabel = { easy: 'Easy', medium: 'Medium', hard: 'Hard' }[q.difficulty] || q.difficulty;
-        const letters = ['A', 'B', 'C', 'D'];
+        const letters = ['A', 'B', 'C', 'D', 'E'];
+        const isMulti = Array.isArray(q.answers);
 
         let html = `
             <div class="question-meta">
@@ -289,31 +354,45 @@
             </div>`;
         }
 
+        // Multi-select hint
+        if (isMulti) {
+            html += `<div class="multi-hint">☑ Select ${q.answers.length} answers</div>`;
+        }
+
         html += `<div class="question-text">${q.question}</div>
             <div class="answer-opts" id="answerOpts">
         `;
 
         q.options.forEach((opt, i) => {
-            html += `<button class="answer-btn" id="opt-${i}" onclick="selectAnswer(${i})" aria-label="Option ${letters[i]}: ${opt}">
+            const onclick = isMulti ? `toggleChoice(${i})` : `selectAnswer(${i})`;
+            html += `<button class="answer-btn" id="opt-${i}" onclick="${onclick}" aria-label="Option ${letters[i]}: ${opt}">
                 <span class="opt-letter">${letters[i]}</span>
                 <span>${opt}</span>
             </button>`;
         });
 
         html += `</div>`;
+
+        // Multi-select check button
+        if (isMulti) {
+            html += `<button class="check-multi-btn" id="checkMultiBtn" onclick="checkMultiAnswer()" disabled>
+                Check My Answers
+            </button>`;
+        }
+
         html += `<div class="explanation" id="explanation"></div>`;
 
         document.getElementById('questionWrap').innerHTML = html;
     }
 
-    // === Answer Handling ===
+    // === Single-select Answer ===
     function selectAnswer(selectedIndex) {
         if (answered) return;
         answered = true;
 
         const q = questions[currentIndex];
         const isCorrect = selectedIndex === q.answer;
-        const letters = ['A', 'B', 'C', 'D'];
+        const letters = ['A', 'B', 'C', 'D', 'E'];
 
         // Record answer
         answers.push({
@@ -336,27 +415,95 @@
         // Mark selected
         const selBtn = document.getElementById(`opt-${selectedIndex}`);
         selBtn.classList.add(isCorrect ? 'correct' : 'wrong');
-        if (!isCorrect) {
-            selBtn.querySelector('.opt-letter').textContent += ' ✗';
-        }
+        selBtn.querySelector('.opt-letter').textContent += isCorrect ? ' ✓' : ' ✗';
 
         // Always highlight correct answer
         const corrBtn = document.getElementById(`opt-${q.answer}`);
         corrBtn.classList.add('correct');
-        if (isCorrect) {
-            corrBtn.querySelector('.opt-letter').textContent += ' ✓';
-        } else {
-            corrBtn.querySelector('.opt-letter').textContent += ' ✓';
+        if (!isCorrect) corrBtn.querySelector('.opt-letter').textContent += ' ✓';
+
+        showExplanation(isCorrect, q.explanation);
+    }
+
+    // === Multi-select Toggle ===
+    function toggleChoice(index) {
+        if (answered) return;
+        const q = questions[currentIndex];
+        const btn = document.getElementById(`opt-${index}`);
+
+        if (selectedChoices.includes(index)) {
+            selectedChoices = selectedChoices.filter(i => i !== index);
+            btn.classList.remove('selected-choice');
+        } else if (selectedChoices.length < q.answers.length) {
+            selectedChoices.push(index);
+            btn.classList.add('selected-choice');
         }
 
-        // Show explanation
+        const checkBtn = document.getElementById('checkMultiBtn');
+        if (checkBtn) checkBtn.disabled = selectedChoices.length !== q.answers.length;
+    }
+
+    // === Multi-select Check ===
+    function checkMultiAnswer() {
+        if (answered) return;
+        answered = true;
+
+        const q = questions[currentIndex];
+        const correctSet = new Set(q.answers);
+        const selectedSet = new Set(selectedChoices);
+        const isCorrect = q.answers.every(a => selectedSet.has(a)) && selectedChoices.every(s => correctSet.has(s));
+        const letters = ['A', 'B', 'C', 'D', 'E'];
+
+        // Record answer
+        answers.push({
+            questionId: q.id,
+            topic: q.topic,
+            topicName: q.topicName || q.topic,
+            teks: q.teks,
+            difficulty: q.difficulty,
+            question: q.question,
+            options: q.options,
+            selectedIndex: selectedChoices[0] ?? null,
+            correctIndex: q.answers[0] ?? null,
+            selectedIndices: selectedChoices,
+            correctIndices: q.answers,
+            isCorrect,
+            explanation: q.explanation
+        });
+
+        // Hide check button, disable all answer btns
+        document.getElementById('checkMultiBtn').style.display = 'none';
+        document.querySelectorAll('.answer-btn').forEach(btn => btn.disabled = true);
+
+        // Mark each option
+        q.options.forEach((_, i) => {
+            const btn = document.getElementById(`opt-${i}`);
+            const wasSelected = selectedSet.has(i);
+            const isCorrectChoice = correctSet.has(i);
+            btn.classList.remove('selected-choice');
+            if (wasSelected && isCorrectChoice) {
+                btn.classList.add('correct');
+                btn.querySelector('.opt-letter').textContent += ' ✓';
+            } else if (wasSelected && !isCorrectChoice) {
+                btn.classList.add('wrong');
+                btn.querySelector('.opt-letter').textContent += ' ✗';
+            } else if (!wasSelected && isCorrectChoice) {
+                btn.classList.add('correct');
+                btn.querySelector('.opt-letter').textContent += ' ✓';
+            }
+        });
+
+        showExplanation(isCorrect, q.explanation);
+    }
+
+    // === Show Explanation + Next Button ===
+    function showExplanation(isCorrect, explanation) {
         const expl = document.getElementById('explanation');
         const icon = isCorrect ? '✅' : '❌';
         const msg = isCorrect ? '<strong>Correct!</strong>' : '<strong>Not quite.</strong>';
-        expl.innerHTML = `${icon} ${msg} ${q.explanation}`;
+        expl.innerHTML = `${icon} ${msg} ${explanation}`;
         expl.classList.add('show');
 
-        // Show next button
         const nextBtn = document.getElementById('nextBtn');
         const isLast = currentIndex === questions.length - 1;
         nextBtn.textContent = isLast ? '🏁 See Results' : 'Next →';

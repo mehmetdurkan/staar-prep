@@ -200,18 +200,29 @@
         document.getElementById('topicBreakdown').innerHTML = breakdownHtml;
 
         // Review List
+        const letters = ['A', 'B', 'C', 'D', 'E'];
         let reviewHtml = '';
         r.answers.forEach((a, i) => {
             const icon = a.isCorrect ? '✅' : '❌';
             const cls = a.isCorrect ? 'correct' : 'wrong';
-            const letters = ['A', 'B', 'C', 'D'];
             const preview = a.question.length > 70 ? a.question.slice(0, 70) + '…' : a.question;
 
             let bodyHtml = `<div style="margin-bottom:8px;"><strong>Question:</strong> ${a.question}</div>`;
-            if (!a.isCorrect) {
-                bodyHtml += `<div class="your-ans mb-8">✗ Your answer: ${letters[a.selectedIndex]}. ${a.options[a.selectedIndex]}</div>`;
+            if (a.correctIndices) {
+                // Multi-select question
+                if (!a.isCorrect && a.selectedIndices) {
+                    const selLabels = a.selectedIndices.map(idx => `${letters[idx]}. ${a.options[idx]}`).join(' and ');
+                    bodyHtml += `<div class="your-ans mb-8">✗ Your answers: ${selLabels}</div>`;
+                }
+                const corrLabels = a.correctIndices.map(idx => `${letters[idx]}. ${a.options[idx]}`).join(' and ');
+                bodyHtml += `<div class="correct-ans mb-8">✓ Correct: ${corrLabels}</div>`;
+            } else {
+                // Single-select question
+                if (!a.isCorrect) {
+                    bodyHtml += `<div class="your-ans mb-8">✗ Your answer: ${letters[a.selectedIndex]}. ${a.options[a.selectedIndex]}</div>`;
+                }
+                bodyHtml += `<div class="correct-ans mb-8">✓ Correct: ${letters[a.correctIndex]}. ${a.options[a.correctIndex]}</div>`;
             }
-            bodyHtml += `<div class="correct-ans mb-8">✓ Correct: ${letters[a.correctIndex]}. ${a.options[a.correctIndex]}</div>`;
             bodyHtml += `<div style="margin-top:8px; padding:10px 12px; background:var(--blue-light); border-radius:8px; font-size:0.85rem;">💡 ${a.explanation}</div>`;
 
             reviewHtml += `

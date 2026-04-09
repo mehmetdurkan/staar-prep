@@ -372,6 +372,189 @@
           "explanation": "The passage describes soil being 'swept up' and 'stripped' by wind — this wearing away or removal of soil is erosion. Conservation practices aim to stop this process."
         }
       ]
+    },
+    {
+      "id": "vocab-p006",
+      "difficulty": "easy",
+      "teks": "3.4A",
+      "title": "The Pollinator",
+      "text": "Bees are some of nature's most important insects. They are pollinators — they carry pollen from one flower to another as they feed on nectar. This process helps plants reproduce and grow fruit and seeds. Without bees, many plants could not survive. Some plants rely entirely on bees for pollination. When bees visit a flower, pollen sticks to their fuzzy bodies. When they visit the next flower, the pollen rubs off and fertilizes it. Bee colonies can be enormous, with tens of thousands of individual bees working together.",
+      "questions": [
+        {
+          "id": "vocab-p006-q1",
+          "difficulty": "easy",
+          "question": "Read this sentence from the passage: \"They are pollinators — they carry pollen from one flower to another as they feed on nectar.\"\n\nWhat does the word POLLINATOR mean?",
+          "options": [
+            "An insect that builds honeycombs",
+            "A creature that carries pollen from flower to flower",
+            "A plant that produces nectar",
+            "A bee that lives alone instead of in a colony"
+          ],
+          "answer": 1,
+          "explanation": "The passage defines the word right after the dash: \"they carry pollen from one flower to another.\" The dash signals a definition. A pollinator is a creature that moves pollen between flowers."
+        },
+        {
+          "id": "vocab-p006-q2",
+          "difficulty": "easy",
+          "question": "Read this sentence: \"When they visit the next flower, the pollen rubs off and fertilizes it.\"\n\nWhat does FERTILIZES mean in this sentence?",
+          "options": [
+            "Cleans the flower's petals",
+            "Provides what is needed for the flower to produce seeds and reproduce",
+            "Takes nectar away from the flower",
+            "Protects the flower from insects"
+          ],
+          "answer": 1,
+          "explanation": "The passage says fertilizing happens when pollen rubs off on a flower — and earlier explains this \"helps plants reproduce and grow fruit and seeds.\" Fertilizing means providing what the plant needs to reproduce."
+        },
+        {
+          "id": "vocab-p006-q3",
+          "difficulty": "easy",
+          "question": "Read this sentence: \"Bee colonies can be enormous, with tens of thousands of individual bees working together.\"\n\nWhat does the word COLONIES mean as it is used in this passage?",
+          "options": [
+            "Types of flowers that bees like",
+            "Large organized groups of bees living and working together",
+            "Special types of bees that do not sting",
+            "The wax structures bees build for storing honey"
+          ],
+          "answer": 1,
+          "explanation": "The passage says colonies can contain \"tens of thousands of individual bees working together\" — this shows a colony is a large group of bees living and functioning as a community."
+        },
+        {
+          "id": "vocab-p006-q4",
+          "difficulty": "easy",
+          "question": "What does the word RELY mean in \"Some plants rely entirely on bees for pollination\"?",
+          "options": [
+            "prefer",
+            "depend on",
+            "compete with",
+            "ignore"
+          ],
+          "answer": 1,
+          "explanation": "\"Rely\" means to depend on something for support or survival. The passage says \"without bees, many plants could not survive\" — this confirms that relying on bees means depending on them completely."
+        }
+      ]
+    },
+    {
+      "id": "vocab-p007",
+      "difficulty": "medium",
+      "teks": "3.4B",
+      "title": "from Nature's Best Jumpers",
+      "text": "Some animals are known as great jumpers. These extreme jumpers come in all sizes and shapes and live in all kinds of habitats. Their jumping skills have helped them adapt to their environments over thousands of years.\n\nFrogs are good jumpers. Most frogs live on the ground and get around by jumping. Frogs' back legs have big muscles that make jumping easy. Their big feet help them push off the ground with a lot of force.\n\nFroghoppers, also known as spittlebugs, are only about .2 inch long. Some froghoppers can jump about 28 inches into the air. That is the highest that any insect is known to jump. Froghoppers store muscle energy in their body to shoot themselves into the air.\n\nJumping can be a great way of getting around, for both big and small animals. Extreme jumpers have a body that has adapted for jumping great heights or distances. This helps extreme jumpers survive in the wild.",
+      "questions": [
+        {
+          "id": "vocab-p007-q1",
+          "difficulty": "medium",
+          "question": "Read this sentence from the passage: \"These extreme jumpers come in all sizes and shapes and live in all kinds of habitats.\"\n\nWhat does the word HABITATS mean?",
+          "options": [
+            "jumping distances",
+            "natural environments where animals live",
+            "food sources that animals eat",
+            "groups of animals that live together"
+          ],
+          "answer": 1,
+          "explanation": "\"Habitats\" are the natural environments or places where animals live. The sentence says jumpers come in all sizes and live in all kinds of habitats — meaning all kinds of natural places (ponds, forests, grasslands, etc.)."
+        },
+        {
+          "id": "vocab-p007-q2",
+          "difficulty": "medium",
+          "question": "Read this sentence: \"Extreme jumpers have a body that has adapted for jumping great heights or distances.\"\n\nWhat does ADAPTED mean in this sentence?",
+          "options": [
+            "grown weaker over time",
+            "changed or adjusted over time to be better suited for something",
+            "been trained by scientists",
+            "become smaller to save energy"
+          ],
+          "answer": 1,
+          "explanation": "\"Adapted\" means changed over time to become better at something. The passage says their bodies \"adapted for jumping\" — meaning their bodies changed (longer legs, stronger muscles) to help them jump better."
+        },
+        {
+          "id": "vocab-p007-q3",
+          "difficulty": "medium",
+          "question": "Read this sentence: \"This helps extreme jumpers survive in the wild.\"\n\nWhat does SURVIVE mean as used in this passage?",
+          "options": [
+            "dance",
+            "compete in races",
+            "continue living",
+            "communicate with other animals"
+          ],
+          "answer": 2,
+          "explanation": "\"Survive\" means to continue living. The passage explains that jumping helps animals escape predators and find food — both of which help them stay alive. \"Survive\" = continue to live."
+        },
+        {
+          "id": "vocab-p007-q4",
+          "difficulty": "medium",
+          "question": "Read this sentence: \"Froghoppers store muscle energy in their body to shoot themselves into the air.\"\n\nThe word STORE in this sentence means —",
+          "options": [
+            "a place where things are bought and sold",
+            "to send away",
+            "to save or hold for later use",
+            "to release all at once"
+          ],
+          "answer": 2,
+          "explanation": "\"Store\" has multiple meanings. Here it means to save or hold something for later use — the froghopper builds up muscle energy and then releases it all at once to jump. The context shows energy is being saved, not spent immediately."
+        }
+      ]
+    },
+    {
+      "id": "vocab-p008",
+      "difficulty": "hard",
+      "teks": "3.4C",
+      "title": "Ocean Zones",
+      "text": "The ocean is divided into zones based on how much sunlight reaches each level. The uppermost zone, called the sunlit zone, receives abundant light and is teeming with life — fish, dolphins, sea turtles, and coral all thrive here. Below it lies the twilight zone, where light is dim and scarce. Animals in this zone have remarkable adaptations: some are bioluminescent, meaning they can produce their own light. Deeper still is the midnight zone, a realm of total darkness and immense pressure. Creatures here are often bizarre in appearance — translucent bodies, enormous eyes, or no eyes at all. Scientists call this extreme environment the deep sea, and new species are still being discovered there regularly.",
+      "questions": [
+        {
+          "id": "vocab-p008-q1",
+          "difficulty": "hard",
+          "question": "Read this sentence: \"The uppermost zone... receives abundant light and is teeming with life.\"\n\nWhat does ABUNDANT mean in this sentence?",
+          "options": [
+            "weak and fading",
+            "very plentiful — more than enough",
+            "blocked by clouds",
+            "changing throughout the day"
+          ],
+          "answer": 1,
+          "explanation": "\"Abundant\" means existing in very large quantities — more than enough. The passage contrasts the sunlit zone (abundant light) with the twilight zone (dim and scarce light), which helps show that abundant means the opposite of scarce."
+        },
+        {
+          "id": "vocab-p008-q2",
+          "difficulty": "hard",
+          "question": "Read this sentence: \"some are bioluminescent, meaning they can produce their own light.\"\n\nThe passage defines bioluminescent right after the word \"meaning.\" What does bioluminescent mean?",
+          "options": [
+            "able to see in total darkness",
+            "able to produce their own light",
+            "able to survive without food",
+            "able to change color to hide from predators"
+          ],
+          "answer": 1,
+          "explanation": "The passage defines the word directly: \"bioluminescent, meaning they can produce their own light.\" This is a context clue in the form of a definition — the author explains the word immediately after using it."
+        },
+        {
+          "id": "vocab-p008-q3",
+          "difficulty": "hard",
+          "question": "Read this sentence: \"Deeper still is the midnight zone, a realm of total darkness and immense pressure.\"\n\nWhat does the word IMMENSE mean as used here?",
+          "options": [
+            "very slight and barely noticeable",
+            "constantly changing",
+            "extremely large or great",
+            "coming from the surface"
+          ],
+          "answer": 2,
+          "explanation": "\"Immense\" means extremely large. The passage describes the midnight zone as having \"immense pressure\" — this is the enormous force of all the water above pressing down. The context shows it is an extreme environment, suggesting the pressure is massive."
+        },
+        {
+          "id": "vocab-p008-q4",
+          "difficulty": "hard",
+          "question": "Read this sentence: \"Creatures here are often bizarre in appearance — translucent bodies, enormous eyes, or no eyes at all.\"\n\nWhat does TRANSLUCENT mean based on context clues in this sentence?",
+          "options": [
+            "brightly colored and patterned",
+            "allowing light to pass through so the body appears clear or see-through",
+            "covered in hard protective scales",
+            "extremely small and difficult to see"
+          ],
+          "answer": 1,
+          "explanation": "\"Translucent\" appears in a list of \"bizarre\" physical features. The context — creatures in total darkness with unusual features — suggests translucent describes how their bodies look. Translucent means allowing light to pass through, making the body appear clear or see-through."
+        }
+      ]
     }
   ]
 }

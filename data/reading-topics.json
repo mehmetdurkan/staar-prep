@@ -49,10 +49,26 @@
         },
         {
           "id": "authors-purpose",
-          "name": "Author's Purpose",
+          "name": "Author's Purpose & Craft",
           "icon": "🖊️",
           "teks": "3.11A–C",
-          "description": "Identify why an author wrote a text — to inform, persuade, or entertain",
+          "description": "Identify why an author wrote a text and analyze the craft choices they made",
+          "hasQuestions": true
+        },
+        {
+          "id": "text-features",
+          "name": "Text Features",
+          "icon": "📊",
+          "teks": "3.13B",
+          "description": "Use headings, subheadings, graphs, captions, and other text features to understand a passage",
+          "hasQuestions": true
+        },
+        {
+          "id": "text-structure",
+          "name": "Text Structure",
+          "icon": "🗂️",
+          "teks": "3.11C",
+          "description": "Identify how a text is organized — cause-effect, compare-contrast, sequence, or problem-solution",
           "hasQuestions": true
         }
       ]

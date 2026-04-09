@@ -372,6 +372,190 @@
           "explanation": "This rhetorical question challenges readers to reconsider what they accept as normal. It is a persuasive technique designed to leave readers with doubt about homework and openness to change."
         }
       ]
+    },
+    {
+      "id": "ap-p006",
+      "difficulty": "easy",
+      "teks": "3.11A",
+      "title": "from Nature's Best Jumpers",
+      "text": "Some animals are known as great jumpers. They can jump up very high or across long distances. These extreme jumpers come in all sizes and shapes and live in all kinds of habitats. Frogs, rabbits, kangaroos, cougars, spiders, and many other types of creatures are known for their jumping skills. Some insects, like fleas and froghoppers, can jump distances that might not be far in inches but that are many times the size of their own body. From the smallest bug to the furriest cat, extreme jumpers are some of the coolest animals in the world.\n\nFrogs are good jumpers. Most frogs live on the ground and get around by jumping. Frogs' back legs have big muscles that make jumping easy. Their big feet help them push off the ground with a lot of force. As a frog leaps, its back legs reach out to full length. Frogs' back legs are almost twice as long as their front legs!\n\nFroghoppers, also known as spittlebugs, are only about .2 inch long. Some froghoppers can jump about 28 inches into the air. That is the highest that any insect is known to jump.",
+      "questions": [
+        {
+          "id": "ap-p006-q1",
+          "difficulty": "easy",
+          "question": "Read this sentence from the passage: \"From the smallest bug to the furriest cat, extreme jumpers are some of the coolest animals in the world.\"\n\nWhat is the MOST LIKELY reason the author ends the first section with this sentence?",
+          "options": [
+            "To give a fact about the size of insects",
+            "To create excitement and interest about the topic of jumping animals",
+            "To explain how cats and bugs are the same",
+            "To tell readers the name of the author's favorite animal"
+          ],
+          "answer": 1,
+          "explanation": "This sentence wraps up the opening by expressing enthusiasm — \"coolest animals\" is the author's opinion designed to get readers excited about the topic. It is an author's craft choice to build reader interest."
+        },
+        {
+          "id": "ap-p006-q2",
+          "difficulty": "easy",
+          "question": "The passage includes the section \"These Legs Are Made for Jumping\" that focuses only on frogs. What is the MOST LIKELY reason the author chose to dedicate a whole section to frogs?",
+          "options": [
+            "Because frogs are the only animals that jump",
+            "To provide a detailed example that helps readers understand how a jumping body works",
+            "Because the author's favorite animal is a frog",
+            "To compare frogs to kangaroos in detail"
+          ],
+          "answer": 1,
+          "explanation": "Authors often zoom in on one detailed example to make a bigger idea clear. By describing exactly how frogs' legs work, the author helps readers understand the concept of a body \"adapted for jumping\" — a key idea in the passage."
+        },
+        {
+          "id": "ap-p006-q3",
+          "difficulty": "easy",
+          "question": "Read this sentence from the passage: \"Frogs' back legs are almost twice as long as their front legs!\"\n\nWhy did the author MOST LIKELY end this sentence with an exclamation point?",
+          "options": [
+            "Because the author made a mistake",
+            "To show this fact is surprising and impressive",
+            "Because all sentences in the passage end with exclamation points",
+            "To show the author is angry about frog legs"
+          ],
+          "answer": 1,
+          "explanation": "Exclamation points are a craft choice — authors use them to show excitement or to signal that a fact is surprising. The author wants readers to find the leg length difference remarkable."
+        },
+        {
+          "id": "ap-p006-q4",
+          "difficulty": "easy",
+          "question": "What are the MOST LIKELY reasons the author wrote this passage about jumping animals? Select TWO correct answers.",
+          "options": [
+            "To inform readers about how different animals are adapted for jumping",
+            "To persuade readers to stop hunting animals",
+            "To entertain readers with interesting and surprising facts",
+            "To explain why humans cannot jump as far as animals",
+            "To tell a story about a frog who learns to jump"
+          ],
+          "answers": [0, 2],
+          "explanation": "The passage gives facts about different jumping animals (inform) but also highlights surprising details — like froghoppers being the tiniest yet highest-jumping insects — that are meant to delight and surprise readers (entertain). Informational texts can do both."
+        }
+      ]
+    },
+    {
+      "id": "ap-p007",
+      "difficulty": "medium",
+      "teks": "3.11B",
+      "title": "Lights Out for Sea Turtles",
+      "text": "Every summer, thousands of sea turtles crawl onto Florida's beaches to lay their eggs. But bright lights from beachfront hotels and homes are causing a serious problem. Sea turtle hatchlings use moonlight reflecting off the ocean to find their way to the water after they hatch. When artificial lights are brighter than the moon, the hatchlings become confused and crawl toward the lights instead of the ocean. Many baby turtles die each year because they wander into roads, parking lots, and buildings. The solution is simple: turn off unnecessary lights near beaches during nesting season, or use special sea-turtle-safe bulbs that do not confuse the hatchlings. Every light turned off is a turtle's life saved.",
+      "questions": [
+        {
+          "id": "ap-p007-q1",
+          "difficulty": "medium",
+          "question": "What is the author's MAIN purpose in writing this passage?",
+          "options": [
+            "To entertain readers with a story about baby sea turtles",
+            "To inform readers about sea turtle biology",
+            "To persuade readers that beach lighting should be changed to protect sea turtles",
+            "To explain the history of sea turtle conservation"
+          ],
+          "answer": 2,
+          "explanation": "The passage identifies a problem (lights harming turtles), explains it with evidence, and ends with a call to action. The final sentence — \"Every light turned off is a turtle's life saved\" — is persuasive language meant to motivate readers."
+        },
+        {
+          "id": "ap-p007-q2",
+          "difficulty": "medium",
+          "question": "Read this sentence: \"Every light turned off is a turtle's life saved.\"\n\nWhat is the MOST LIKELY reason the author chose to end the passage with this sentence?",
+          "options": [
+            "To summarize all the facts from the passage",
+            "To leave readers with a powerful, memorable message that motivates them to act",
+            "To explain how sea turtle-safe bulbs work",
+            "To introduce the problem of beach lighting for the first time"
+          ],
+          "answer": 1,
+          "explanation": "Ending with a short, strong sentence is an author's craft choice. This sentence connects the reader's action (turning off a light) directly to a result (saving a life) — it is designed to be memorable and motivating, a classic persuasive technique."
+        },
+        {
+          "id": "ap-p007-q3",
+          "difficulty": "medium",
+          "question": "The author explains that hatchlings use moonlight to find the ocean and that artificial lights are brighter than the moon. What is the MOST LIKELY reason the author included this scientific explanation?",
+          "options": [
+            "To entertain readers with interesting moon facts",
+            "To compare the moon to artificial lights",
+            "To help readers understand WHY lights are dangerous to turtles — making the argument more convincing",
+            "To inform readers about how the moon reflects light"
+          ],
+          "answer": 2,
+          "explanation": "When a persuasive author explains the science behind a problem, they are building credibility — helping readers understand the cause makes the argument more logical and convincing. This is a craft choice."
+        },
+        {
+          "id": "ap-p007-q4",
+          "difficulty": "medium",
+          "question": "The author says the solution is \"simple.\" What effect does using the word \"simple\" MOST LIKELY have on the reader?",
+          "options": [
+            "It makes readers think the problem is not serious",
+            "It makes the solution seem easy enough for anyone to do — removing excuses for not acting",
+            "It shows the author does not understand how hard it is to change lighting",
+            "It tells readers the solution has already been put in place everywhere"
+          ],
+          "answer": 1,
+          "explanation": "Calling the solution \"simple\" is a word choice craft decision — it removes the reader's objection that the fix is too hard or complicated. If it's simple, there's no excuse not to act. This is a persuasive technique."
+        }
+      ]
+    },
+    {
+      "id": "ap-p008",
+      "difficulty": "hard",
+      "teks": "3.11C",
+      "title": "The Midnight Garden",
+      "text": "The garden came alive at midnight. Fireflies blinked like fallen stars scattered across the dark grass. An owl perched in the oak tree, turning its head slowly as if listening to the garden's secrets. Somewhere in the shadows, a cricket orchestra tuned up — first one, then a dozen, then a hundred tiny violins playing in the warm summer air. Maria stood at the edge of the path, breathing it all in, afraid that if she stepped forward, the magic would shatter like glass.",
+      "questions": [
+        {
+          "id": "ap-p008-q1",
+          "difficulty": "hard",
+          "question": "Read this sentence from the passage: \"Fireflies blinked like fallen stars scattered across the dark grass.\"\n\nWhat is the MOST LIKELY reason the author uses this simile?",
+          "options": [
+            "To explain the scientific reason fireflies glow",
+            "To help readers picture the beauty of the fireflies by comparing them to something familiar and magical",
+            "To show that fireflies only appear at night",
+            "To tell readers that stars are falling into the garden"
+          ],
+          "answer": 1,
+          "explanation": "A simile (using \"like\" or \"as\" to compare two things) helps readers visualize something. Comparing fireflies to fallen stars paints a beautiful, magical image — this is an author's craft choice to create a mood and help the reader see the scene."
+        },
+        {
+          "id": "ap-p008-q2",
+          "difficulty": "hard",
+          "question": "Read this sentence: \"Somewhere in the shadows, a cricket orchestra tuned up — first one, then a dozen, then a hundred tiny violins playing in the warm summer air.\"\n\nThe author compares crickets to \"an orchestra\" and their sounds to \"tiny violins.\" What is the MOST LIKELY reason the author chose this comparison?",
+          "options": [
+            "To inform readers that crickets are related to violins",
+            "To suggest that crickets are as loud as a real orchestra",
+            "To help readers hear the cricket sounds in their imagination by comparing them to music",
+            "To show that Maria plays the violin in the garden"
+          ],
+          "answer": 2,
+          "explanation": "Comparing crickets to an orchestra is a metaphor — it helps readers hear the cricket sounds as beautiful, layered music. Authors use figurative language to make writing vivid and to engage the reader's senses."
+        },
+        {
+          "id": "ap-p008-q3",
+          "difficulty": "hard",
+          "question": "Read this sentence: \"Maria stood at the edge of the path, breathing it all in, afraid that if she stepped forward, the magic would shatter like glass.\"\n\nWhat does the simile \"shatter like glass\" help the reader understand about how Maria feels?",
+          "options": [
+            "Maria is afraid of glass",
+            "Maria feels the moment is delicate and fragile — one wrong move could break the spell",
+            "Maria is stepping on broken glass",
+            "The garden is made of glass at night"
+          ],
+          "answer": 1,
+          "explanation": "Glass shatters suddenly and permanently — it cannot be put back together. The author uses this simile to show that Maria feels the magical moment is fragile and precious, and she is afraid to ruin it."
+        },
+        {
+          "id": "ap-p008-q4",
+          "difficulty": "hard",
+          "question": "What is the MOST LIKELY purpose of this passage?",
+          "options": [
+            "To inform readers about animals that are active at night",
+            "To persuade readers to spend time in gardens",
+            "To entertain readers with vivid, imaginative writing that creates a magical mood",
+            "To explain the science of firefly bioluminescence"
+          ],
+          "answer": 2,
+          "explanation": "The passage uses figurative language, imagery, and careful word choice to create a magical atmosphere — these are literary craft tools used for entertainment and artistic expression, not for informing or persuading."
+        }
+      ]
     }
   ]
 }
